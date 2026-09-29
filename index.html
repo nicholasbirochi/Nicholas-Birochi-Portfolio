@@ -7,250 +7,336 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
     >
-    <meta name="description" content="Portfolio profissional de Nicholas Birochi: sistemas desktop, simulacoes academicas, Java, Spring MVC, dados e seguranca aplicada.">
-    <meta name="theme-color" content="#f1eee8">
-    <link rel="canonical" href="https://nicolasbirochi.com.br/">
+    <meta name="description" content="Portfolio profissional de Nicholas Birochi: software, dados, hardware, IA local, automacao e seguranca aplicada.">
+    <meta name="theme-color" content="#0c0c0c">
+    <link rel="canonical" href="https://nicholasbirochi.com.br/">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="styles.css">
     <title>Nicholas Birochi | Portfolio</title>
   </head>
   <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <header class="site-header" aria-label="Cabecalho principal">
       <a class="brand" href="#top" aria-label="Ir para o inicio">
         <span class="brand-mark">NB</span>
-        <span>Nicholas Birochi</span>
+        <span class="brand-text">Nicholas Birochi</span>
       </a>
+
       <nav class="nav-links" aria-label="Navegacao principal">
-        <a href="#projects">Projetos</a>
+        <a href="#work">Projetos</a>
+        <a href="#stack">Stack</a>
         <a href="#security">Seguranca</a>
         <a href="#contact">Contato</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero section-shell" aria-labelledby="hero-title">
+      <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">nicolasbirochi.com.br</p>
-          <h1 id="hero-title">Portfolio profissional para projetos que unem codigo, produto e criterio tecnico.</h1>
+          <p class="eyebrow">portfolio 2026 / nicholasbirochi.com.br</p>
+          <h1 id="hero-title">Nicholas Birochi</h1>
+          <p class="role-line">Software, dados, hardware e IA local.</p>
           <p class="lead">
-            Desenvolvimento de aplicacoes desktop, simuladores academicos, sistemas web em Java e experiencias digitais com atencao a seguranca, usabilidade e apresentacao.
+            Eu construo projetos que saem do papel: sistemas web, BI local, automacoes,
+            simuladores, firmware e experiencias digitais com acabamento visual e criterio tecnico.
           </p>
+
           <div class="hero-actions" aria-label="Acoes principais">
-            <a class="button button-primary" href="#projects">
+            <a class="button button-primary" href="#work">
               <span>Ver projetos</span>
-              <span aria-hidden="true">↘</span>
+              <span aria-hidden="true">-&gt;</span>
             </a>
-            <a class="button button-secondary" href="#security">
-              <span>Matriz de seguranca</span>
-              <span aria-hidden="true">→</span>
+            <a class="button button-secondary" href="https://github.com/nicholasbirochi" rel="noopener noreferrer" target="_blank">
+              <span>GitHub</span>
+              <span aria-hidden="true">-&gt;</span>
             </a>
           </div>
-          <dl class="metrics" aria-label="Resumo do portfolio">
-            <div>
-              <dt>4</dt>
-              <dd>projetos base</dd>
-            </div>
-            <div>
-              <dt>19</dt>
-              <dd>pontos revisados</dd>
-            </div>
-            <div>
-              <dt>0</dt>
-              <dd>dependencias externas</dd>
-            </div>
-          </dl>
         </div>
 
-        <div class="motion-stage" aria-label="Animacao de interface do portfolio">
-          <div class="motion-canvas" id="motionCanvas">
-            <div class="motion-shape" id="motionShape">
-              <span class="motion-label">Abrir portfolio</span>
+        <div class="hero-media" aria-label="Projeto em destaque">
+          <div class="hero-media-top">
+            <span>latest build</span>
+            <strong>Standalone Fingerprint Key</strong>
+          </div>
+          <div class="device-frame">
+            <img src="assets/fingerprint-spec-sheet.png" alt="Prancha tecnica do Standalone Fingerprint Key">
+          </div>
+          <div class="hero-stat-grid" aria-label="Resumo rapido">
+            <div>
+              <strong>ESP32-S3</strong>
+              <span>firmware + HID</span>
             </div>
-            <div class="motion-cursor" id="motionCursor" aria-hidden="true">
-              <span></span>
+            <div>
+              <strong>46.4 mm</strong>
+              <span>case impresso</span>
+            </div>
+            <div>
+              <strong>0 driver</strong>
+              <span>USB keyboard</span>
             </div>
           </div>
+        </div>
+
+        <div class="hero-marquee" aria-hidden="true">
+          <span>Python</span>
+          <span>Flask</span>
+          <span>SQLite</span>
+          <span>Java</span>
+          <span>Spring MVC</span>
+          <span>PostgreSQL</span>
+          <span>Power BI</span>
+          <span>ESP32</span>
+          <span>Godot</span>
+          <span>Ollama</span>
+          <span>n8n</span>
         </div>
       </section>
 
-      <section class="section-shell intro-band" aria-labelledby="profile-title">
-        <div>
-          <p class="eyebrow">perfil tecnico</p>
-          <h2 id="profile-title">Construcao de software com clareza visual e responsabilidade operacional.</h2>
-        </div>
+      <section class="section-shell intro-band" aria-labelledby="intro-title">
+        <p class="eyebrow">perfil</p>
+        <h2 id="intro-title">Portfolio com cara de produto, nao de trabalho entregue as pressas.</h2>
         <p>
-          O portfolio foi estruturado para mostrar evolucao tecnica: interfaces desktop em C#, modelagem fisica, integracao com banco de dados e um e-commerce Spring MVC com autenticacao, carrinho, pedidos e upload de imagens.
+          A vitrine agora prioriza os projetos mais recentes e fortes: hardware com firmware,
+          BI local, automacao com IA, sistemas web e jogos. Cada bloco mostra decisao tecnica,
+          contexto, stack e resultado visual sem entupir a tela.
         </p>
       </section>
 
-      <section class="section-shell projects-section" id="projects" aria-labelledby="projects-title">
+      <section class="work section-shell" id="work" aria-labelledby="work-title">
         <div class="section-heading">
-          <p class="eyebrow">projetos selecionados</p>
-          <h2 id="projects-title">Quatro trabalhos, quatro superficies tecnicas diferentes.</h2>
+          <p class="eyebrow">selected work</p>
+          <h2 id="work-title">Projetos recentes e mais fortes.</h2>
+          <p>
+            Uma selecao mais profissional, com os cases que contam melhor a sua evolucao:
+            backend, dados, interface, automacao, hardware e produto.
+          </p>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-media">
-              <img src="assets/crypto-capa.png" alt="Tela do projeto de criptografia em C#">
+        <div class="project-wall">
+          <article class="project-card project-card-large project-dark">
+            <div class="project-media project-media-device">
+              <img src="assets/fingerprint-closed.png" alt="Render do dispositivo Standalone Fingerprint Key fechado">
             </div>
-            <div class="project-body">
-              <p class="project-kicker">Projeto 01 · C# WinForms</p>
-              <h3>Criptografia por Matrizes</h3>
+            <div class="project-copy">
+              <p class="project-kicker">Hardware + firmware / 2026</p>
+              <h3>Standalone Fingerprint Key</h3>
               <p>
-                Aplicacao desktop para codificar e decodificar mensagens por transformacoes matriciais, com fluxo guiado e telas de apoio.
+                Chave biometrica standalone para macOS com ESP32-S3, sensor capacitivo,
+                USB HID, protocolo customizado, testes de framing e case parametrico impresso em 3D.
               </p>
-              <ul class="tag-list" aria-label="Tecnologias">
-                <li>C#</li>
-                <li>WinForms</li>
-                <li>Desktop UX</li>
-              </ul>
+              <div class="tag-list" aria-label="Tecnologias do projeto">
+                <span>ESP32-S3</span>
+                <span>C++</span>
+                <span>USB HID</span>
+                <span>3D enclosure</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card-large">
+            <div class="project-media project-media-dashboard">
+              <img src="assets/ccb-dashboard.png" alt="Dashboard do projeto CCB BI">
+            </div>
+            <div class="project-copy">
+              <p class="project-kicker">Produto local / 2026</p>
+              <h3>CCB BI</h3>
+              <p>
+                Sistema Flask + SQLite para registrar formularios, operar offline na rede local,
+                gerar QR code de acesso e entregar analises com graficos SVG sem depender de nuvem.
+              </p>
+              <div class="tag-list" aria-label="Tecnologias do projeto">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>SQLite</span>
+                <span>Offline-first</span>
+              </div>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-media">
-              <img src="assets/ballistics-ui.png" alt="Interface do simulador de lancamento balistico e eletrica">
+            <div class="project-media project-media-ai" aria-hidden="true">
+              <div class="terminal-window">
+                <span>local-ai.flow</span>
+                <strong>Ollama + n8n</strong>
+                <p>drive -> pdf -> reasoning -> task</p>
+                <i></i>
+              </div>
             </div>
-            <div class="project-body">
-              <p class="project-kicker">Projeto 02 · Fisica aplicada</p>
-              <h3>Laboratorio de Balistica e Eletrica</h3>
+            <div class="project-copy">
+              <p class="project-kicker">Automacao IA / 2026</p>
+              <h3>Ollama AI Automation n8n</h3>
               <p>
-                Simulador academico em C# para apoio a calculos de fisica, sistemas lineares e lancamento balistico, acompanhado por relatorio e video.
+                Fluxos locais de IA com processamento de documentos, automacao, privacidade e
+                orquestracao entre ferramentas sem expor dados sensiveis desnecessariamente.
               </p>
-              <ul class="tag-list" aria-label="Tecnologias">
-                <li>C#</li>
-                <li>Modelagem</li>
-                <li>Calculo numerico</li>
-              </ul>
+              <div class="tag-list" aria-label="Tecnologias do projeto">
+                <span>n8n</span>
+                <span>Ollama</span>
+                <span>Local AI</span>
+              </div>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-media">
-              <img src="assets/doppler-audio.png" alt="Icone de ondas sonoras do simulador Doppler">
+            <div class="project-media project-media-analytics" aria-hidden="true">
+              <div class="analytics-grid">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
-            <div class="project-body">
-              <p class="project-kicker">Projeto 03 · JavaFX e SQL Server</p>
-              <h3>Simulacao do Efeito Doppler</h3>
+            <div class="project-copy">
+              <p class="project-kicker">Dados corporativos / 2026</p>
+              <h3>Corporate BI Automation</h3>
               <p>
-                Experimento visual para simular fonte sonora, observador, ambiente e timbres, com persistencia em banco e procedures.
+                Workflows de Power BI, extracao e padronizacao de relatorios para reduzir trabalho
+                manual e melhorar leitura operacional em ambiente corporativo.
               </p>
-              <ul class="tag-list" aria-label="Tecnologias">
-                <li>Java</li>
-                <li>JavaFX</li>
-                <li>JDBC</li>
-                <li>SQL Server</li>
-              </ul>
+              <div class="tag-list" aria-label="Tecnologias do projeto">
+                <span>Power BI</span>
+                <span>ETL</span>
+                <span>Dashboards</span>
+              </div>
             </div>
           </article>
 
           <article class="project-card">
             <div class="project-media project-media-logo">
-              <img src="assets/petshop-logo.svg" alt="Logo do Petshop Spring MVC">
+              <img src="assets/petshop-logo.svg" alt="Logo do Petshop E-Commerce">
             </div>
-            <div class="project-body">
-              <p class="project-kicker">Projeto 04 · Spring MVC</p>
+            <div class="project-copy">
+              <p class="project-kicker">Web app / 2025</p>
               <h3>Petshop E-Commerce</h3>
               <p>
-                Aplicacao web com catalogo, carrinho em cookie, pedidos, autenticacao por sessao, perfis de acesso e CRUD administrativo.
+                Aplicacao Spring MVC com catalogo, carrinho em cookie, pedidos, autenticacao por
+                sessao, perfis de acesso, upload de imagens e CRUD administrativo.
               </p>
-              <ul class="tag-list" aria-label="Tecnologias">
-                <li>Java 21</li>
-                <li>Spring Boot</li>
-                <li>Thymeleaf</li>
-                <li>PostgreSQL</li>
-              </ul>
+              <div class="tag-list" aria-label="Tecnologias do projeto">
+                <span>Java 21</span>
+                <span>Spring Boot</span>
+                <span>Thymeleaf</span>
+                <span>PostgreSQL</span>
+              </div>
             </div>
+          </article>
+
+          <article class="project-card project-coral">
+            <div class="project-media project-media-game" aria-hidden="true">
+              <div class="game-scene">
+                <span></span>
+                <span></span>
+                <i></i>
+              </div>
+            </div>
+            <div class="project-copy">
+              <p class="project-kicker">Game design / 2026</p>
+              <h3>Haven Game</h3>
+              <p>
+                Jogo indie 2D em Godot sobre paz, amizade e narrativa curta, pensado para solo
+                ou cooperativo, com arte suave e estrutura preparada para capitulos.
+              </p>
+              <div class="tag-list" aria-label="Tecnologias do projeto">
+                <span>Godot 4</span>
+                <span>GDScript</span>
+                <span>2D</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="more-work" aria-label="Outros projetos relevantes">
+          <a href="https://github.com/nicholasbirochi/simulador-escalonamento" rel="noopener noreferrer" target="_blank">
+            <span>CPU Scheduling Simulator</span>
+            <strong>SO, algoritmos e visualizacao</strong>
+          </a>
+          <a href="https://github.com/nicholasbirochi/haven-game" rel="noopener noreferrer" target="_blank">
+            <span>Haven Game Repo</span>
+            <strong>Godot, narrativa e coop</strong>
+          </a>
+          <a href="https://github.com/nicholasbirochi/n8n-ollama-ai" rel="noopener noreferrer" target="_blank">
+            <span>n8n + Ollama AI</span>
+            <strong>Automacao local e documentos</strong>
+          </a>
+        </div>
+      </section>
+
+      <section class="stack section-shell" id="stack" aria-labelledby="stack-title">
+        <div class="section-heading section-heading-compact">
+          <p class="eyebrow">stack</p>
+          <h2 id="stack-title">Tecnologias que aparecem nos projetos de verdade.</h2>
+        </div>
+
+        <div class="stack-grid">
+          <article>
+            <span>01</span>
+            <h3>Software</h3>
+            <p>Java, Spring MVC, Python, Flask, C#, WinForms, HTML, CSS e JavaScript sem dependencia pesada quando nao precisa.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Dados</h3>
+            <p>SQLite, PostgreSQL, SQL Server, Power BI, extracao, dashboards e analises voltadas para decisao operacional.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Hardware</h3>
+            <p>ESP32-S3, firmware, USB HID, sensores, testes de protocolo e modelagem parametrica para impressao 3D.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Produto</h3>
+            <p>Interfaces responsivas, operacao local, experiencia de instalacao simples, documentacao e matriz de seguranca.</p>
           </article>
         </div>
       </section>
 
-      <section class="section-shell security-section" id="security" aria-labelledby="security-title">
-        <div class="section-heading">
+      <section class="security section-shell" id="security" aria-labelledby="security-title">
+        <div class="security-copy">
           <p class="eyebrow">seguranca aplicada</p>
-          <h2 id="security-title">Checklist dos 19 pontos, usando apenas o que faz sentido por superficie.</h2>
+          <h2 id="security-title">Os 19 pontos viraram criterio, nao enfeite.</h2>
+          <p>
+            Cada projeto tem uma superficie diferente. Site estatico nao precisa de login ou CSRF,
+            mas um e-commerce precisa de sessao, senha, upload, validacao e controles de abuso.
+          </p>
         </div>
 
-        <div class="security-layout">
-          <article class="security-card">
-            <h3>Site do portfolio</h3>
-            <p>
-              Arquitetura estatica, sem coleta de dados, sem login, sem banco, sem upload e sem dependencias externas. A politica CSP bloqueia scripts externos e frames.
-            </p>
-            <ul class="security-list">
-              <li>Sem variaveis de ambiente no cliente.</li>
-              <li>Sem formularios de backend ou armazenamento sensivel.</li>
-              <li>Links externos preparados com isolamento de aba.</li>
-              <li>Assets locais para reduzir superficie de terceiros.</li>
-            </ul>
-          </article>
-
-          <div class="security-table" role="table" aria-label="Matriz de seguranca por projeto">
-            <div role="row" class="security-row security-head">
-              <span role="columnheader">Projeto</span>
-              <span role="columnheader">Pontos necessarios</span>
-              <span role="columnheader">Tratamento</span>
-            </div>
-            <div role="row" class="security-row">
-              <span role="cell">Criptografia</span>
-              <span role="cell">2, 9, 12, 16</span>
-              <span role="cell">Validacao local, nenhum segredo publicado, sem backend ou banco.</span>
-            </div>
-            <div role="row" class="security-row">
-              <span role="cell">Balistica e Eletrica</span>
-              <span role="cell">2, 9, 12</span>
-              <span role="cell">Campos numericos devem falhar de forma clara; sem autenticacao, cookie ou CORS.</span>
-            </div>
-            <div role="row" class="security-row">
-              <span role="cell">Doppler</span>
-              <span role="cell">1, 3, 4, 12, 16</span>
-              <span role="cell">DAO usa PreparedStatement; conexao e senha devem ficar fora do codigo em ambiente real.</span>
-            </div>
-            <div role="row" class="security-row">
-              <span role="cell">Petshop</span>
-              <span role="cell">1, 3, 5, 8, 10, 11, 12, 13, 15, 18</span>
-              <span role="cell">Aplicacao web exige hardening de credenciais, upload, sessao, cookies e tentativas de login.</span>
-            </div>
+        <div class="security-board" aria-label="Resumo de seguranca por superficie">
+          <div>
+            <span>Portfolio</span>
+            <strong>CSP, sem backend, sem cookie, sem formulario</strong>
+          </div>
+          <div>
+            <span>CCB BI</span>
+            <strong>Login local, roles, SQLite, backup e mensagens discretas</strong>
+          </div>
+          <div>
+            <span>Petshop</span>
+            <strong>BCrypt, sessao, upload, validacao e acesso admin</strong>
+          </div>
+          <div>
+            <span>Fingerprint Key</span>
+            <strong>Threat model, segredo local, limitacoes documentadas</strong>
           </div>
         </div>
-
-        <div class="checklist" aria-label="Os 19 pontos revisados">
-          <span>1 env exposta</span>
-          <span>2 validacao frontend</span>
-          <span>3 validacao backend</span>
-          <span>4 SQL Injection</span>
-          <span>5 autenticacao fraca</span>
-          <span>6 IDOR</span>
-          <span>7 senhas no banco</span>
-          <span>8 forca bruta</span>
-          <span>9 bloquear envio</span>
-          <span>10 CSRF</span>
-          <span>11 upload</span>
-          <span>12 nao revelar info</span>
-          <span>13 dependencias</span>
-          <span>14 tokens</span>
-          <span>15 rate limit</span>
-          <span>16 dados sensiveis</span>
-          <span>17 SSRF</span>
-          <span>18 cookies</span>
-          <span>19 CORS</span>
-        </div>
       </section>
 
-      <section class="section-shell contact-section" id="contact" aria-labelledby="contact-title">
+      <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
         <div>
           <p class="eyebrow">contato</p>
-          <h2 id="contact-title">Vamos deixar isso pronto para publicar no dominio.</h2>
+          <h2 id="contact-title">Pronto para conversar sobre software que parece produto.</h2>
         </div>
         <div class="contact-actions">
-          <a class="button button-primary" href="mailto:contato@nicolasbirochi.com.br">
+          <a class="button button-primary" href="mailto:contato@nicholasbirochi.com.br">
             <span>Enviar e-mail</span>
-            <span aria-hidden="true">↗</span>
+            <span aria-hidden="true">-&gt;</span>
           </a>
-          <a class="button button-secondary" href="https://github.com/nicholasbirochi" rel="noopener noreferrer" target="_blank">
-            <span>GitHub</span>
-            <span aria-hidden="true">↗</span>
+          <a class="button button-secondary" href="https://github.com/nicholasbirochi/Nicholas-Birochi-Portfolio" rel="noopener noreferrer" target="_blank">
+            <span>Codigo do site</span>
+            <span aria-hidden="true">-&gt;</span>
           </a>
         </div>
       </section>
@@ -258,7 +344,7 @@
 
     <footer class="site-footer">
       <span>Nicholas Birochi</span>
-      <span>nicolasbirochi.com.br</span>
+      <span>nicholasbirochi.com.br</span>
     </footer>
 
     <script src="app.js" defer></script>
