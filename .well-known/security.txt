@@ -1,3 +1,3 @@
-Contact: mailto:contato@nicolasbirochi.com.br
+Contact: mailto:contato@nicholasbirochi.com.br
 Preferred-Languages: pt-BR, en
-Canonical: https://nicolasbirochi.com.br/.well-known/security.txt
+Canonical: https://nicholasbirochi.com.br/.well-known/security.txt

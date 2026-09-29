@@ -3,7 +3,7 @@
   "short_name": "NB Portfolio",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f1eee8",
-  "theme_color": "#f1eee8",
+  "background_color": "#0c0c0c",
+  "theme_color": "#0c0c0c",
   "icons": []
 }

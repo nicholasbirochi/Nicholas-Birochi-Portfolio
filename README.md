@@ -1,47 +1,25 @@
 # Portfolio Nicholas Birochi
 
-Site estatico profissional para `nicolasbirochi.com.br`, criado para apresentar quatro projetos academicos/profissionais com foco em clareza visual, motion design e seguranca por superficie.
+Site estatico profissional publicado em `nicholasbirochi.com.br`, criado para apresentar os projetos mais recentes e fortes de Nicholas Birochi com foco em produto, dados, hardware, automacao e seguranca aplicada.
 
 ## Estrutura
 
 - `index.html`: pagina principal.
 - `styles.css`: sistema visual responsivo.
-- `app.js`: animacao do hero calculada a partir do tempo.
+- `app.js`: progresso de scroll e microinteracoes.
 - `assets/`: imagens locais dos projetos.
-- `dist/`: saida estatica usada para publicacao no Sites.
+- `dist/`: saida estatica usada no Cloudflare Pages.
 - `CNAME`: dominio customizado.
 - `robots.txt`, `sitemap.xml`, `.well-known/security.txt`: publicacao e metadados.
 
-## Motion Design
+## Projetos em destaque
 
-Base: 120 BPM, 7 barras em 4/4, 28 batidas, loop de 14 segundos.
-
-Grade de estados:
-
-| Beat | Estado |
-| ---: | --- |
-| 0 | Button |
-| 2 | Loader |
-| 4 | Check |
-| 6 | Dynamic island |
-| 8 | Music player |
-| 10 | Scrub progress |
-| 12 | Volume slider |
-| 14 | Toggle |
-| 16 | Tabs |
-| 19 | Chart |
-| 22 | Command palette |
-| 25 | Toast |
-| 26 | Back to button |
-| 28 | Primeiro frame |
-
-Notas de implementacao:
-
-- Sem bibliotecas externas.
-- Sem CSS transitions na animacao principal.
-- `seek(t)` recalcula a interface a cada frame a partir do tempo.
-- Springs usam resposta fechada e os valores mudam como soma das respostas por alvo.
-- O cursor e a forma principal tambem derivam apenas do tempo.
+- Standalone Fingerprint Key
+- CCB BI
+- Ollama AI Automation n8n
+- Corporate BI Automation
+- Petshop E-Commerce
+- Haven Game
 
 ## Seguranca
 
@@ -55,4 +33,4 @@ O portfolio foi desenhado como site estatico:
 - Sem scripts de terceiros.
 - CSP via meta tag bloqueando scripts externos, frames e objetos.
 
-Os 19 pontos de seguranca do checklist foram mantidos na pagina em formato de matriz por projeto.
+Os pontos de seguranca aparecem de forma contextual por superficie, evitando aplicar controles que nao fazem sentido para sites estaticos.
