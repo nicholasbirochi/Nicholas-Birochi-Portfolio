@@ -1,0 +1,9 @@
+{
+  "name": "Nicholas Birochi Portfolio",
+  "short_name": "NB Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f1eee8",
+  "theme_color": "#f1eee8",
+  "icons": []
+}

@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+    >
+    <meta name="description" content="Portfolio profissional de Nicholas Birochi: sistemas desktop, simulacoes academicas, Java, Spring MVC, dados e seguranca aplicada.">
+    <meta name="theme-color" content="#f1eee8">
+    <link rel="canonical" href="https://nicolasbirochi.com.br/">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nicholas Birochi | Portfolio</title>
+  </head>
+  <body>
+    <header class="site-header" aria-label="Cabecalho principal">
+      <a class="brand" href="#top" aria-label="Ir para o inicio">
+        <span class="brand-mark">NB</span>
+        <span>Nicholas Birochi</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegacao principal">
+        <a href="#projects">Projetos</a>
+        <a href="#security">Seguranca</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">nicolasbirochi.com.br</p>
+          <h1 id="hero-title">Portfolio profissional para projetos que unem codigo, produto e criterio tecnico.</h1>
+          <p class="lead">
+            Desenvolvimento de aplicacoes desktop, simuladores academicos, sistemas web em Java e experiencias digitais com atencao a seguranca, usabilidade e apresentacao.
+          </p>
+          <div class="hero-actions" aria-label="Acoes principais">
+            <a class="button button-primary" href="#projects">
+              <span>Ver projetos</span>
+              <span aria-hidden="true">↘</span>
+            </a>
+            <a class="button button-secondary" href="#security">
+              <span>Matriz de seguranca</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <dl class="metrics" aria-label="Resumo do portfolio">
+            <div>
+              <dt>4</dt>
+              <dd>projetos base</dd>
+            </div>
+            <div>
+              <dt>19</dt>
+              <dd>pontos revisados</dd>
+            </div>
+            <div>
+              <dt>0</dt>
+              <dd>dependencias externas</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="motion-stage" aria-label="Animacao de interface do portfolio">
+          <div class="motion-canvas" id="motionCanvas">
+            <div class="motion-shape" id="motionShape">
+              <span class="motion-label">Abrir portfolio</span>
+            </div>
+            <div class="motion-cursor" id="motionCursor" aria-hidden="true">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell intro-band" aria-labelledby="profile-title">
+        <div>
+          <p class="eyebrow">perfil tecnico</p>
+          <h2 id="profile-title">Construcao de software com clareza visual e responsabilidade operacional.</h2>
+        </div>
+        <p>
+          O portfolio foi estruturado para mostrar evolucao tecnica: interfaces desktop em C#, modelagem fisica, integracao com banco de dados e um e-commerce Spring MVC com autenticacao, carrinho, pedidos e upload de imagens.
+        </p>
+      </section>
+
+      <section class="section-shell projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">projetos selecionados</p>
+          <h2 id="projects-title">Quatro trabalhos, quatro superficies tecnicas diferentes.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/crypto-capa.png" alt="Tela do projeto de criptografia em C#">
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">Projeto 01 · C# WinForms</p>
+              <h3>Criptografia por Matrizes</h3>
+              <p>
+                Aplicacao desktop para codificar e decodificar mensagens por transformacoes matriciais, com fluxo guiado e telas de apoio.
+              </p>
+              <ul class="tag-list" aria-label="Tecnologias">
+                <li>C#</li>
+                <li>WinForms</li>
+                <li>Desktop UX</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/ballistics-ui.png" alt="Interface do simulador de lancamento balistico e eletrica">
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">Projeto 02 · Fisica aplicada</p>
+              <h3>Laboratorio de Balistica e Eletrica</h3>
+              <p>
+                Simulador academico em C# para apoio a calculos de fisica, sistemas lineares e lancamento balistico, acompanhado por relatorio e video.
+              </p>
+              <ul class="tag-list" aria-label="Tecnologias">
+                <li>C#</li>
+                <li>Modelagem</li>
+                <li>Calculo numerico</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/doppler-audio.png" alt="Icone de ondas sonoras do simulador Doppler">
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">Projeto 03 · JavaFX e SQL Server</p>
+              <h3>Simulacao do Efeito Doppler</h3>
+              <p>
+                Experimento visual para simular fonte sonora, observador, ambiente e timbres, com persistencia em banco e procedures.
+              </p>
+              <ul class="tag-list" aria-label="Tecnologias">
+                <li>Java</li>
+                <li>JavaFX</li>
+                <li>JDBC</li>
+                <li>SQL Server</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media project-media-logo">
+              <img src="assets/petshop-logo.svg" alt="Logo do Petshop Spring MVC">
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">Projeto 04 · Spring MVC</p>
+              <h3>Petshop E-Commerce</h3>
+              <p>
+                Aplicacao web com catalogo, carrinho em cookie, pedidos, autenticacao por sessao, perfis de acesso e CRUD administrativo.
+              </p>
+              <ul class="tag-list" aria-label="Tecnologias">
+                <li>Java 21</li>
+                <li>Spring Boot</li>
+                <li>Thymeleaf</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell security-section" id="security" aria-labelledby="security-title">
+        <div class="section-heading">
+          <p class="eyebrow">seguranca aplicada</p>
+          <h2 id="security-title">Checklist dos 19 pontos, usando apenas o que faz sentido por superficie.</h2>
+        </div>
+
+        <div class="security-layout">
+          <article class="security-card">
+            <h3>Site do portfolio</h3>
+            <p>
+              Arquitetura estatica, sem coleta de dados, sem login, sem banco, sem upload e sem dependencias externas. A politica CSP bloqueia scripts externos e frames.
+            </p>
+            <ul class="security-list">
+              <li>Sem variaveis de ambiente no cliente.</li>
+              <li>Sem formularios de backend ou armazenamento sensivel.</li>
+              <li>Links externos preparados com isolamento de aba.</li>
+              <li>Assets locais para reduzir superficie de terceiros.</li>
+            </ul>
+          </article>
+
+          <div class="security-table" role="table" aria-label="Matriz de seguranca por projeto">
+            <div role="row" class="security-row security-head">
+              <span role="columnheader">Projeto</span>
+              <span role="columnheader">Pontos necessarios</span>
+              <span role="columnheader">Tratamento</span>
+            </div>
+            <div role="row" class="security-row">
+              <span role="cell">Criptografia</span>
+              <span role="cell">2, 9, 12, 16</span>
+              <span role="cell">Validacao local, nenhum segredo publicado, sem backend ou banco.</span>
+            </div>
+            <div role="row" class="security-row">
+              <span role="cell">Balistica e Eletrica</span>
+              <span role="cell">2, 9, 12</span>
+              <span role="cell">Campos numericos devem falhar de forma clara; sem autenticacao, cookie ou CORS.</span>
+            </div>
+            <div role="row" class="security-row">
+              <span role="cell">Doppler</span>
+              <span role="cell">1, 3, 4, 12, 16</span>
+              <span role="cell">DAO usa PreparedStatement; conexao e senha devem ficar fora do codigo em ambiente real.</span>
+            </div>
+            <div role="row" class="security-row">
+              <span role="cell">Petshop</span>
+              <span role="cell">1, 3, 5, 8, 10, 11, 12, 13, 15, 18</span>
+              <span role="cell">Aplicacao web exige hardening de credenciais, upload, sessao, cookies e tentativas de login.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="checklist" aria-label="Os 19 pontos revisados">
+          <span>1 env exposta</span>
+          <span>2 validacao frontend</span>
+          <span>3 validacao backend</span>
+          <span>4 SQL Injection</span>
+          <span>5 autenticacao fraca</span>
+          <span>6 IDOR</span>
+          <span>7 senhas no banco</span>
+          <span>8 forca bruta</span>
+          <span>9 bloquear envio</span>
+          <span>10 CSRF</span>
+          <span>11 upload</span>
+          <span>12 nao revelar info</span>
+          <span>13 dependencias</span>
+          <span>14 tokens</span>
+          <span>15 rate limit</span>
+          <span>16 dados sensiveis</span>
+          <span>17 SSRF</span>
+          <span>18 cookies</span>
+          <span>19 CORS</span>
+        </div>
+      </section>
+
+      <section class="section-shell contact-section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">contato</p>
+          <h2 id="contact-title">Vamos deixar isso pronto para publicar no dominio.</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:contato@nicolasbirochi.com.br">
+            <span>Enviar e-mail</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a class="button button-secondary" href="https://github.com/nicholasbirochi" rel="noopener noreferrer" target="_blank">
+            <span>GitHub</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Nicholas Birochi</span>
+      <span>nicolasbirochi.com.br</span>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
