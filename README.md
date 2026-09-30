@@ -4,7 +4,7 @@ Personal portfolio at https://nicholasbirochi.com.br. Static HTML, CSS and JavaS
 
 ## Content
 
-Selected projects: CCB BI, Standalone Fingerprint Key, JARVIS, Language Lyrics Lab, TechGrow churn analysis and Ollama + n8n. An additional project index links to public repositories. Professional background is based on Nicholas's supplied resume; private business documents and datasets are not published.
+Selected projects: CCB BI, Standalone Fingerprint Key, JARVIS, Language Lyrics Lab, TechGrow churn analysis and Ollama + n8n. The CCB preview uses only aggregated period metrics, while JARVIS includes a short local-voice demonstration. An additional project index links to public repositories. Professional background is based on Nicholas's supplied resume; private business documents and datasets are not published.
 
 ## Development
 
@@ -12,7 +12,7 @@ Open `index.html` in a browser, or serve the folder with `python -m http.server 
 
 ## Interaction and accessibility
 
-- Project filters, project detail dialogs, mobile navigation and email copy.
+- Project filters, project detail dialogs, JARVIS audio control, mobile navigation and email copy.
 - Keyboard focus, Escape dismissal, reduced-motion support and local fonts.
 - Responsive layouts for mobile, tablet and desktop.
 - No analytics, authentication, external runtime scripts or cookies.
@@ -24,4 +24,6 @@ Barlow Condensed and Manrope are distributed with their OFL licenses. Icons are 
 
 Hero image editing used the built-in image generation tool. Prompt: preserve the subject's exact identity, smile, hair and polo; replace the wall with flat charcoal #202221; compose a wide photograph with the subject on the right and empty background on the left, without text or props.
 
-Release marker: `2026-09-30-editorial`.
+The active JARVIS frame was derived from the supplied interface screenshot with its central data sphere made legible for a video preview. The About photograph and professional portraits use the original files supplied by Nicholas. Featured recommendations use supplied or explicitly authorized draft text; profiles awaiting copy remain linked without invented testimonials.
+
+Release marker: `2026-09-30-editorial-v4`.

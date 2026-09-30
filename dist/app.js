@@ -1,10 +1,10 @@
 const cases = {
   ccb: {
     title: 'CCB BI', kicker: 'DADOS / APLICAÇÃO LOCAL',
-    intro: 'Registro e análise das Reuniões de Jovens e Menores.',
+    intro: 'Do registro semanal a indicadores capazes de revelar tendências.',
     description: 'Aplicação Flask e SQLite que digitaliza formulários e reúne indicadores em um painel. Computadores e celulares na mesma rede acessam o sistema por link ou QR code.',
-    points: ['Operação cotidiana offline, com dados armazenados localmente.', 'Referências bíblicas validadas e preenchimento de formulário com rascunho automático.', 'Dois níveis de acesso e filtros por período, presidência e localidade.'],
-    status: 'Aplicação documentada para execução em Windows e macOS. Python, Flask, SQLite e gráficos SVG.',
+    points: ['Operação cotidiana offline, com dados armazenados localmente.', 'No recorte demonstrado, o painel consolida 28 reuniões, 2.607 recitativos e 126 visitas.', 'Filtros por período, presidência e localidade, com comparativos e evolução temporal.'],
+    status: 'Os números exibidos no portfólio são agregados de um período demonstrativo; nenhuma base individual é publicada.',
     repo: 'BI-CCB-Young-Congregation'
   },
   fingerprint: {
@@ -121,19 +121,68 @@ dialog.addEventListener('close', () => {
   dialogTrigger?.focus({preventScroll: true});
 });
 
-document.querySelector('.copy-email').addEventListener('click', async () => {
-  const status = document.querySelector('#copy-status');
-  try {
-    await navigator.clipboard.writeText('nicholas.birochi@gmail.com');
-    status.textContent = 'E-mail copiado';
-    document.querySelector('.copy-email img').src = 'assets/icons/check.svg';
-  } catch {
-    status.textContent = 'nicholas.birochi@gmail.com';
-  }
+document.querySelectorAll('.copy-contact').forEach(button => {
+  button.addEventListener('click', async () => {
+    const status = document.querySelector('#copy-status');
+    const icon = button.querySelector('img');
+    try {
+      await navigator.clipboard.writeText(button.dataset.copy);
+      status.textContent = button.dataset.label;
+      icon.src = 'assets/icons/check.svg';
+      window.setTimeout(() => {
+        status.textContent = '';
+        icon.src = 'assets/icons/plus.svg';
+      }, 2200);
+    } catch {
+      status.textContent = button.dataset.copy;
+    }
+  });
 });
+
+const jarvisVideo = document.querySelector('.jarvis-video');
+const jarvisSound = document.querySelector('.jarvis-sound');
+const jarvisTranscript = document.querySelector('.jarvis-transcript');
+const jarvisLines = [
+  [0, 'Olá, Nicholas. Sistemas locais ativos.'],
+  [3.4, 'Posso organizar tarefas e consultar informações.'],
+  [8.2, 'Inteligência artificial sem enviar seus dados para a nuvem.']
+];
+
+function updateJarvisTranscript() {
+  const current = [...jarvisLines].reverse().find(([time]) => jarvisVideo.currentTime >= time);
+  jarvisTranscript.textContent = current?.[1] || jarvisLines[0][1];
+}
+
+if (jarvisVideo && jarvisSound) {
+  jarvisVideo.addEventListener('timeupdate', updateJarvisTranscript);
+  jarvisVideo.addEventListener('ended', () => {
+    jarvisVideo.muted = true;
+    jarvisSound.setAttribute('aria-pressed', 'false');
+    jarvisSound.setAttribute('aria-label', 'Ouvir a demonstração do JARVIS');
+    jarvisSound.querySelector('img').src = 'assets/icons/volume-2.svg';
+    jarvisSound.querySelector('span').textContent = 'OUVIR JARVIS';
+    jarvisVideo.currentTime = 0;
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) jarvisVideo.play().catch(() => {});
+  });
+  jarvisSound.addEventListener('click', async () => {
+    const turnOn = jarvisVideo.muted;
+    jarvisVideo.muted = !turnOn;
+    jarvisSound.setAttribute('aria-pressed', String(turnOn));
+    jarvisSound.setAttribute('aria-label', turnOn ? 'Silenciar a demonstração do JARVIS' : 'Ouvir a demonstração do JARVIS');
+    jarvisSound.querySelector('img').src = `assets/icons/${turnOn ? 'volume-x' : 'volume-2'}.svg`;
+    jarvisSound.querySelector('span').textContent = turnOn ? 'SILENCIAR' : 'OUVIR JARVIS';
+    if (turnOn) jarvisVideo.currentTime = 0;
+    try {
+      await jarvisVideo.play();
+    } catch {
+      jarvisSound.querySelector('span').textContent = 'TOCAR VÍDEO';
+    }
+  });
+}
 
 // Progressive enhancement keeps all content visible without JavaScript or motion.
 const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+if (motion.matches) jarvisVideo?.pause();
 if (!motion.matches && 'IntersectionObserver' in window) {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
