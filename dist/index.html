@@ -1,352 +1,94 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
-    >
-    <meta name="description" content="Portfolio profissional de Nicholas Birochi: software, dados, hardware, IA local, automacao e seguranca aplicada.">
-    <meta name="theme-color" content="#0c0c0c">
-    <link rel="canonical" href="https://nicholasbirochi.com.br/">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="styles.css">
-    <title>Nicholas Birochi | Portfolio</title>
-  </head>
-  <body>
-    <div class="scroll-progress" aria-hidden="true"></div>
-
-    <header class="site-header" aria-label="Cabecalho principal">
-      <a class="brand" href="#top" aria-label="Ir para o inicio">
-        <span class="brand-mark">NB</span>
-        <span class="brand-text">Nicholas Birochi</span>
-      </a>
-
-      <nav class="nav-links" aria-label="Navegacao principal">
-        <a href="#work">Projetos</a>
-        <a href="#stack">Stack</a>
-        <a href="#security">Seguranca</a>
-        <a href="#contact">Contato</a>
-      </nav>
-    </header>
-
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nicholas Birochi. Dados, desenvolvimento e automação. Conheça meus projetos em BI, inteligência artificial local, software e hardware.">
+  <meta name="theme-color" content="#202221">
+  <meta name="portfolio-version" content="2026-09-30-editorial">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta property="og:title" content="Nicholas Birochi | Dados, código & curiosidade">
+  <meta property="og:description" content="Da análise à aplicação. Projetos, experimentos e a minha trajetória em tecnologia.">
+  <meta property="og:image" content="https://nicholasbirochi.com.br/assets/nicholas-photo.jpg">
+  <meta property="og:url" content="https://nicholasbirochi.com.br/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://nicholasbirochi.com.br/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/barlow-700.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=20260930">
+  <script src="app.js?v=20260930" defer></script>
+  <title>Nicholas Birochi | Dados, código & curiosidade</title>
+</head>
+<body>
+  <a class="skip-link" href="#projetos">Pular para os projetos</a>
+  <header class="header">
+    <a class="wordmark" href="#inicio" aria-label="Nicholas Birochi, início">NB<span class="brand-dot">.</span></a>
+    <span class="header-note">DADOS & DESENVOLVIMENTO</span>
+    <button class="menu-toggle icon-button" aria-controls="navigation" aria-expanded="false" aria-label="Abrir menu" title="Abrir menu"><img src="assets/icons/menu.svg" alt="" width="24" height="24"></button>
+    <nav id="navigation" aria-label="Navegação principal">
+      <a href="#projetos">Projetos <span>01</span></a>
+      <a href="#sobre">Sobre <span>02</span></a>
+      <a href="#trajetoria">Trajetória <span>03</span></a>
+      <a class="nav-contact" href="#contato">Vamos conversar <img src="assets/icons/arrow-up-right.svg" alt="" width="18" height="18"></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <picture class="hero-picture"><img src="assets/nicholas-hero.png" alt="Nicholas Birochi" width="1536" height="1024" fetchpriority="high"></picture>
+      <div class="hero-inner container">
+        <p class="hero-label"><span class="tiny-cross" aria-hidden="true">+</span> PORTFÓLIO PESSOAL / 2026</p>
+        <h1 id="hero-title">NICHOLAS<br><span>BIROCHI</span><span class="hero-period">.</span></h1>
         <div class="hero-copy">
-          <p class="eyebrow">portfolio 2026 / nicholasbirochi.com.br</p>
-          <h1 id="hero-title">Nicholas Birochi</h1>
-          <p class="role-line">Software, dados, hardware e IA local.</p>
-          <p class="lead">
-            Eu construo projetos que saem do papel: sistemas web, BI local, automacoes,
-            simuladores, firmware e experiencias digitais com acabamento visual e criterio tecnico.
-          </p>
-
-          <div class="hero-actions" aria-label="Acoes principais">
-            <a class="button button-primary" href="#work">
-              <span>Ver projetos</span>
-              <span aria-hidden="true">-&gt;</span>
-            </a>
-            <a class="button button-secondary" href="https://github.com/nicholasbirochi" rel="noopener noreferrer" target="_blank">
-              <span>GitHub</span>
-              <span aria-hidden="true">-&gt;</span>
-            </a>
-          </div>
+          <p>Dados, código<br>& curiosidade.</p>
+          <span>Transformo problemas em análises,<br>automações e aplicações.</span>
+          <a class="round-link" href="#projetos"><span>Explore meu trabalho</span><i><img src="assets/icons/arrow-down.svg" alt="" width="22" height="22"></i></a>
         </div>
+      </div>
+      <div class="hero-caption"><span>SÃO BERNARDO DO CAMPO, BR</span><span>ENGENHARIA DA COMPUTAÇÃO</span></div>
+    </section>
+    <div class="discipline-band" aria-label="Áreas de atuação"><div><span>ANÁLISE DE DADOS</span><b aria-hidden="true">+</b><span>DESENVOLVIMENTO</span><b aria-hidden="true">+</b><span>AUTOMAÇÃO & IA</span><b aria-hidden="true">+</b><span>HARDWARE</span><b aria-hidden="true">+</b></div></div>
 
-        <div class="hero-media" aria-label="Projeto em destaque">
-          <div class="hero-media-top">
-            <span>latest build</span>
-            <strong>Standalone Fingerprint Key</strong>
-          </div>
-          <div class="device-frame">
-            <img src="assets/fingerprint-spec-sheet.png" alt="Prancha tecnica do Standalone Fingerprint Key">
-          </div>
-          <div class="hero-stat-grid" aria-label="Resumo rapido">
-            <div>
-              <strong>ESP32-S3</strong>
-              <span>firmware + HID</span>
-            </div>
-            <div>
-              <strong>46.4 mm</strong>
-              <span>case impresso</span>
-            </div>
-            <div>
-              <strong>0 driver</strong>
-              <span>USB keyboard</span>
-            </div>
-          </div>
-        </div>
+    <section class="work section-space container" id="projetos" aria-labelledby="work-title">
+      <div class="section-top"><p class="eyebrow">01 / TRABALHOS SELECIONADOS</p><span class="quiet">Do insight ao protótipo.</span></div>
+      <div class="work-heading"><h2 id="work-title">IDEIAS QUE<br><em>GANHAM FORMA.</em></h2><p>Uma seleção do que venho construindo entre dados, software e experimentação.</p></div>
+      <div class="filter-bar" aria-label="Filtrar projetos"><div class="filters" role="group" aria-label="Área do projeto"><button aria-pressed="true" data-filter="all">Todos <sup>6</sup></button><button aria-pressed="false" data-filter="dados">Dados</button><button aria-pressed="false" data-filter="ia">IA & automação</button><button aria-pressed="false" data-filter="software">Software</button><button aria-pressed="false" data-filter="hardware">Hardware</button></div><span id="filter-count" aria-live="polite">06 PROJETOS</span></div>
+      <div class="projects">
+        <article class="project" data-category="dados software">
+          <button class="project-visual visual-ccb" data-project="ccb" aria-label="Conhecer o projeto CCB BI"><span class="visual-label">INTELIGÊNCIA DE DADOS / 01</span><img class="project-image" src="assets/ccb-dashboard.png" alt="Tela real do CCB BI com indicadores e gráficos" width="1180" height="760" loading="lazy"><span class="project-open"><img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24"></span></button>
+          <div class="project-meta"><div><p class="eyebrow">BI LOCAL · PYTHON · FLASK</p><h3><button data-project="ccb">CCB BI</button></h3></div><span>2026</span></div><p class="project-description">Do formulário ao dashboard. Uma aplicação que funciona na rede local, inclusive sem internet no dia a dia.</p>
+        </article>
+        <article class="project" data-category="hardware">
+          <button class="project-visual visual-hardware" data-project="fingerprint" aria-label="Conhecer o projeto Standalone Fingerprint Key"><span class="visual-label">HARDWARE & FIRMWARE / 02</span><span class="hardware-word" aria-hidden="true">TOUCH.<br>TYPE.</span><img class="project-image device-image" src="assets/fingerprint-exploded.png" alt="Vista explodida do gabinete do dispositivo biométrico" width="1000" height="750" loading="lazy"><span class="hardware-spec">ESP32-S3 / USB HID / 46,4 MM</span><span class="project-open"><img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24"></span></button>
+          <div class="project-meta"><div><p class="eyebrow">ESP32-S3 · C++ · IMPRESSÃO 3D</p><h3><button data-project="fingerprint">Fingerprint Key</button></h3></div><span>2026</span></div><p class="project-description">Uma chave biométrica para macOS: do protocolo do sensor ao firmware e ao gabinete paramétrico.</p>
+        </article>
+        <article class="project" data-category="ia software">
+          <button class="project-visual visual-jarvis" data-project="jarvis" aria-label="Conhecer o projeto JARVIS"><span class="visual-label">ASSISTENTE PESSOAL / 03</span><img class="project-image jarvis-image" src="assets/jarvis-preview.png" alt="Interface visual do assistente JARVIS em estado de espera" width="1200" height="800" loading="lazy"><span class="project-open"><img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24"></span></button>
+          <div class="project-meta"><div><p class="eyebrow">PYTHON · OLLAMA · VOZ LOCAL</p><h3><button data-project="jarvis">J.A.R.V.I.S.</button></h3></div><span>2026</span></div><p class="project-description">Um assistente de voz que roda no próprio computador. Conversa em português e organiza informações profissionais.</p>
+        </article>
+        <article class="project" data-category="software">
+          <button class="project-visual visual-lyrics" data-project="lyrics" aria-label="Conhecer o projeto Language Lyrics Lab"><span class="visual-label">IDIOMAS & MÚSICA / 04</span><span class="lyrics-art" aria-hidden="true"><span>LANGUAGE<br>LYRICS<br><em>LAB.</em></span><span class="lyrics-translation">learning<br><small>aprendizado</small></span></span><span class="project-open"><img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24"></span></button>
+          <div class="project-meta"><div><p class="eyebrow">REACT NATIVE · EXPO · TYPESCRIPT</p><h3><button data-project="lyrics">Language Lyrics Lab</button></h3></div><span>2026</span></div><p class="project-description">Aprender idiomas, uma música por vez. Letras sincronizadas, tradução por linha e revisão com flashcards.</p>
+        </article>
+        <article class="project" data-category="dados">
+          <button class="project-visual visual-churn" data-project="churn" aria-label="Conhecer o projeto TechGrow"><span class="visual-label">MACHINE LEARNING / 05</span><img class="project-image" src="assets/churn-preview.png" alt="Visualização da análise de churn do projeto TechGrow" width="1200" height="800" loading="lazy"><span class="project-open"><img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24"></span></button>
+          <div class="project-meta"><div><p class="eyebrow">PYTHON · PANDAS · SCIKIT-LEARN</p><h3><button data-project="churn">TechGrow / Churn</button></h3></div><span>2026</span></div><p class="project-description">Entender por que clientes saem. Análise exploratória e modelos preditivos para um negócio SaaS.</p>
+        </article>
+        <article class="project" data-category="ia">
+          <button class="project-visual visual-n8n" data-project="n8n" aria-label="Conhecer o projeto Ollama e n8n"><span class="visual-label">AUTOMAÇÃO COM IA / 06</span><div class="workflow" aria-hidden="true"><span class="flow-node">DOCUMENTOS<small>Google Drive</small></span><span class="flow-wire"></span><span class="flow-node flow-main">n8n<small>Orquestração</small></span><span class="flow-wire"></span><span class="flow-node">OLLAMA<small>IA local</small></span></div><span class="flow-caption">MENOS REPETIÇÃO.<br>MAIS POSSIBILIDADES.</span><span class="project-open"><img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24"></span></button>
+          <div class="project-meta"><div><p class="eyebrow">N8N · OLLAMA · DOCKER</p><h3><button data-project="n8n">Ollama + n8n</button></h3></div><span>2025</span></div><p class="project-description">Documentos entram, respostas saem. Um fluxo de automação com orquestração no n8n e inferência local.</p>
+        </article>
+      </div>
+      <div class="archive"><div class="archive-heading"><p class="eyebrow">TAMBÉM NO MEU LABORATÓRIO</p><a href="https://github.com/nicholasbirochi?tab=repositories" target="_blank" rel="noopener noreferrer">Todos no GitHub <img src="assets/icons/arrow-up-right.svg" width="18" height="18" alt=""></a></div><a href="https://github.com/nicholasbirochi/Task-Scheduling-Simulator" target="_blank" rel="noopener noreferrer"><span>01</span><h3>Task Scheduling Simulator</h3><span>Python / Sistemas operacionais</span><img src="assets/icons/arrow-up-right.svg" width="22" height="22" alt=""></a><a href="https://github.com/nicholasbirochi/CPU-Scheduling-Practical-Simulator" target="_blank" rel="noopener noreferrer"><span>02</span><h3>CPU Scheduling Simulator</h3><span>Algoritmos / Simulação</span><img src="assets/icons/arrow-up-right.svg" width="22" height="22" alt=""></a><a href="https://github.com/nicholasbirochi/Temperature-Monitoring-System" target="_blank" rel="noopener noreferrer"><span>03</span><h3>Temperature Monitoring</h3><span>ASP.NET / SQL Server</span><img src="assets/icons/arrow-up-right.svg" width="22" height="22" alt=""></a><a href="https://github.com/nicholasbirochi/Homework-Management" target="_blank" rel="noopener noreferrer"><span>04</span><h3>Homework Management</h3><span>React Native / SQLite</span><img src="assets/icons/arrow-up-right.svg" width="22" height="22" alt=""></a></div>
+    </section>
 
-        <div class="hero-marquee" aria-hidden="true">
-          <span>Python</span>
-          <span>Flask</span>
-          <span>SQLite</span>
-          <span>Java</span>
-          <span>Spring MVC</span>
-          <span>PostgreSQL</span>
-          <span>Power BI</span>
-          <span>ESP32</span>
-          <span>Godot</span>
-          <span>Ollama</span>
-          <span>n8n</span>
-        </div>
-      </section>
+    <section class="about section-space" id="sobre" aria-labelledby="about-title"><div class="container"><div class="section-top"><p class="eyebrow">02 / UM POUCO SOBRE MIM</p><span class="quiet">Além do código.</span></div><div class="about-grid"><figure class="about-photo"><img src="assets/nicholas-photo.jpg" alt="Retrato de Nicholas Birochi" width="614" height="614" loading="lazy"><figcaption>NICHOLAS BIROCHI <span>SÃO PAULO, BRASIL</span></figcaption></figure><div class="about-copy"><h2 id="about-title">CURIOSO POR<br><em>NATUREZA.</em><br>CONSTRUTOR<br>POR ESCOLHA.</h2><p>Sou Nicholas, estudante de Engenharia da Computação na Faculdade Engenheiro Salvador Arena e estagiário em Análise de Dados na Volkswagen.</p><p>Meu trabalho conecta dados e desenvolvimento: investigar um problema, encontrar padrões e construir algo que ajude alguém a decidir ou a trabalhar melhor.</p><p>Essa curiosidade também vai para os projetos pessoais. Exploro IA local, aplicações web, música e hardware, aprendendo enquanto construo.</p><a class="text-link" href="https://www.linkedin.com/in/nicholasbirochi" target="_blank" rel="noopener noreferrer">Mais sobre mim no LinkedIn <img src="assets/icons/arrow-up-right.svg" alt="" width="20" height="20"></a></div></div><div class="skills"><div><span>01</span><h3>Dados & análise</h3><p>Python, R, SQL, Power BI,<br>Pandas e Machine Learning</p></div><div><span>02</span><h3>Software</h3><p>Flask, Dash, Java, Spring,<br>C#, React Native e Git</p></div><div><span>03</span><h3>Automação & IA</h3><p>Ollama, n8n, Docker,<br>Power Automate e Excel VBA</p></div><div><span>04</span><h3>Experimentação</h3><p>ESP32, USB HID, sensores,<br>firmware e modelagem 3D</p></div></div></div></section>
 
-      <section class="section-shell intro-band" aria-labelledby="intro-title">
-        <p class="eyebrow">perfil</p>
-        <h2 id="intro-title">Portfolio com cara de produto, nao de trabalho entregue as pressas.</h2>
-        <p>
-          A vitrine agora prioriza os projetos mais recentes e fortes: hardware com firmware,
-          BI local, automacao com IA, sistemas web e jogos. Cada bloco mostra decisao tecnica,
-          contexto, stack e resultado visual sem entupir a tela.
-        </p>
-      </section>
+    <section class="experience container section-space" id="trajetoria" aria-labelledby="experience-title"><div class="section-top"><p class="eyebrow">03 / TRAJETÓRIA</p><span class="quiet">Aprendizado em movimento.</span></div><div class="experience-layout"><h2 id="experience-title">DA TEORIA<br><em>À PRÁTICA.</em></h2><div class="timeline"><article><div class="timeline-meta"><span>ABR 2025 / ATUAL</span><span class="current-label">ATUAL</span></div><h3>Volkswagen</h3><h4>Estágio em Análise de Dados · Auditoria Especial</h4><p>Dashboards em Python e Power BI, rotinas de análise, tratamento de dados do SAP e IA local para apoiar o trabalho de auditoria.</p></article><article><div class="timeline-meta"><span>JAN 2023 / DEZ 2024</span></div><h3>PratikaUD</h3><h4>Estágio em Análise de Dados</h4><p>Automação de planilhas, análise de dados e melhoria de relatórios internos com Excel e VBA.</p></article><article><div class="timeline-meta"><span>FORMAÇÃO / EM ANDAMENTO</span></div><h3>Engenharia da Computação</h3><h4>Faculdade Engenheiro Salvador Arena</h4><p>Formação que conecta desenvolvimento, dados, eletrônica e sistemas. Conclusão prevista para dezembro de 2027.</p></article></div></div></section>
 
-      <section class="work section-shell" id="work" aria-labelledby="work-title">
-        <div class="section-heading">
-          <p class="eyebrow">selected work</p>
-          <h2 id="work-title">Projetos recentes e mais fortes.</h2>
-          <p>
-            Uma selecao mais profissional, com os cases que contam melhor a sua evolucao:
-            backend, dados, interface, automacao, hardware e produto.
-          </p>
-        </div>
-
-        <div class="project-wall">
-          <article class="project-card project-card-large project-dark">
-            <div class="project-media project-media-device">
-              <img src="assets/fingerprint-closed.png" alt="Render do dispositivo Standalone Fingerprint Key fechado">
-            </div>
-            <div class="project-copy">
-              <p class="project-kicker">Hardware + firmware / 2026</p>
-              <h3>Standalone Fingerprint Key</h3>
-              <p>
-                Chave biometrica standalone para macOS com ESP32-S3, sensor capacitivo,
-                USB HID, protocolo customizado, testes de framing e case parametrico impresso em 3D.
-              </p>
-              <div class="tag-list" aria-label="Tecnologias do projeto">
-                <span>ESP32-S3</span>
-                <span>C++</span>
-                <span>USB HID</span>
-                <span>3D enclosure</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card project-card-large">
-            <div class="project-media project-media-dashboard">
-              <img src="assets/ccb-dashboard.png" alt="Dashboard do projeto CCB BI">
-            </div>
-            <div class="project-copy">
-              <p class="project-kicker">Produto local / 2026</p>
-              <h3>CCB BI</h3>
-              <p>
-                Sistema Flask + SQLite para registrar formularios, operar offline na rede local,
-                gerar QR code de acesso e entregar analises com graficos SVG sem depender de nuvem.
-              </p>
-              <div class="tag-list" aria-label="Tecnologias do projeto">
-                <span>Python</span>
-                <span>Flask</span>
-                <span>SQLite</span>
-                <span>Offline-first</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-media project-media-ai" aria-hidden="true">
-              <div class="terminal-window">
-                <span>local-ai.flow</span>
-                <strong>Ollama + n8n</strong>
-                <p>drive -> pdf -> reasoning -> task</p>
-                <i></i>
-              </div>
-            </div>
-            <div class="project-copy">
-              <p class="project-kicker">Automacao IA / 2026</p>
-              <h3>Ollama AI Automation n8n</h3>
-              <p>
-                Fluxos locais de IA com processamento de documentos, automacao, privacidade e
-                orquestracao entre ferramentas sem expor dados sensiveis desnecessariamente.
-              </p>
-              <div class="tag-list" aria-label="Tecnologias do projeto">
-                <span>n8n</span>
-                <span>Ollama</span>
-                <span>Local AI</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-media project-media-analytics" aria-hidden="true">
-              <div class="analytics-grid">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-            <div class="project-copy">
-              <p class="project-kicker">Dados corporativos / 2026</p>
-              <h3>Corporate BI Automation</h3>
-              <p>
-                Workflows de Power BI, extracao e padronizacao de relatorios para reduzir trabalho
-                manual e melhorar leitura operacional em ambiente corporativo.
-              </p>
-              <div class="tag-list" aria-label="Tecnologias do projeto">
-                <span>Power BI</span>
-                <span>ETL</span>
-                <span>Dashboards</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-media project-media-logo">
-              <img src="assets/petshop-logo.svg" alt="Logo do Petshop E-Commerce">
-            </div>
-            <div class="project-copy">
-              <p class="project-kicker">Web app / 2025</p>
-              <h3>Petshop E-Commerce</h3>
-              <p>
-                Aplicacao Spring MVC com catalogo, carrinho em cookie, pedidos, autenticacao por
-                sessao, perfis de acesso, upload de imagens e CRUD administrativo.
-              </p>
-              <div class="tag-list" aria-label="Tecnologias do projeto">
-                <span>Java 21</span>
-                <span>Spring Boot</span>
-                <span>Thymeleaf</span>
-                <span>PostgreSQL</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card project-coral">
-            <div class="project-media project-media-game" aria-hidden="true">
-              <div class="game-scene">
-                <span></span>
-                <span></span>
-                <i></i>
-              </div>
-            </div>
-            <div class="project-copy">
-              <p class="project-kicker">Game design / 2026</p>
-              <h3>Haven Game</h3>
-              <p>
-                Jogo indie 2D em Godot sobre paz, amizade e narrativa curta, pensado para solo
-                ou cooperativo, com arte suave e estrutura preparada para capitulos.
-              </p>
-              <div class="tag-list" aria-label="Tecnologias do projeto">
-                <span>Godot 4</span>
-                <span>GDScript</span>
-                <span>2D</span>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <div class="more-work" aria-label="Outros projetos relevantes">
-          <a href="https://github.com/nicholasbirochi/simulador-escalonamento" rel="noopener noreferrer" target="_blank">
-            <span>CPU Scheduling Simulator</span>
-            <strong>SO, algoritmos e visualizacao</strong>
-          </a>
-          <a href="https://github.com/nicholasbirochi/haven-game" rel="noopener noreferrer" target="_blank">
-            <span>Haven Game Repo</span>
-            <strong>Godot, narrativa e coop</strong>
-          </a>
-          <a href="https://github.com/nicholasbirochi/n8n-ollama-ai" rel="noopener noreferrer" target="_blank">
-            <span>n8n + Ollama AI</span>
-            <strong>Automacao local e documentos</strong>
-          </a>
-        </div>
-      </section>
-
-      <section class="stack section-shell" id="stack" aria-labelledby="stack-title">
-        <div class="section-heading section-heading-compact">
-          <p class="eyebrow">stack</p>
-          <h2 id="stack-title">Tecnologias que aparecem nos projetos de verdade.</h2>
-        </div>
-
-        <div class="stack-grid">
-          <article>
-            <span>01</span>
-            <h3>Software</h3>
-            <p>Java, Spring MVC, Python, Flask, C#, WinForms, HTML, CSS e JavaScript sem dependencia pesada quando nao precisa.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Dados</h3>
-            <p>SQLite, PostgreSQL, SQL Server, Power BI, extracao, dashboards e analises voltadas para decisao operacional.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Hardware</h3>
-            <p>ESP32-S3, firmware, USB HID, sensores, testes de protocolo e modelagem parametrica para impressao 3D.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Produto</h3>
-            <p>Interfaces responsivas, operacao local, experiencia de instalacao simples, documentacao e matriz de seguranca.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="security section-shell" id="security" aria-labelledby="security-title">
-        <div class="security-copy">
-          <p class="eyebrow">seguranca aplicada</p>
-          <h2 id="security-title">Os 19 pontos viraram criterio, nao enfeite.</h2>
-          <p>
-            Cada projeto tem uma superficie diferente. Site estatico nao precisa de login ou CSRF,
-            mas um e-commerce precisa de sessao, senha, upload, validacao e controles de abuso.
-          </p>
-        </div>
-
-        <div class="security-board" aria-label="Resumo de seguranca por superficie">
-          <div>
-            <span>Portfolio</span>
-            <strong>CSP, sem backend, sem cookie, sem formulario</strong>
-          </div>
-          <div>
-            <span>CCB BI</span>
-            <strong>Login local, roles, SQLite, backup e mensagens discretas</strong>
-          </div>
-          <div>
-            <span>Petshop</span>
-            <strong>BCrypt, sessao, upload, validacao e acesso admin</strong>
-          </div>
-          <div>
-            <span>Fingerprint Key</span>
-            <strong>Threat model, segredo local, limitacoes documentadas</strong>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
-        <div>
-          <p class="eyebrow">contato</p>
-          <h2 id="contact-title">Pronto para conversar sobre software que parece produto.</h2>
-        </div>
-        <div class="contact-actions">
-          <a class="button button-primary" href="mailto:contato@nicholasbirochi.com.br">
-            <span>Enviar e-mail</span>
-            <span aria-hidden="true">-&gt;</span>
-          </a>
-          <a class="button button-secondary" href="https://github.com/nicholasbirochi/Nicholas-Birochi-Portfolio" rel="noopener noreferrer" target="_blank">
-            <span>Codigo do site</span>
-            <span aria-hidden="true">-&gt;</span>
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <span>Nicholas Birochi</span>
-      <span>nicholasbirochi.com.br</span>
-    </footer>
-
-    <script src="app.js" defer></script>
-  </body>
+    <section class="contact" id="contato" aria-labelledby="contact-title"><div class="container"><div class="section-top"><p class="eyebrow">04 / CONTATO</p><span>UMA CONVERSA PODE SER O COMEÇO.</span></div><a class="contact-title" href="mailto:nicholas.birochi@gmail.com"><h2 id="contact-title">VAMOS<br>CONSTRUIR?</h2><span class="contact-arrow"><img src="assets/icons/arrow-up-right.svg" alt="Enviar e-mail" width="88" height="88"></span></a><div class="contact-bottom"><div><a class="email-link" href="mailto:nicholas.birochi@gmail.com">nicholas.birochi@gmail.com</a><button class="copy-email" aria-label="Copiar endereço de e-mail" title="Copiar e-mail"><img src="assets/icons/plus.svg" width="18" height="18" alt=""></button><span id="copy-status" role="status"></span></div><div class="social-links"><a href="https://github.com/nicholasbirochi" target="_blank" rel="noopener noreferrer">GitHub <img src="assets/icons/arrow-up-right.svg" width="18" height="18" alt=""></a><a href="https://www.linkedin.com/in/nicholasbirochi" target="_blank" rel="noopener noreferrer">LinkedIn <img src="assets/icons/arrow-up-right.svg" width="18" height="18" alt=""></a></div></div></div></section>
+  </main>
+  <footer class="footer container"><a class="wordmark" href="#inicio" aria-label="Voltar ao início">NB.</a><span>© 2026 Nicholas Birochi</span><a href="#inicio">De volta ao topo <img src="assets/icons/arrow-up-right.svg" width="18" height="18" alt=""></a></footer>
+  <dialog class="case-dialog" aria-labelledby="case-title"><button class="dialog-close icon-button" aria-label="Fechar projeto" title="Fechar projeto"><img src="assets/icons/x.svg" width="24" height="24" alt=""></button><div class="case-content"><p class="eyebrow" id="case-kicker"></p><h2 id="case-title"></h2><p id="case-intro"></p><div class="case-section"><h3>O projeto</h3><p id="case-description"></p></div><div class="case-section"><h3>Decisões técnicas</h3><ul id="case-points"></ul></div><p id="case-status"></p><a class="case-link" id="case-repo" target="_blank" rel="noopener noreferrer">Explorar no GitHub <img src="assets/icons/arrow-up-right.svg" width="22" height="22" alt=""></a></div></dialog>
+</body>
 </html>
