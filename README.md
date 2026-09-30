@@ -26,4 +26,4 @@ Hero image editing used the built-in image generation tool. Prompt: preserve the
 
 The active JARVIS frame was derived from the supplied interface screenshot with its central data sphere made legible for a video preview. The About photograph and professional portraits use the original files supplied by Nicholas. Featured recommendations use supplied or explicitly authorized draft text; profiles awaiting copy remain linked without invented testimonials.
 
-Release marker: `2026-09-30-editorial-v4`.
+Release marker: `2026-09-30-editorial-v5`.
