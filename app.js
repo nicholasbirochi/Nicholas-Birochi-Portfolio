@@ -3,17 +3,16 @@ const cases = {
     title: 'CCB BI', kicker: 'DADOS / APLICAÇÃO LOCAL',
     intro: 'Do registro semanal a indicadores capazes de revelar tendências.',
     description: 'Aplicação Flask e SQLite que digitaliza formulários e reúne indicadores em um painel. Computadores e celulares na mesma rede acessam o sistema por link ou QR code.',
-    points: ['Operação cotidiana offline, com dados armazenados localmente.', 'No recorte demonstrado, o painel consolida 28 reuniões, 2.607 recitativos e 126 visitas.', 'Filtros por período, presidência e localidade, com comparativos e evolução temporal.'],
+    points: ['Operação cotidiana offline, com dados armazenados localmente.', 'No recorte demonstrado, o painel consolida 28 reuniões, 2.607 recitativos, 197 registros individuais e 126 visitas.', 'Filtros por período, presidência e localidade, com comparativos e evolução temporal.'],
     status: 'Os números exibidos no portfólio são agregados de um período demonstrativo; nenhuma base individual é publicada.',
-    repo: 'BI-CCB-Young-Congregation'
+    url: 'https://github.com/nicholasbirochi/BI-CCB-Young-Congregation'
   },
-  fingerprint: {
-    title: 'Standalone Fingerprint Key', kicker: 'HARDWARE / FIRMWARE / MODELAGEM 3D',
-    intro: 'Uma chave biométrica independente para macOS.',
-    description: 'O ESP32-S3 conversa com um sensor HLK-ZW111 e se apresenta ao computador como um teclado USB. Após uma correspondência biométrica, digita um segredo configurado localmente.',
-    points: ['Protocolo UART separado do firmware, com testes de framing e checksum.', 'Gabinete paramétrico de 46,4 × 46,4 × 13 mm, em duas peças.', 'Documentação de montagem, testes de bancada e limitações de segurança.'],
-    status: 'Projeto experimental. Não equivale a Touch ID ou a uma chave FIDO2; o segredo digitado exige cuidados descritos no repositório.',
-    repo: 'Standalone-Fingerprint-Key'
+  ronda: {
+    title: 'Ronda Analytics', kicker: 'DADOS / DASHBOARD CORPORATIVO',
+    intro: 'Transformar registros operacionais em uma leitura semanal clara.',
+    description: 'Dashboard em Dash e Plotly para analisar presença, recorrência e co-presença, com visões por período, área e pessoa. A arquitetura combina Parquet, SQLite e cache para manter a navegação rápida.',
+    points: ['Filtros dinâmicos e carregamento progressivo dos gráficos.', 'Séries semanais, distribuições, boxplots, indicadores e mapas de co-presença.', 'Exportação de relatórios e separação em camadas MVC e serviços.'],
+    status: 'Projeto interno. O portfólio mostra apenas uma representação sintética; nenhum dado corporativo, nome ou identificador foi publicado.'
   },
   jarvis: {
     title: 'J.A.R.V.I.S.', kicker: 'IA LOCAL / ASSISTENTE DE VOZ',
@@ -21,31 +20,31 @@ const cases = {
     description: 'Reconhecimento de voz, conversação via Ollama e organização de informações profissionais, com interface visual de estado e integração com a barra de menus do macOS.',
     points: ['Ativação por palavra-chave ou duas palmas, com reconhecimento local.', 'Perfil profissional estruturado com procedência dos fatos.', 'Adaptadores de sites com prévia das alterações antes da confirmação.'],
     status: 'Em desenvolvimento. A gestão completa de candidaturas continua em evolução.',
-    repo: 'JARVIS-Assistant'
+    url: 'https://github.com/nicholasbirochi/JARVIS-Assistant'
   },
-  lyrics: {
-    title: 'Language Lyrics Lab', kicker: 'APLICAÇÃO / MÚSICA / IDIOMAS',
-    intro: 'Um laboratório para estudar idiomas através de letras de músicas.',
-    description: 'Aplicação Expo para web e iOS com letras sincronizadas, traduções para português e modos de revisão. O estudo acontece linha por linha, com vocabulário transformado em flashcards.',
-    points: ['Interface compartilhada com React Native e React Native Web.', 'Adaptador para letras sincronizadas via LRCLIB.', 'Tradução opcional com LibreTranslate e catálogo de exemplo.'],
-    status: 'Protótipo em desenvolvimento. Integrações e conteúdo de áudio dependem das fontes e licenças aplicáveis.',
-    repo: 'Language-Lyrics-Lab'
+  ias: {
+    title: 'IA Local + Automação', kicker: 'IA / DOCUMENTOS / ORQUESTRAÇÃO',
+    intro: 'Documentos entram; análises e respostas saem sem depender de uma IA em nuvem.',
+    description: 'Pipeline auto-hospedado que conecta arquivos do Google Drive ou OneDrive ao Ollama, usando n8n para coordenar ingestão, processamento e entrega dos resultados.',
+    points: ['n8n e PostgreSQL executados em contêineres Docker.', 'Inferência local via API do Ollama, mantendo o processamento na máquina.', 'Workflow importável e preparado para diferentes destinos de resposta.'],
+    status: 'Integração experimental. Credenciais e documentos reais permanecem fora do repositório.',
+    url: 'https://github.com/nicholasbirochi/Ollama-AI-Automation-n8n'
   },
-  churn: {
-    title: 'TechGrow / Churn', kicker: 'CIÊNCIA DE DADOS / MACHINE LEARNING',
-    intro: 'Investigar os sinais que antecedem o cancelamento de clientes.',
-    description: 'Estudo de churn em SaaS com análise exploratória, preparação de dados e comparação de modelos preditivos. O objetivo é conectar padrões de uso a decisões de Produto e Customer Success.',
-    points: ['Exploração de variáveis e comportamento de clientes com Pandas.', 'Comparação de Regressão Logística, Random Forest e XGBoost.', 'Interpretação de características e discussão dos resultados.'],
-    status: 'Projeto de estudo. Os resultados se referem ao conjunto de dados analisado, não a métricas de uma operação real.',
-    repo: 'SAAS-Churn-Analysis-Techgrow'
+  petshop: {
+    title: 'Petshop E-Commerce', kicker: 'JAVA / SPRING MVC / E-COMMERCE',
+    intro: 'Uma experiência completa de compra, da vitrine à gestão do pedido.',
+    description: 'Aplicação web colaborativa construída com Spring Boot MVC e Thymeleaf. Reúne catálogo, carrinho persistido, autenticação, pedidos e administração de produtos.',
+    points: ['Backend em Java 21 com Spring Data JPA e PostgreSQL.', 'Perfis USER e ADMIN com proteção de rotas por anotações AOP.', 'Upload de imagens, CRUD de produtos, histórico de pedidos e interface responsiva.'],
+    status: 'Projeto acadêmico colaborativo desenvolvido por Nicholas Birochi, Henrico Birochi, Vítor Braghittoni, Edgar Ribeiro e Vinicius Yamaguti.',
+    url: 'https://github.com/HenricoBirochi/Petshop-Spring-MVC'
   },
-  n8n: {
-    title: 'Ollama + n8n', kicker: 'AUTOMAÇÃO / DOCUMENTOS / IA',
-    intro: 'Conectar documentos e inteligência artificial em um fluxo local.',
-    description: 'Ambiente com n8n e PostgreSQL em Docker que integra arquivos do Google Drive ou OneDrive à inferência do Ollama. O fluxo organiza leitura, processamento e encaminhamento das respostas.',
-    points: ['Orquestração visual com um workflow exportável do n8n.', 'Processamento pelo modelo local através da API do Ollama.', 'Serviços definidos em Docker Compose para reproduzir o ambiente.'],
-    status: 'Integração experimental. A inferência é local; os conectores de armazenamento utilizam seus respectivos serviços.',
-    repo: 'Ollama-AI-Automation-n8n'
+  fingerprint: {
+    title: 'Standalone Fingerprint Key', kicker: 'HARDWARE / FIRMWARE / MODELAGEM 3D',
+    intro: 'Uma chave biométrica independente para macOS.',
+    description: 'O ESP32-S3 conversa com um sensor HLK-ZW111 e se apresenta ao computador como um teclado USB. Após uma correspondência biométrica, digita um segredo configurado localmente.',
+    points: ['Protocolo UART separado do firmware, com testes de framing e checksum.', 'Gabinete paramétrico de 46,4 × 46,4 × 13 mm, em duas peças.', 'Documentação de montagem, testes de bancada e limitações de segurança.'],
+    status: 'Projeto experimental. Não equivale a Touch ID ou a uma chave FIDO2; o segredo digitado exige cuidados descritos no repositório.',
+    url: 'https://github.com/nicholasbirochi/Standalone-Fingerprint-Key'
   }
 };
 
@@ -104,7 +103,10 @@ document.querySelectorAll('[data-project]').forEach(button => {
       li.textContent = point;
       return li;
     }));
-    document.querySelector('#case-repo').href = `https://github.com/nicholasbirochi/${project.repo}`;
+    const repoLink = document.querySelector('#case-repo');
+    repoLink.hidden = !project.url;
+    if (project.url) repoLink.href = project.url;
+    else repoLink.removeAttribute('href');
     dialog.showModal();
     dialog.scrollTop = 0;
     document.body.classList.add('modal-open');
@@ -131,7 +133,7 @@ document.querySelectorAll('.copy-contact').forEach(button => {
       icon.src = 'assets/icons/check.svg';
       window.setTimeout(() => {
         status.textContent = '';
-        icon.src = 'assets/icons/plus.svg';
+        icon.src = 'assets/icons/copy.svg';
       }, 2200);
     } catch {
       status.textContent = button.dataset.copy;
