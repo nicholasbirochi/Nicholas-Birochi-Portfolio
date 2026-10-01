@@ -93,6 +93,51 @@ const caseCopyEn = {
   }
 };
 
+const caseCopyEs = {
+  ccb: {
+    title: 'CCB BI', kicker: 'DATOS / APLICACIÓN LOCAL',
+    intro: 'De los registros semanales a indicadores capaces de revelar tendencias.',
+    description: 'Aplicación Flask y SQLite que digitaliza formularios y reúne indicadores en un panel. Los computadores y celulares de la misma red acceden al sistema mediante un enlace o código QR.',
+    points: ['Operación cotidiana sin conexión, con los datos almacenados localmente.', 'En el período presentado, el panel consolida 28 reuniones, 2.607 recitaciones, 197 registros individuales y 126 visitas.', 'Filtros por período, coordinación y localidad, con comparaciones y evolución temporal.'],
+    status: 'El portafolio solo muestra cifras agregadas de un período demostrativo; no se publica ninguna base de datos individual.'
+  },
+  ronda: {
+    title: 'Análisis de Comportamiento', kicker: 'DATOS / PANEL CORPORATIVO',
+    intro: 'Transformar registros operativos en una lectura semanal clara.',
+    description: 'Panel en Dash y Plotly para analizar presencia, recurrencia y copresencia, con vistas por período, área y persona. La arquitectura combina Parquet, SQLite y caché para mantener una navegación ágil.',
+    points: ['Filtros dinámicos y carga progresiva de gráficos.', 'Series semanales, distribuciones, diagramas de caja, indicadores y mapas de copresencia.', 'Exportación de informes y separación por capas MVC y servicios.'],
+    status: 'Proyecto interno. El portafolio utiliza una reproducción demostrativa basada en los gráficos reales; no se publican datos corporativos, nombres ni identificadores.'
+  },
+  jarvis: {
+    title: 'J.A.R.V.I.S.', kicker: 'IA LOCAL / ASISTENTE DE VOZ',
+    intro: 'Un asistente personal que conversa en portugués y funciona en el propio computador.',
+    description: 'Reconocimiento de voz, conversación mediante Ollama e información profesional estructurada, con una interfaz visual de estado e integración con la barra de menús de macOS.',
+    points: ['Activación por palabra clave o dos palmadas, con reconocimiento local.', 'Perfil profesional estructurado con procedencia de los datos.', 'Adaptadores de sitios web con vista previa antes de confirmar cualquier cambio.'],
+    status: 'En desarrollo. La gestión completa de candidaturas continúa evolucionando.'
+  },
+  ias: {
+    title: 'IA Local + Automatización', kicker: 'IA / DOCUMENTOS / ORQUESTACIÓN',
+    intro: 'Entran documentos; salen análisis y respuestas sin depender de una IA en la nube.',
+    description: 'Pipeline autoalojado que conecta archivos de Google Drive o OneDrive con Ollama y utiliza n8n para coordinar la ingesta, el procesamiento y la entrega de resultados.',
+    points: ['n8n y PostgreSQL ejecutados en contenedores Docker.', 'Inferencia local mediante la API de Ollama, manteniendo el procesamiento en la máquina.', 'Flujo importable y preparado para diferentes destinos de respuesta.'],
+    status: 'Integración experimental. Las credenciales y los documentos reales permanecen fuera del repositorio.'
+  },
+  petshop: {
+    title: 'Petshop E-Commerce', kicker: 'JAVA / SPRING MVC / COMERCIO ELECTRÓNICO',
+    intro: 'Una experiencia completa de compra, desde el escaparate hasta la gestión del pedido.',
+    description: 'Aplicación web colaborativa creada con Spring Boot MVC y Thymeleaf. Reúne catálogo, carrito persistente, autenticación, pedidos y administración de productos.',
+    points: ['Backend en Java 21 con Spring Data JPA y PostgreSQL.', 'Perfiles USER y ADMIN con protección de rutas mediante anotaciones AOP.', 'Carga de imágenes, CRUD de productos, historial de pedidos e interfaz responsiva.'],
+    status: 'Proyecto académico colaborativo desarrollado por Nicholas Birochi, Henrico Birochi, Vítor Braghittoni, Edgar Ribeiro y Vinicius Yamaguti.'
+  },
+  fingerprint: {
+    title: 'Standalone Fingerprint Key', kicker: 'HARDWARE / FIRMWARE / MODELADO 3D',
+    intro: 'Una llave biométrica independiente para macOS.',
+    description: 'El ESP32-S3 se comunica con un sensor HLK-ZW111 y se presenta ante el computador como un teclado USB. Tras una coincidencia biométrica, escribe un secreto configurado localmente.',
+    points: ['Protocolo UART separado del firmware, con pruebas de tramas y checksum.', 'Carcasa paramétrica de 46,4 × 46,4 × 13 mm en dos piezas.', 'Documentación de montaje, pruebas de banco y limitaciones de seguridad claramente indicadas.'],
+    status: 'Proyecto experimental. No equivale a Touch ID ni a una llave FIDO2; escribir un secreto exige las precauciones documentadas en el repositorio.'
+  }
+};
+
 const englishCopy = {
   skip: 'Skip to projects', headerNote: 'DATA & DEVELOPMENT', navProjects: 'Projects', navAbout: 'About', navJourney: 'Journey', navContact: 'Let\'s talk',
   heroLabel: 'PERSONAL PORTFOLIO / 2026', heroLead: 'Data, code<br>& curiosity.', heroCopy: 'I turn problems into analyses,<br>automations and applications.', heroCta: 'Explore my work', heroCourse: 'COMPUTER ENGINEERING',
@@ -102,36 +147,75 @@ const englishCopy = {
   aboutEyebrow: '02 / A LITTLE ABOUT ME', aboutQuiet: 'Beyond the code.', aboutTitle: 'CURIOUS BY<br><em>NATURE.</em><br>INNOVATIVE<br><em>BY CHOICE.</em>', aboutP1: 'I am Nicholas, a Computer Engineering student at Faculdade Engenheiro Salvador Arena and a Data Analytics intern at Volkswagen do Brasil.', aboutP2: 'My work connects data and development: understanding a problem, finding patterns and creating solutions that help someone decide or work better.', aboutP3: 'That curiosity also drives my personal projects. I explore local AI, web applications, music and hardware while turning ideas into useful experiences.', aboutLinkedin: 'More about me on LinkedIn', skillData: 'Data & analytics', skillAi: 'Automation & AI', skillExperiment: 'Experimentation',
   journeyEyebrow: '03 / JOURNEY', journeyQuiet: 'Learning and practice in motion.', journeyTitle: 'TWO PATHS.<br><em>ONE EVOLUTION.</em>', journeyIntro: 'Education and experience move forward together: what I learn becomes practice, and every professional challenge guides the next subject I study.', learning: 'Learning', professional: 'Professional',
   learning2023Tag: 'EDUCATION + LANGUAGE', learning2023Title: 'Computer Engineering & Cambridge B2', learning2023Body: 'Started Computer Engineering at Faculdade Engenheiro Salvador Arena and earned B2 First certification with a score of 153.', work2023Title: 'Data Analytics Intern', work2023Body: 'Spreadsheet automation, data analysis and internal reporting improvements using Excel and VBA.',
-  learning2024Tag: 'ANALYTICAL FOUNDATION', learning2024Title: 'Python, R, Power BI & Machine Learning', learning2024Body: 'Courses and projects in statistics, modeling, data science and a 40-hour Power BI elective.', work2024Title: 'More reliable processes', work2024Body: 'Automation and workflow reviews helped improve the accuracy of internal reports.',
-  learning2025Tag: 'SOFTWARE + AUTOMATION', learning2025Title: 'Clean Code, n8n & local AI', learning2025Body: 'Deeper work in Python, Power Automate, AI agents and self-hosted solutions.', current: 'CURRENT', work2025Title: 'Data Analytics Intern', work2025Body: 'Python and Power BI dashboards, SAP data analysis and local AI supporting Special Audit.',
-  learning2026Tag: 'APPLIED SPECIALIZATION', learning2026Title: 'AI for data, SAP & audit', learning2026Body: 'Continuous education in data science, enterprise tools and the VW SAM Region Internal Audit Workshop.', work2026Tag: 'ROLE EVOLUTION', work2026Title: 'Analytical solutions in production', work2026Body: 'Progress toward projects involving architecture, caching, reports, anomaly detection and AI-assisted documentation.',
+  current: 'CURRENT', work2025Title: 'Data Analytics Intern', work2025Body: 'Python and Power BI dashboards, SAP data analysis and local AI supporting Special Audit.',
   planned: 'PLANNED', learning2027Title: 'Graduation', learning2027Body: 'Computer Engineering degree expected in December 2027.', goal: 'GOAL', work2027Title: 'Next step: Junior Data Analyst', work2027Body: 'The desired progression after the internship, combining hands-on experience, education and technical autonomy.',
   recommendationEyebrow: 'PROFESSIONAL RECOMMENDATIONS', recommendationQuiet: 'Perspectives from people who trust my work.', quoteHenrico: 'I recommend Nicholas for his curiosity, dedication and ability to turn problems into practical solutions. He learns quickly, communicates well and takes every project seriously.', quoteEdgar: 'A longtime friend, always willing to put in the work and deliver the product.', quoteVitor: 'I followed Nicholas throughout the development of the church project (CCB-BI). He knew how to listen, evolve the solution and turn a real need into a clear, useful and well-built tool.', quoteEduardo: 'I recommend Nicholas for his dedication and willingness to understand the area\'s needs, contributing disruptive ideas and solutions that demonstrate future-oriented thinking.', linkedinRecommendation: 'Recommendation via LinkedIn', connections: 'PROFESSIONAL CONNECTIONS', newRecommendations: 'More recommendations coming soon.',
-  contactEyebrow: '04 / CONTACT', contactQuiet: 'A CONVERSATION CAN BE THE BEGINNING.', contactTitle: 'LET\'S<br>TALK?', contactIntro: 'I am open to opportunities, collaborations and projects in data, automation, local AI and software development.', formTitle: 'WRITE YOUR MESSAGE', formEmail: 'YOUR EMAIL', formSubject: 'SUBJECT', formMessage: 'MESSAGE', formSubmit: 'PREPARE EMAIL', location: 'São Bernardo do Campo, SP · Brazil', availability: 'Available to discuss new challenges', backTop: 'Back to top',
+  contactEyebrow: '04 / CONTACT', contactQuiet: 'A CONVERSATION CAN BE THE BEGINNING.', contactTitle: 'LET\'S<br>TALK?', contactIntro: 'I am open to opportunities, collaborations and projects in data, automation, local AI and software development.', formTitle: 'WRITE YOUR MESSAGE', formEmail: 'YOUR EMAIL', formSubject: 'SUBJECT', formMessage: 'MESSAGE', formSubmit: 'PREPARE EMAIL', contactSocial: 'CONTACT & SOCIAL', contactProfessional: 'PROFESSIONAL PROFILES', location: 'São Bernardo do Campo, SP · Brazil', availability: 'Available to discuss new challenges', backTop: 'Back to top',
   caseProject: 'The project', caseDecisions: 'Technical decisions', caseGithub: 'Explore on GitHub'
 };
 
+const spanishCopy = {
+  skip: 'Ir a los proyectos', headerNote: 'DATOS & DESARROLLO', navProjects: 'Proyectos', navAbout: 'Sobre mí', navJourney: 'Trayectoria', navContact: 'Hablemos',
+  heroLabel: 'PORTAFOLIO PERSONAL / 2026', heroLead: 'Datos, código<br>y curiosidad.', heroCopy: 'Transformo problemas en análisis,<br>automatizaciones y aplicaciones.', heroCta: 'Explorar mi trabajo', heroCourse: 'INGENIERÍA INFORMÁTICA',
+  fieldData: 'ANÁLISIS DE DATOS', fieldDev: 'DESARROLLO', fieldAi: 'AUTOMATIZACIÓN & IA', workEyebrow: '01 / TRABAJOS SELECCIONADOS', workQuiet: 'De la idea al prototipo.', workTitle: 'IDEAS QUE<br><em>TOMAN FORMA.</em>', workIntro: 'Una selección de lo que vengo construyendo entre datos, software y experimentación.',
+  filterAll: 'Todos', filterData: 'Datos', filterAi: 'IA & automatización', allGithub: 'Todos en GitHub', ccbDescription: 'Del registro al diagnóstico: formularios, filtros y análisis para apoyar decisiones en una aplicación local.', rondaTitle: 'Análisis de Comportamiento', rondaDescription: 'Paneles de presencia, copresencia y evolución semanal con filtros, caché y exportación de informes.', jarvisDescription: 'Un asistente multimodal local con voz, memoria profesional estructurada y automatizaciones supervisadas.', iasTitle: 'IA Local + Automatización', iasDescription: 'Un pipeline autoalojado que convierte documentos en análisis y respuestas mediante IA local.', petshopDescription: 'Una tienda completa con catálogo, carrito, pedidos, autenticación, perfiles de acceso y panel administrativo.', fingerprintDescription: 'Una llave biométrica para macOS: electrónica, protocolo, firmware y carcasa paramétrica en un solo producto.',
+  numberRepos: 'repositorios públicos', numberFields: 'áreas de actuación', numberEnglish: 'inglés certificado', numberGraduation: 'graduación prevista',
+  aboutEyebrow: '02 / UN POCO SOBRE MÍ', aboutQuiet: 'Más allá del código.', aboutTitle: 'CURIOSO POR<br><em>NATURALEZA.</em><br>INNOVADOR<br><em>POR ELECCIÓN.</em>', aboutP1: 'Soy Nicholas, estudiante de Ingeniería Informática en la Faculdade Engenheiro Salvador Arena y pasante de Análisis de Datos en Volkswagen do Brasil.', aboutP2: 'Mi trabajo conecta datos y desarrollo: investigar un problema, encontrar patrones y crear soluciones que ayuden a alguien a decidir o trabajar mejor.', aboutP3: 'Esa curiosidad también impulsa mis proyectos personales. Exploro IA local, aplicaciones web, música y hardware mientras convierto ideas en experiencias útiles.', aboutLinkedin: 'Más sobre mí en LinkedIn', skillData: 'Datos & análisis', skillAi: 'Automatización & IA', skillExperiment: 'Experimentación',
+  journeyEyebrow: '03 / TRAYECTORIA', journeyQuiet: 'Aprendizaje y práctica en movimiento.', journeyTitle: 'DOS CAMINOS.<br><em>UNA EVOLUCIÓN.</em>', journeyIntro: 'La formación y la experiencia avanzan juntas: lo que aprendo se convierte en práctica y cada desafío profesional orienta el siguiente estudio.', learning: 'Aprendizaje', professional: 'Profesional',
+  learning2023Tag: 'FORMACIÓN + IDIOMA', learning2023Title: 'Ingeniería Informática & Cambridge B2', learning2023Body: 'Inicio de la carrera en la Faculdade Engenheiro Salvador Arena y certificación B2 First con puntuación 153.', work2023Title: 'Pasante de Análisis de Datos', work2023Body: 'Automatización de hojas de cálculo, análisis de datos y mejora de informes internos con Excel y VBA.',
+  current: 'ACTUAL', work2025Title: 'Pasante de Análisis de Datos', work2025Body: 'Paneles en Python y Power BI, análisis de datos de SAP e IA local para apoyar a Auditoría Especial.',
+  planned: 'PREVISTO', learning2027Title: 'Finalización de la carrera', learning2027Body: 'Graduación en Ingeniería Informática prevista para diciembre de 2027.', goal: 'OBJETIVO', work2027Title: 'Próximo paso: Analista de Datos Junior', work2027Body: 'La progresión deseada después de la pasantía, reuniendo experiencia práctica, formación y autonomía técnica.',
+  recommendationEyebrow: 'RECOMENDACIONES PROFESIONALES', recommendationQuiet: 'Perspectivas de quienes confían en mi trabajo.', quoteHenrico: 'Recomiendo a Nicholas por su curiosidad, dedicación y capacidad para transformar problemas en soluciones prácticas. Aprende rápido, se comunica bien y se toma cada proyecto en serio.', quoteEdgar: 'Amigo de muchos años, siempre dispuesto a esforzarse y entregar el producto.', quoteVitor: 'Acompañé a Nicholas durante el desarrollo del proyecto para la iglesia (CCB-BI). Supo escuchar, mejorar la solución y transformar una necesidad real en una herramienta clara, útil y bien construida.', quoteEduardo: 'Recomiendo a Nicholas por su dedicación y disposición para escuchar las necesidades del área, a las que contribuye con ideas y soluciones disruptivas que demuestran su pensamiento orientado a las tecnologías del futuro.', linkedinRecommendation: 'Recomendación vía LinkedIn', connections: 'CONEXIONES PROFESIONALES', newRecommendations: 'Próximamente habrá nuevas recomendaciones.',
+  contactEyebrow: '04 / CONTACTO', contactQuiet: 'UNA CONVERSACIÓN PUEDE SER EL COMIENZO.', contactTitle: '¿HABLAMOS?', contactIntro: 'Estoy abierto a oportunidades, colaboraciones y proyectos de datos, automatización, IA local y desarrollo de software.', formTitle: 'ESCRIBE TU MENSAJE', formEmail: 'TU E-MAIL', formSubject: 'ASUNTO', formMessage: 'MENSAJE', formSubmit: 'PREPARAR E-MAIL', contactSocial: 'CONTACTO & REDES SOCIALES', contactProfessional: 'PERFILES PROFESIONALES', location: 'São Bernardo do Campo, SP · Brasil', availability: 'Disponible para conversar sobre nuevos desafíos', backTop: 'Volver arriba',
+  caseProject: 'El proyecto', caseDecisions: 'Decisiones técnicas', caseGithub: 'Explorar en GitHub'
+};
+
 const englishPlaceholders = {formEmailPlaceholder: 'you@company.com', formSubjectPlaceholder: 'About an opportunity', formMessagePlaceholder: 'Briefly tell me how I can help.'};
+const spanishPlaceholders = {formEmailPlaceholder: 'tu@empresa.com', formSubjectPlaceholder: 'Sobre una oportunidad', formMessagePlaceholder: 'Cuéntame brevemente cómo puedo ayudar.'};
 const originalCopy = new Map([...document.querySelectorAll('[data-i18n]')].map(element => [element.dataset.i18n, element.innerHTML]));
 const originalPlaceholders = new Map([...document.querySelectorAll('[data-i18n-placeholder]')].map(element => [element.dataset.i18nPlaceholder, element.placeholder]));
 let currentLanguage = 'pt';
 let activeProjectKey = null;
+const languageConfigs = {
+  pt: {
+    htmlLang: 'pt-BR', code: 'PT', name: 'Português', flag: 'assets/icons/flag-br.svg', copy: null, placeholders: null,
+    title: 'Nicholas Birochi | Dados, código & curiosidade', description: 'Nicholas Birochi. Dados, desenvolvimento e automação. Conheça meus projetos em BI, inteligência artificial local, software e hardware.',
+    menuOpen: 'Abrir menu', menuClose: 'Fechar menu', pickerLabel: 'Selecionar idioma. Atual: Português', senderLabel: 'E-mail para retorno', formStatus: 'Abrindo seu aplicativo de e-mail…'
+  },
+  en: {
+    htmlLang: 'en', code: 'EN', name: 'English', flag: 'assets/icons/flag-us.svg', copy: englishCopy, placeholders: englishPlaceholders,
+    title: 'Nicholas Birochi | Data, code & curiosity', description: 'Nicholas Birochi. Data, development and automation. Explore my projects in BI, local AI, software and hardware.',
+    menuOpen: 'Open menu', menuClose: 'Close menu', pickerLabel: 'Select language. Current: English', senderLabel: 'Sender email', formStatus: 'Opening your email app…'
+  },
+  es: {
+    htmlLang: 'es', code: 'ES', name: 'Español', flag: 'assets/icons/flag-es.svg', copy: spanishCopy, placeholders: spanishPlaceholders,
+    title: 'Nicholas Birochi | Datos, código y curiosidad', description: 'Nicholas Birochi. Datos, desarrollo y automatización. Conoce mis proyectos de BI, IA local, software y hardware.',
+    menuOpen: 'Abrir menú', menuClose: 'Cerrar menú', pickerLabel: 'Seleccionar idioma. Actual: Español', senderLabel: 'E-mail de contacto', formStatus: 'Abriendo tu aplicación de e-mail…'
+  }
+};
 
 function setLanguage(language, persist = true) {
-  currentLanguage = language === 'en' ? 'en' : 'pt';
-  document.documentElement.lang = currentLanguage === 'en' ? 'en' : 'pt-BR';
+  currentLanguage = languageConfigs[language] ? language : 'pt';
+  const config = languageConfigs[currentLanguage];
+  document.documentElement.lang = config.htmlLang;
   document.querySelectorAll('[data-i18n]').forEach(element => {
     const key = element.dataset.i18n;
-    element.innerHTML = currentLanguage === 'en' && englishCopy[key] ? englishCopy[key] : originalCopy.get(key);
+    element.innerHTML = config.copy?.[key] ?? originalCopy.get(key);
   });
   document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
     const key = element.dataset.i18nPlaceholder;
-    element.placeholder = currentLanguage === 'en' ? englishPlaceholders[key] : originalPlaceholders.get(key);
+    element.placeholder = config.placeholders?.[key] ?? originalPlaceholders.get(key);
   });
-  document.querySelectorAll('[data-language]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.language === currentLanguage)));
-  document.title = currentLanguage === 'en' ? 'Nicholas Birochi | Data, code & curiosity' : 'Nicholas Birochi | Dados, código & curiosidade';
+  document.querySelectorAll('[data-language]').forEach(button => button.setAttribute('aria-selected', String(button.dataset.language === currentLanguage)));
+  const currentFlag = document.querySelector('.language-current-flag');
+  if (currentFlag) currentFlag.src = config.flag;
+  const currentCode = document.querySelector('.language-current-code');
+  if (currentCode) currentCode.textContent = config.code;
+  const languageTrigger = document.querySelector('.language-trigger');
+  if (languageTrigger) languageTrigger.setAttribute('aria-label', config.pickerLabel);
+  document.title = config.title;
   const description = document.querySelector('meta[name="description"]');
-  if (description) description.content = currentLanguage === 'en' ? 'Nicholas Birochi. Data, development and automation. Explore my projects in BI, local AI, software and hardware.' : 'Nicholas Birochi. Dados, desenvolvimento e automação. Conheça meus projetos em BI, inteligência artificial local, software e hardware.';
+  if (description) description.content = config.description;
   const visibleCount = projects.filter(project => !project.hidden).length;
   updateFilterStatus(visibleCount);
   if (document.querySelector('.case-dialog')?.open && activeProjectKey) renderCase(activeProjectKey);
@@ -144,7 +228,9 @@ function setLanguage(language, persist = true) {
 function updateFilterStatus(count) {
   const status = document.querySelector('#filter-status');
   if (!status) return;
-  status.textContent = currentLanguage === 'en' ? `${count} visible ${count === 1 ? 'project' : 'projects'}` : `${count} ${count === 1 ? 'projeto visível' : 'projetos visíveis'}`;
+  if (currentLanguage === 'en') status.textContent = `${count} visible ${count === 1 ? 'project' : 'projects'}`;
+  else if (currentLanguage === 'es') status.textContent = `${count} ${count === 1 ? 'proyecto visible' : 'proyectos visibles'}`;
+  else status.textContent = `${count} ${count === 1 ? 'projeto visível' : 'projetos visíveis'}`;
 }
 
 const menuButton = document.querySelector('.menu-toggle');
@@ -152,7 +238,7 @@ const navigation = document.querySelector('#navigation');
 function closeMenu() {
   navigation.classList.remove('is-open');
   menuButton.setAttribute('aria-expanded', 'false');
-  const label = currentLanguage === 'en' ? 'Open menu' : 'Abrir menu';
+  const label = languageConfigs[currentLanguage].menuOpen;
   menuButton.setAttribute('aria-label', label);
   menuButton.title = label;
   menuButton.querySelector('img').src = 'assets/icons/menu.svg';
@@ -161,7 +247,8 @@ menuButton.addEventListener('click', () => {
   const open = menuButton.getAttribute('aria-expanded') !== 'true';
   navigation.classList.toggle('is-open', open);
   menuButton.setAttribute('aria-expanded', String(open));
-  const label = currentLanguage === 'en' ? (open ? 'Close menu' : 'Open menu') : (open ? 'Fechar menu' : 'Abrir menu');
+  const config = languageConfigs[currentLanguage];
+  const label = open ? config.menuClose : config.menuOpen;
   menuButton.setAttribute('aria-label', label);
   menuButton.title = label;
   menuButton.querySelector('img').src = `assets/icons/${open ? 'x' : 'menu'}.svg`;
@@ -196,7 +283,8 @@ let dialogTrigger;
 function renderCase(key) {
   const project = cases[key];
   if (!project) return;
-  const copy = currentLanguage === 'en' ? {...project, ...caseCopyEn[key]} : project;
+  const localizedCases = currentLanguage === 'en' ? caseCopyEn : currentLanguage === 'es' ? caseCopyEs : null;
+  const copy = localizedCases ? {...project, ...localizedCases[key]} : project;
   for (const [id, value] of Object.entries({title: copy.title, kicker: copy.kicker, intro: copy.intro, description: copy.description, status: copy.status})) {
     document.querySelector(`#case-${id}`).textContent = value;
   }
@@ -232,29 +320,55 @@ dialog.addEventListener('close', () => {
   dialogTrigger?.focus({preventScroll: true});
 });
 
-document.querySelectorAll('[data-language]').forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.language)));
+const languagePicker = document.querySelector('.language-picker');
+const languageTrigger = document.querySelector('.language-trigger');
+const languageMenu = document.querySelector('.language-options');
+const languageItems = [...document.querySelectorAll('[data-language]')];
+function openLanguagePicker(focusIndex = -1) {
+  languageMenu.hidden = false;
+  languageTrigger.setAttribute('aria-expanded', 'true');
+  if (focusIndex >= 0) languageItems[focusIndex]?.focus();
+}
+function closeLanguagePicker(restoreFocus = false) {
+  languageMenu.hidden = true;
+  languageTrigger.setAttribute('aria-expanded', 'false');
+  if (restoreFocus) languageTrigger.focus();
+}
+languageTrigger.addEventListener('click', () => {
+  if (languageMenu.hidden) openLanguagePicker();
+  else closeLanguagePicker();
+});
+languageTrigger.addEventListener('keydown', event => {
+  if (!['ArrowDown', 'ArrowUp'].includes(event.key)) return;
+  event.preventDefault();
+  const selectedIndex = Math.max(0, languageItems.findIndex(item => item.dataset.language === currentLanguage));
+  openLanguagePicker(event.key === 'ArrowDown' ? selectedIndex : Math.max(0, selectedIndex - 1));
+});
+languageItems.forEach(item => item.addEventListener('click', () => {
+  setLanguage(item.dataset.language);
+  closeLanguagePicker(true);
+}));
+languageMenu.addEventListener('keydown', event => {
+  const index = languageItems.indexOf(document.activeElement);
+  if (event.key === 'Escape') {
+    event.preventDefault();
+    closeLanguagePicker(true);
+  } else if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+    event.preventDefault();
+    const step = event.key === 'ArrowDown' ? 1 : -1;
+    languageItems[(index + step + languageItems.length) % languageItems.length].focus();
+  } else if (event.key === 'Home' || event.key === 'End') {
+    event.preventDefault();
+    languageItems[event.key === 'Home' ? 0 : languageItems.length - 1].focus();
+  } else if (event.key === 'Tab') closeLanguagePicker();
+});
+document.addEventListener('click', event => {
+  if (!event.target.closest('.language-picker')) closeLanguagePicker();
+});
 let savedLanguage = 'pt';
 try { savedLanguage = localStorage.getItem('portfolio-language') || 'pt'; } catch {}
 const requestedLanguage = new URLSearchParams(window.location.search).get('lang');
 setLanguage(requestedLanguage || savedLanguage, false);
-
-document.querySelectorAll('.copy-contact').forEach(button => {
-  button.addEventListener('click', async () => {
-    const status = document.querySelector('#copy-status');
-    const icon = button.querySelector('img');
-    try {
-      await navigator.clipboard.writeText(button.dataset.copy);
-      status.textContent = currentLanguage === 'en' ? 'Email copied' : button.dataset.label;
-      icon.src = 'assets/icons/check.svg';
-      window.setTimeout(() => {
-        status.textContent = '';
-        icon.src = 'assets/icons/copy.svg';
-      }, 2200);
-    } catch {
-      status.textContent = button.dataset.copy;
-    }
-  });
-});
 
 const contactForm = document.querySelector('#contact-form');
 contactForm?.addEventListener('submit', event => {
@@ -264,9 +378,9 @@ contactForm?.addEventListener('submit', event => {
   const sender = String(data.get('from') || '').trim();
   const subject = String(data.get('subject') || '').trim();
   const message = String(data.get('message') || '').trim();
-  const senderLabel = currentLanguage === 'en' ? 'Sender email' : 'E-mail para retorno';
+  const senderLabel = languageConfigs[currentLanguage].senderLabel;
   const body = `${message}\n\n${senderLabel}: ${sender}`;
-  document.querySelector('#form-status').textContent = currentLanguage === 'en' ? 'Opening your email app…' : 'Abrindo seu aplicativo de e-mail…';
+  document.querySelector('#form-status').textContent = languageConfigs[currentLanguage].formStatus;
   window.location.href = `mailto:nicholas.birochi@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
