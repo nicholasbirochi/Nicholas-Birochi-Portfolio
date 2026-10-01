@@ -4,7 +4,7 @@ Personal portfolio at https://nicholasbirochi.com.br. Static HTML, CSS and JavaS
 
 ## Content
 
-Selected projects: CCB BI, Behavioral Analysis, JARVIS, Local AI + Automation, Petshop E-Commerce and Standalone Fingerprint Key. The CCB preview uses only aggregated period metrics, the Behavioral Analysis preview reproduces the real chart families with anonymous demonstration values, and JARVIS includes a short local-voice demonstration. The Petshop preview is rendered from the project's actual home-page design. An additional project index links to public repositories. Professional and learning timelines are based on Nicholas's supplied resume; private business documents and datasets are not published.
+Selected projects: CCB BI, Behavioral Analysis, JARVIS, Local AI + Automation, Petshop E-Commerce and Standalone Fingerprint Key. The CCB preview uses only aggregated period metrics, the Behavioral Analysis preview reproduces the real chart families with anonymous demonstration values, and JARVIS includes a short local-voice demonstration. The Petshop preview is rendered from the project's actual home-page design. Professional and learning timelines are based on Nicholas's supplied resume; private business documents and datasets are not published.
 
 ## Development
 
@@ -12,8 +12,8 @@ Open `index.html` in a browser, or serve the folder with `python -m http.server 
 
 ## Interaction and accessibility
 
-- Portuguese/English switcher with local persistence and translated project dialogs.
-- Project filters, project detail dialogs, JARVIS audio control, mobile navigation and email copy.
+- Portuguese/English/Spanish language combobox with local persistence and translated project dialogs.
+- Project filters, project detail dialogs, JARVIS audio control, mobile navigation and grouped contact links.
 - Static contact composer that prepares a `mailto:` message without sending data to a server.
 - Keyboard focus, Escape dismissal, reduced-motion support and local fonts.
 - Responsive layouts for mobile, tablet and desktop.
@@ -28,4 +28,4 @@ Hero image editing used the built-in image generation tool. Prompt: preserve the
 
 The active JARVIS frame was derived from the supplied interface screenshot with its central data sphere made legible for a video preview. The About photograph and professional portraits use the original files supplied by Nicholas. Featured recommendations use supplied or explicitly authorized draft text; profiles awaiting copy remain linked without invented testimonials.
 
-Release marker: `2026-10-01-editorial-v7`.
+Release marker: `2026-10-01-editorial-v10`.
