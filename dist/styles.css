@@ -52,8 +52,8 @@
 .recommendation-list .recommendation-card{grid-template-columns:148px minmax(0,1fr);min-height:300px;align-items:start}
 .recommendation-list .recommendation-card:last-child:nth-child(odd){grid-column:1/-1;grid-template-columns:148px minmax(0,1fr);min-height:260px}
 .recommendation-list .recommendation-card figure{width:108px;height:108px;margin:30px 0 0 30px;border:1px solid #bec5bc;border-radius:50%}
-.recommendation-list .recommendation-card:nth-child(3) figure img{transform:scale(1.45);transform-origin:center 27%}
-.recommendation-list .recommendation-card:nth-child(3):hover figure img{transform:scale(1.49)}
+.recommendation-list .recommendation-card:nth-child(3) figure img{transform:translateY(5%) scale(1.2);transform-origin:center 28%}
+.recommendation-list .recommendation-card:nth-child(3):hover figure img{transform:translateY(5%) scale(1.23)}
 .recommendation-list .recommendation-copy{padding:30px 30px 28px 4px}
 .recommendation-list .quote-mark{font-size:58px}
 .recommendation-list blockquote{margin:22px 0 28px;font-size:22px;line-height:1.24}
@@ -74,3 +74,201 @@
 @media(max-width:1100px){.recommendation-list{grid-template-columns:1fr}.recommendation-list .recommendation-card,.recommendation-list .recommendation-card:last-child:nth-child(odd){grid-column:auto;grid-template-columns:132px minmax(0,1fr);min-height:270px}.recommendation-list .recommendation-card figure{width:96px;height:96px;margin:28px 0 0 28px}.profile-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:760px){.profile-grid{grid-template-columns:1fr}.profile-link,.profile-link:nth-child(2){border-right:0;border-bottom:1px solid #bec5bc}.profile-link:last-child{border-bottom:0}}
 @media(max-width:640px){.about-photo>img{aspect-ratio:4/5}.recommendation-list{gap:16px}.recommendation-list .recommendation-card,.recommendation-list .recommendation-card:last-child:nth-child(odd){grid-template-columns:1fr;min-height:0}.recommendation-list .recommendation-card figure{width:84px;height:84px;margin:24px 0 0 24px}.recommendation-list .recommendation-copy{padding:18px 24px 26px}.recommendation-list .quote-mark{font-size:52px}.recommendation-list blockquote{margin:18px 0 26px;font-size:22px}.network-heading{align-items:start;flex-direction:column;gap:5px}}
+
+/* Six flagship projects */
+.projects{grid-template-columns:repeat(3,minmax(0,1fr));gap:52px 22px}
+.project-visual{aspect-ratio:1.18}
+.visual-label{top:18px;left:18px;font-size:8px;letter-spacing:0}
+.project-open{right:14px;bottom:14px;width:40px;height:40px}
+.project-open img{width:20px;height:20px}
+.project-meta{align-items:flex-start;margin-top:18px}
+.project-meta h3{font-size:21px}
+.project-description{font-size:12px;line-height:1.55;margin-top:9px}
+.hardware-word{top:24%;left:18px;font-size:56px}
+.hardware-spec{bottom:18px;left:18px;font-size:7px}
+.device-image{inset:16% 1% auto;width:98%;height:77%}
+
+/* Dense CCB BI preview */
+.visual-ccb{background:#d9e5e1}
+.ccb-dashboard-mini{inset:16% 4% 5%;display:flex;flex-direction:column;background:#f7f8f6;border-color:#b9c8c3;color:#102440}
+.ccb-dashboard-head{display:flex;align-items:center;justify-content:space-between;min-height:28px;padding:0 9px;border-bottom:1px solid #d7dfdc}
+.ccb-dashboard-head strong{font-size:7px}
+.ccb-dashboard-head small{font-size:5px;color:#707881}
+.ccb-kpis{grid-template-columns:repeat(3,minmax(0,1fr));flex:0 0 auto}
+.ccb-kpis>span{padding:7px 8px}
+.ccb-kpis b{font-size:16px}
+.ccb-kpis small{font-size:5px;margin-top:4px}
+.ccb-data-grid{grid-template-columns:minmax(0,1.5fr) minmax(74px,.72fr);flex:1;gap:8px;padding:8px 9px 7px}
+.ccb-line-chart>strong{font-size:6px}
+.ccb-line-chart svg{height:82px;margin-top:4px}
+.ccb-line-chart polyline{stroke-width:2.5}
+.chart-axis{font-size:4px}
+.ccb-insights{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-content:start;gap:5px;min-width:0;text-align:left}
+.ccb-insights>span:not(.ccb-share){display:block;padding:7px 6px;background:#e8eeeb;border:1px solid #d6e0dc}
+.ccb-insights>span>b{display:block;font-family:Barlow,Arial,sans-serif;font-size:14px;line-height:1}
+.ccb-insights>span>small{display:block;margin-top:4px;color:#6d747d;font-size:4px;text-transform:uppercase}
+.ccb-share{grid-column:1/-1;display:block;padding-top:4px}
+.ccb-share>small{display:flex;justify-content:space-between;font-size:5px;color:#59646a}
+.ccb-share>small b{font-size:6px;color:#102440}
+.ccb-share>i{display:flex;width:100%;height:7px;margin:5px 0;background:#ef6230}
+.ccb-share>i>em{display:block;width:47.9%;height:100%;background:#0c4a67}
+
+/* Ronda: public-safe synthetic dashboard */
+.visual-ronda{background:#e7dfcf;color:#1d2927}
+.ronda-dashboard{position:absolute;inset:16% 4% 5%;display:flex;flex-direction:column;overflow:hidden;background:#f8f7f2;border:1px solid #c7bca8;border-radius:4px;box-shadow:0 14px 28px #463f3021}
+.ronda-head{display:flex;align-items:center;justify-content:space-between;min-height:28px;padding:0 9px;border-bottom:1px solid #ddd7cb}
+.ronda-head strong{font-size:7px}
+.ronda-head small{font-size:5px;color:#786e60}
+.ronda-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid #ddd7cb}
+.ronda-kpis>span{display:block;padding:7px 8px;border-right:1px solid #ddd7cb}
+.ronda-kpis>span:last-child{border-right:0}
+.ronda-kpis b{display:block;font-family:Barlow,Arial,sans-serif;font-size:16px;line-height:1}
+.ronda-kpis small{display:block;margin-top:4px;color:#756e66;font-size:5px;text-transform:uppercase}
+.ronda-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(72px,.7fr);flex:1;gap:9px;padding:8px 9px}
+.ronda-trend,.ronda-heatmap{display:block;min-width:0;text-align:left}
+.ronda-trend>small,.ronda-heatmap>small{display:block;font-size:5px;font-weight:600}
+.ronda-trend svg{display:block;width:100%;height:82px;margin-top:4px}
+.ronda-trend g line{stroke:#dedbd4;stroke-width:1}
+.ronda-trend polyline{fill:none;stroke:#1f6b58;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.ronda-trend circle{fill:#ef6b35;stroke:#fff;stroke-width:2}
+.ronda-heatmap>span{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:9px}
+.ronda-heatmap i{display:block;aspect-ratio:1;border-radius:1px;background:#d8ded8}
+.ronda-heatmap i:nth-child(3n){background:#9ebdab}
+.ronda-heatmap i:nth-child(4n+1){background:#4d8b73}
+.ronda-heatmap i:nth-child(7n){background:#ef8a55}
+
+/* Local AI architecture */
+.visual-ias{background:#d7e2ef;color:#102039}
+.ai-console{position:absolute;inset:18% 5% 7%;display:flex;flex-direction:column;overflow:hidden;background:#0f1b2d;color:#eef5fb;border:1px solid #3d526e;border-radius:4px;box-shadow:0 14px 28px #10203933}
+.ai-console-head{display:flex;align-items:center;gap:4px;min-height:28px;padding:0 10px;border-bottom:1px solid #34445a}
+.ai-console-head>i{width:5px;height:5px;border-radius:50%;background:#9bb0c8}
+.ai-console-head>i:first-child{background:#e66f4c}
+.ai-console-head>i:nth-child(2){background:#e7bf55}
+.ai-console-head>i:nth-child(3){background:#58b889}
+.ai-console-head>small{margin-left:auto;font-size:5px;color:#aab9c9}
+.ai-flow{display:grid;grid-template-columns:minmax(0,1fr) 16px minmax(0,1fr) 16px minmax(0,1fr);align-items:center;flex:1;padding:12px 10px 7px}
+.ai-flow>span{display:flex;min-width:0;height:72px;flex-direction:column;justify-content:center;padding:8px;border:1px solid #4c6079;background:#18263a}
+.ai-flow>span.ai-core{border-color:#8fe4be;background:#203c3a}
+.ai-flow>span>b{font-size:5px;color:#85a0bc}
+.ai-flow>span>strong{margin-top:8px;font-family:Barlow,Arial,sans-serif;font-size:12px;line-height:1;overflow-wrap:anywhere}
+.ai-flow>span>small{margin-top:5px;color:#aebaca;font-size:5px;line-height:1.2}
+.ai-flow>em{display:block;height:1px;background:#6e829a;position:relative}
+.ai-flow>em::after{content:"";position:absolute;right:0;top:-2px;width:4px;height:4px;border-top:1px solid #9db1c6;border-right:1px solid #9db1c6;transform:rotate(45deg)}
+.ai-stack{display:flex;gap:5px;padding:0 10px 10px}
+.ai-stack i{padding:5px 6px;border:1px solid #3d526e;font-style:normal;font-size:5px;color:#b7c7d6}
+
+/* Petshop storefront */
+.visual-petshop{background:#f0d66d;color:#142921}
+.petshop-window{position:absolute;inset:16% 4% 5%;display:flex;flex-direction:column;overflow:hidden;background:#fffaf0;border:1px solid #c5ac4e;border-radius:4px;box-shadow:0 14px 28px #453b1926}
+.petshop-nav{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:12px;min-height:31px;padding:0 9px;border-bottom:1px solid #e8dfc4}
+.petshop-nav img{width:54px;height:20px;object-fit:contain;object-position:left center}
+.petshop-nav small,.petshop-nav b{font-size:5px}
+.petshop-nav b{padding:5px 7px;background:#183f32;color:#fff}
+.petshop-hero{display:flex;align-items:end;justify-content:space-between;gap:10px;padding:10px 11px 8px;background:#dce9df}
+.petshop-hero>span{display:block;text-align:left}
+.petshop-hero small{display:block;font-size:5px;color:#4e6e60}
+.petshop-hero strong{display:block;margin-top:4px;font-family:Barlow,Arial,sans-serif;font-size:15px;line-height:.95}
+.petshop-hero>i{padding:6px 8px;background:#ef6b46;color:#fff;font-style:normal;font-size:5px;white-space:nowrap}
+.pet-products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;flex:1;padding:7px}
+.pet-products>span{display:flex;min-width:0;flex-direction:column;overflow:hidden;background:#f5f0e4;text-align:left}
+.pet-products img{width:100%;height:54px;object-fit:cover}
+.pet-products small{padding:5px;font-size:5px;font-weight:600}
+
+/* Contact channels */
+.contact{padding:72px 0 0}
+.contact-title{grid-template-columns:minmax(0,1fr) 122px;align-items:end}
+.contact-title h2{font-size:104px}
+.contact-title>div>p{max-width:640px}
+.contact-arrow{width:122px;height:122px}
+.contact-channels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:54px;border-top:1px solid #20222155;border-left:1px solid #20222155}
+.contact-channel{display:grid;grid-template-columns:44px minmax(0,1fr) 24px;align-items:center;gap:16px;min-width:0;min-height:106px;padding:18px 22px;border-right:1px solid #20222155;border-bottom:1px solid #20222155;transition:background-color .2s,color .2s}
+.contact-channel.contact-rocketseat{grid-column:1/-1}
+.contact-channel-icon{display:grid;place-items:center;width:44px;height:44px;border:1px solid #20222166}
+.contact-channel-copy{display:grid;gap:8px;min-width:0}
+.contact-channel-copy small{font-size:7px;font-weight:700;color:#465044}
+.contact-channel-copy a,.contact-channel-copy strong{min-width:0;font-size:12px;font-weight:600;line-height:1.35;overflow-wrap:anywhere}
+.channel-arrow{justify-self:end;transition:transform .2s}
+a.contact-channel:hover,a.contact-channel:focus-visible{background:var(--ink);color:#fff}
+a.contact-channel:hover .contact-channel-copy small,a.contact-channel:focus-visible .contact-channel-copy small{color:#bfc8bc}
+a.contact-channel:hover img,a.contact-channel:focus-visible img{filter:invert(1)}
+a.contact-channel:hover .channel-arrow,a.contact-channel:focus-visible .channel-arrow{transform:translate(3px,-3px)}
+.copy-contact{width:36px;height:36px}
+.contact-signoff{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:24px 0 28px;font-size:10px}
+.contact-signoff p,.contact-signoff a{display:flex;align-items:center;gap:9px}
+.contact-signoff a{margin-left:auto;font-weight:600}
+.availability-dot{width:7px;height:7px;border-radius:50%;background:#1d6f51;box-shadow:0 0 0 4px #1d6f511c}
+.copy-status{position:absolute;height:auto;margin-top:-24px}
+
+@media(max-width:1100px){
+  .projects{gap:46px 18px}
+  .project-meta h3{font-size:19px}
+  .ccb-dashboard-mini,.ronda-dashboard,.petshop-window{inset:17% 3.5% 5%}
+  .ai-console{inset:19% 4% 7%}
+  .ccb-data-grid,.ronda-grid{padding-inline:7px;gap:6px}
+  .ccb-line-chart svg,.ronda-trend svg{height:70px}
+  .pet-products img{height:46px}
+  .hardware-word{font-size:48px}
+}
+
+@media(max-width:900px){
+  .projects{grid-template-columns:repeat(2,minmax(0,1fr));gap:46px 20px}
+  .project-visual{aspect-ratio:1.2}
+  .project-meta h3{font-size:21px}
+  .ccb-dashboard-mini,.ronda-dashboard,.petshop-window{inset:16% 4% 5%}
+  .ai-console{inset:18% 5% 7%}
+  .ccb-line-chart svg,.ronda-trend svg{height:82px}
+  .pet-products img{height:58px}
+  .contact-title{display:block;position:relative}
+  .contact-title h2{font-size:77px}
+  .contact-title .contact-arrow{position:absolute;top:0;right:0;width:96px;height:96px}
+  .contact-title .contact-arrow img{width:50px;height:50px}
+  .contact-channel{grid-template-columns:40px minmax(0,1fr) 20px;gap:12px;padding:16px;min-height:98px}
+  .contact-channel-icon{width:40px;height:40px}
+  .contact-channel-copy a,.contact-channel-copy strong{font-size:10px}
+}
+
+@media(max-width:640px){
+  .projects{grid-template-columns:1fr;gap:42px}
+  .project-visual{aspect-ratio:1.22}
+  .project-meta h3{font-size:23px}
+  .ccb-dashboard-mini,.ronda-dashboard,.petshop-window{inset:16% 4% 5%}
+  .ccb-kpis b,.ronda-kpis b{font-size:15px}
+  .ccb-line-chart svg,.ronda-trend svg{height:76px}
+  .ccb-insights>span>b{font-size:13px}
+  .pet-products img{height:54px}
+  .hardware-word{font-size:65px}
+  .contact{padding-top:50px}
+  .contact-title{display:block;position:relative}
+  .contact-title h2{font-size:54px}
+  .contact-title>div>p{font-size:12px}
+  .contact-title .contact-arrow{position:absolute;top:0;right:0}
+  .contact-title .contact-arrow{width:58px;height:58px}
+  .contact-title .contact-arrow img{width:30px;height:30px}
+  .contact-channels{grid-template-columns:1fr;margin-top:36px}
+  .contact-channel.contact-rocketseat{grid-column:auto}
+  .contact-channel{grid-template-columns:40px minmax(0,1fr) 22px;min-height:86px;padding:14px 12px}
+  .contact-channel-copy a,.contact-channel-copy strong{font-size:10px}
+  .contact-signoff{align-items:flex-start;flex-direction:column;padding-block:22px}
+  .contact-signoff a{margin-left:0}
+  .copy-status{position:static;min-height:18px;margin-top:-12px}
+}
+
+@media(max-width:370px){
+  .project-visual{aspect-ratio:1.18}
+  .visual-label{top:15px;left:15px;font-size:7px}
+  .ccb-dashboard-mini,.ronda-dashboard,.petshop-window{inset:17% 3% 5%}
+  .ccb-data-grid,.ronda-grid{grid-template-columns:minmax(0,1.45fr) minmax(64px,.68fr);padding:6px;gap:5px}
+  .ccb-line-chart svg,.ronda-trend svg{height:64px}
+  .pet-products img{height:44px}
+  .petshop-hero strong{font-size:13px}
+  .ai-flow{grid-template-columns:minmax(0,1fr) 10px minmax(0,1fr) 10px minmax(0,1fr);padding-inline:7px}
+  .ai-flow>span{padding:5px}
+  .ai-flow>span>strong{font-size:10px}
+  .contact-title h2{font-size:46px}
+  .contact-title .contact-arrow{width:48px;height:48px}
+  .contact-title .contact-arrow img{width:26px;height:26px}
+  .contact-channel{grid-template-columns:36px minmax(0,1fr) 20px;gap:9px;padding-inline:10px}
+  .contact-channel-icon{width:36px;height:36px}
+  .contact-channel-icon img{width:20px;height:20px}
+  .contact-channel-copy a,.contact-channel-copy strong{font-size:9px}
+}

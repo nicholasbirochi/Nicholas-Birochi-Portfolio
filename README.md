@@ -4,7 +4,7 @@ Personal portfolio at https://nicholasbirochi.com.br. Static HTML, CSS and JavaS
 
 ## Content
 
-Selected projects: CCB BI, Standalone Fingerprint Key, JARVIS, Language Lyrics Lab, TechGrow churn analysis and Ollama + n8n. The CCB preview uses only aggregated period metrics, while JARVIS includes a short local-voice demonstration. An additional project index links to public repositories. Professional background is based on Nicholas's supplied resume; private business documents and datasets are not published.
+Selected projects: CCB BI, Ronda Analytics, JARVIS, Local AI + Automation, Petshop E-Commerce and Standalone Fingerprint Key. The CCB preview uses only aggregated period metrics, the Ronda preview is a synthetic public-safe visualization, and JARVIS includes a short local-voice demonstration. An additional project index links to public repositories. Professional background is based on Nicholas's supplied resume; private business documents and datasets are not published.
 
 ## Development
 
@@ -20,10 +20,10 @@ Open `index.html` in a browser, or serve the folder with `python -m http.server 
 
 ## Assets
 
-Barlow Condensed and Manrope are distributed with their OFL licenses. Icons are from Lucide (license in `assets/icons/LICENSE`). Project imagery is sourced from public project documentation or captured from project previews; the n8n diagram describes the documented workflow. The hero photograph uses Nicholas's provided LinkedIn portrait, edited for layout, with the original retained in the About section.
+Barlow Condensed and Manrope are distributed with their OFL licenses. Icons are from Lucide (license in `assets/icons/LICENSE`). Project imagery is sourced from public project documentation, supplied assets or code-built previews. The Ronda dashboard is illustrative rather than a screenshot of an internal system, and the local-AI diagram describes the documented n8n/Ollama workflow. The hero photograph uses Nicholas's provided LinkedIn portrait, edited for layout, with the original retained in the About section.
 
 Hero image editing used the built-in image generation tool. Prompt: preserve the subject's exact identity, smile, hair and polo; replace the wall with flat charcoal #202221; compose a wide photograph with the subject on the right and empty background on the left, without text or props.
 
 The active JARVIS frame was derived from the supplied interface screenshot with its central data sphere made legible for a video preview. The About photograph and professional portraits use the original files supplied by Nicholas. Featured recommendations use supplied or explicitly authorized draft text; profiles awaiting copy remain linked without invented testimonials.
 
-Release marker: `2026-09-30-editorial-v5`.
+Release marker: `2026-10-01-editorial-v6`.
