@@ -213,6 +213,12 @@ function setLanguage(language, persist = true) {
   if (currentCode) currentCode.textContent = config.code;
   const languageTrigger = document.querySelector('.language-trigger');
   if (languageTrigger) languageTrigger.setAttribute('aria-label', config.pickerLabel);
+  const copyVerb = currentLanguage === 'en' ? 'Copy' : 'Copiar';
+  document.querySelectorAll('.copy-contact').forEach(button => {
+    const label = `${copyVerb} ${button.dataset.copyName}`;
+    button.setAttribute('aria-label', label);
+    button.title = label;
+  });
   document.title = config.title;
   const description = document.querySelector('meta[name="description"]');
   if (description) description.content = config.description;
@@ -369,6 +375,53 @@ let savedLanguage = 'pt';
 try { savedLanguage = localStorage.getItem('portfolio-language') || 'pt'; } catch {}
 const requestedLanguage = new URLSearchParams(window.location.search).get('lang');
 setLanguage(requestedLanguage || savedLanguage, false);
+
+async function writeToClipboard(value) {
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(value);
+    return;
+  }
+  const field = document.createElement('textarea');
+  field.value = value;
+  field.setAttribute('readonly', '');
+  field.style.position = 'fixed';
+  field.style.opacity = '0';
+  document.body.append(field);
+  field.select();
+  const copied = document.execCommand('copy');
+  field.remove();
+  if (!copied) throw new Error('Clipboard unavailable');
+}
+
+const copyTimers = new WeakMap();
+document.querySelectorAll('.copy-contact').forEach(button => {
+  button.addEventListener('click', async () => {
+    const status = document.querySelector('#copy-status');
+    const icon = button.querySelector('img');
+    const value = button.dataset.copy;
+    const name = button.dataset.copyName;
+    try {
+      await writeToClipboard(value);
+      const message = currentLanguage === 'en' ? `${name} copied` : `${name} copiado`;
+      status.textContent = message;
+      button.setAttribute('aria-label', message);
+      button.title = message;
+      icon.src = 'assets/icons/check.svg';
+      clearTimeout(copyTimers.get(button));
+      copyTimers.set(button, setTimeout(() => {
+        const copyVerb = currentLanguage === 'en' ? 'Copy' : 'Copiar';
+        const label = `${copyVerb} ${name}`;
+        button.setAttribute('aria-label', label);
+        button.title = label;
+        icon.src = 'assets/icons/copy.svg';
+        status.textContent = '';
+      }, 1800));
+    } catch {
+      const prefix = currentLanguage === 'en' ? 'Copy manually:' : currentLanguage === 'es' ? 'Copia manualmente:' : 'Copie manualmente:';
+      status.textContent = `${prefix} ${value}`;
+    }
+  });
+});
 
 const contactForm = document.querySelector('#contact-form');
 contactForm?.addEventListener('submit', event => {

@@ -459,3 +459,76 @@ a.contact-channel:hover .channel-arrow,a.contact-channel:focus-visible .channel-
   .language-trigger>img:first-child{width:22px;height:15px}
   .language-options{right:auto;left:0;width:176px}
 }
+
+/* Editorial v11: animated header controls and compact contact previews */
+.header nav a:not(.nav-contact){position:relative;transition:color .2s ease,transform .2s ease}
+.header nav a:not(.nav-contact)::after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:2px;background:var(--lime);transform:scaleX(0);transform-origin:left;transition:transform .25s cubic-bezier(.22,.61,.36,1)}
+.header nav a:not(.nav-contact):hover,.header nav a:not(.nav-contact):focus-visible{color:var(--lime);transform:translateY(-2px)}
+.header nav a:not(.nav-contact):hover::after,.header nav a:not(.nav-contact):focus-visible::after{transform:scaleX(1)}
+.header .nav-contact{overflow:hidden;transition:background-color .22s ease,border-color .22s ease,color .22s ease,transform .22s ease,box-shadow .22s ease}
+.header .nav-contact img{transition:filter .22s ease,transform .22s cubic-bezier(.22,.61,.36,1)}
+.header .nav-contact:hover,.header .nav-contact:focus-visible{color:var(--ink);background:var(--lime);border-color:var(--lime);transform:translateY(-3px);box-shadow:0 8px 0 #0d0f0e66}
+.header .nav-contact:hover img,.header .nav-contact:focus-visible img{filter:none;transform:translate(3px,-3px)}
+.language-trigger,.menu-toggle{transition:background-color .2s ease,border-color .2s ease,color .2s ease,transform .2s ease}
+.language-trigger:hover{border-color:var(--lime);transform:translateY(-2px)}
+.menu-toggle:hover{background:var(--lime);transform:translateY(-2px)}
+.menu-toggle:hover>img{filter:none}
+
+.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);clip-path:inset(50%);white-space:nowrap;border:0}
+.contact-channel-group .contact-channel{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:14px;min-height:106px;padding:18px 22px;transition:background-color .22s ease,color .22s ease}
+.contact-channel-main{display:grid;grid-template-columns:44px minmax(0,1fr);align-items:center;gap:16px;min-width:0;height:100%;color:inherit}
+.contact-channel-copy{position:relative;display:grid;align-items:center;min-width:0;min-height:42px}
+.channel-name,.channel-preview{grid-area:1/1;min-width:0;line-height:1.25;transition:opacity .2s ease,transform .24s cubic-bezier(.22,.61,.36,1),color .2s ease}
+.channel-name{font-size:17px;font-weight:600}
+.channel-preview{overflow-wrap:anywhere;color:#4d554c;font-size:12px;font-weight:600;opacity:0;transform:translateY(7px)}
+.channel-actions{display:flex;align-items:center;gap:7px}
+.copy-contact,.channel-arrow{display:grid;place-items:center;width:36px;height:36px;border:1px solid #20222166;border-radius:50%;transition:background-color .2s ease,border-color .2s ease,transform .22s cubic-bezier(.22,.61,.36,1)}
+.copy-contact img,.channel-arrow img,.contact-channel-icon img{transition:filter .2s ease,transform .22s ease}
+.contact-channel:hover,.contact-channel:focus-within{color:#f3f4f0;background:var(--ink)}
+.contact-channel:hover .channel-name,.contact-channel:focus-within .channel-name{opacity:0;transform:translateY(-7px)}
+.contact-channel:hover .channel-preview,.contact-channel:focus-within .channel-preview{color:#f3f4f0;opacity:1;transform:translateY(0)}
+.contact-channel:hover .contact-channel-icon,.contact-channel:focus-within .contact-channel-icon,.contact-channel:hover .copy-contact,.contact-channel:focus-within .copy-contact,.contact-channel:hover .channel-arrow,.contact-channel:focus-within .channel-arrow{border-color:#f3f4f066}
+.contact-channel:hover .contact-channel-icon img,.contact-channel:focus-within .contact-channel-icon img,.contact-channel:hover .copy-contact img,.contact-channel:focus-within .copy-contact img,.contact-channel:hover .channel-arrow img,.contact-channel:focus-within .channel-arrow img{filter:invert(1)}
+.contact-channel:hover .channel-arrow,.contact-channel:focus-within .channel-arrow{transform:translate(2px,-2px)}
+.contact-channel .copy-contact:hover,.contact-channel .copy-contact:focus-visible,.contact-channel .channel-arrow:hover,.contact-channel .channel-arrow:focus-visible{background:var(--lime);border-color:var(--lime);transform:translateY(-2px)}
+.contact-channel .copy-contact:hover img,.contact-channel .copy-contact:focus-visible img,.contact-channel .channel-arrow:hover img,.contact-channel .channel-arrow:focus-visible img{filter:none}
+.contact-channel.is-previewing{color:#f3f4f0;background:var(--ink)}
+.contact-channel.is-previewing .channel-name{opacity:0;transform:translateY(-7px)}
+.contact-channel.is-previewing .channel-preview{color:#f3f4f0;opacity:1;transform:translateY(0)}
+.contact-channel.is-previewing .contact-channel-icon,.contact-channel.is-previewing .copy-contact,.contact-channel.is-previewing .channel-arrow{border-color:#f3f4f066}
+.contact-channel.is-previewing .contact-channel-icon img,.contact-channel.is-previewing .copy-contact img,.contact-channel.is-previewing .channel-arrow img{filter:invert(1)}
+.contact-channel.is-previewing .channel-arrow{transform:translate(2px,-2px)}
+
+@media(max-width:640px){
+  .header nav a:not(.nav-contact)::after{bottom:8px}
+  .header nav a:not(.nav-contact):hover,.header nav a:not(.nav-contact):focus-visible{transform:translateX(5px)}
+  .header .nav-contact:hover,.header .nav-contact:focus-visible{transform:translateX(4px);box-shadow:none}
+  .contact-channel-group .contact-channel{min-height:92px;padding:14px 12px;gap:9px}
+  .contact-channel-main{grid-template-columns:40px minmax(0,1fr);gap:11px}
+  .channel-actions{gap:5px}
+  .copy-contact,.channel-arrow{width:32px;height:32px}
+  .copy-contact img,.channel-arrow img{width:16px;height:16px}
+}
+
+@media(max-width:370px){
+  .contact-channel-group .contact-channel{padding-inline:9px}
+  .contact-channel-main{grid-template-columns:36px minmax(0,1fr);gap:8px}
+  .channel-name{font-size:14px}
+  .channel-preview{font-size:9px}
+  .channel-actions{gap:4px}
+  .copy-contact,.channel-arrow{width:29px;height:29px}
+}
+
+@media(hover:none){
+  .contact-channel-copy{align-content:center;gap:3px}
+  .channel-name,.channel-preview{grid-area:auto;opacity:1;transform:none}
+  .channel-name{font-size:14px}
+  .channel-preview{color:#596057;font-size:9px}
+  .contact-channel:hover .channel-name,.contact-channel:focus-within .channel-name{opacity:1;transform:none}
+  .contact-channel:hover .channel-preview,.contact-channel:focus-within .channel-preview{opacity:1;transform:none}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .header nav a,.header nav a::after,.language-trigger,.menu-toggle,.contact-channel,.channel-name,.channel-preview,.copy-contact,.channel-arrow{transition:none!important}
+  .header nav a,.language-trigger,.menu-toggle,.copy-contact,.channel-arrow{transform:none!important}
+}
