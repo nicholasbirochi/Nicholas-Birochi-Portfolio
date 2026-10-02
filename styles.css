@@ -678,3 +678,171 @@ a.contact-channel:hover .channel-arrow,a.contact-channel:focus-visible .channel-
   .recommendation-list .recommendation-card{min-height:290px;align-items:stretch}
   .recommendation-list .recommendation-copy{height:100%}
 }
+
+/* Editorial v15: visually aligned brands, stronger small type and a true language combobox */
+.experience .section-top .eyebrow{font-size:13px}
+.experience .section-top .quiet{font-size:15px}
+.experience-intro>p{font-size:16px;line-height:1.7}
+.timeline-column-title>span{font-size:11px}
+.timeline-tag{font-size:11px;line-height:1.4}
+.timeline-tag .current-label{font-size:10px;padding:3px 8px}
+.timeline-flow .timeline-event::before{font-size:10px}
+.timeline-flow .timeline-event h3{font-size:25px}
+.timeline-flow .timeline-event>p:last-child{font-size:14px;line-height:1.65}
+
+.timeline-event-head{
+  display:grid;
+  min-height:68px;
+  grid-template-columns:minmax(0,1fr) 154px;
+  align-items:center;
+  gap:18px;
+}
+.timeline-brands{
+  display:grid;
+  width:154px;
+  height:62px;
+  min-width:154px;
+  place-items:center;
+  justify-self:end;
+}
+.timeline-logo{
+  display:block;
+  width:auto;
+  max-width:none;
+  height:auto;
+  max-height:none;
+  object-fit:contain;
+  object-position:center;
+}
+.logo-volkswagen{width:52px;height:52px}
+.logo-fesa{width:144px;height:auto;max-width:none}
+.logo-cambridge{width:144px;height:auto;max-width:none}
+.logo-pratikaud{width:112px;height:62px;mix-blend-mode:multiply}
+
+.language-options button[hidden]{display:none}
+.language-options button[aria-selected="true"]{display:none}
+
+@media(min-width:1101px){
+  .timeline-flow{
+    min-height:860px;
+    grid-template-rows:238px minmax(30px,1fr) 238px minmax(30px,1fr) 238px;
+  }
+}
+
+@media(min-width:761px) and (max-width:1100px){
+  .timeline-flow{
+    min-height:940px;
+    grid-template-rows:260px minmax(30px,1fr) 260px minmax(30px,1fr) 260px;
+  }
+  .timeline-event-head{grid-template-columns:minmax(0,1fr) 132px}
+  .timeline-brands{width:132px;min-width:132px}
+  .logo-fesa,.logo-cambridge{width:128px}
+}
+
+@media(max-width:760px){
+  .experience .section-top .eyebrow{font-size:10px}
+  .experience .section-top .quiet{font-size:12px}
+  .experience-intro>p{font-size:14px}
+  .timeline-column-title{font-size:20px}
+  .timeline-event-head{
+    grid-template-columns:1fr;
+    min-height:0;
+    align-items:start;
+    gap:12px;
+  }
+  .timeline-brands{
+    width:142px;
+    height:58px;
+    min-width:142px;
+    justify-self:start;
+  }
+  .logo-volkswagen{width:48px;height:48px}
+  .logo-fesa,.logo-cambridge{width:136px;max-width:none}
+  .logo-pratikaud{width:104px;height:58px}
+  .timeline-tag{font-size:9px}
+  .timeline-flow .timeline-event::before{width:46px;font-size:9px}
+  .timeline-flow .timeline-event h3{font-size:23px}
+  .timeline-flow .timeline-event>p:last-child{font-size:13px;line-height:1.65}
+}
+
+@media(max-width:370px){
+  .timeline-brands{width:124px;min-width:124px}
+  .logo-fesa,.logo-cambridge{width:120px;max-width:none}
+}
+
+/* Editorial v16: paged recommendations */
+.recommendation-stage{min-width:0}
+.recommendation .section-top .eyebrow{font-size:12px}
+.recommendation .section-top .quiet{font-size:14px}
+.recommendation-page{grid-auto-rows:1fr;animation:recommendation-page-in .32s ease both}
+.recommendation-page[hidden]{display:none!important}
+.recommendation-page .recommendation-card{height:100%}
+.recommendation-list .recommendation-vitor figure{background:#22272b}
+.recommendation-list .recommendation-vitor figure img{transform:translateY(7%) scale(1.24);transform-origin:center center}
+.recommendation-list .recommendation-vitor:hover figure img{transform:translateY(7%) scale(1.27)}
+.recommendation-list .recommendation-eduardo figure{background:#d7c2b0}
+.recommendation-list .recommendation-eduardo figure img{transform:translateY(6%) scale(1.2);transform-origin:center center}
+.recommendation-list .recommendation-eduardo:hover figure img{transform:translateY(6%) scale(1.23)}
+.recommendation-list .recommendation-braghittoni figure{background:#303740}
+.recommendation-list .recommendation-braghittoni figure img{transform:none;transform-origin:center center}
+.recommendation-list .recommendation-braghittoni:hover figure img{transform:scale(1.03)}
+.recommendation-list .recommender h3{font-size:18px}
+.recommendation-list .recommender p{font-size:11px}
+
+.recommendation-pagination{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:10px;
+  margin-top:28px;
+}
+.recommendation-nav{
+  display:grid;
+  width:44px;
+  height:44px;
+  place-items:center;
+  border:1px solid #aeb6aa;
+  border-radius:50%;
+  transition:background-color .2s,color .2s,transform .2s,opacity .2s;
+}
+.recommendation-prev img{transform:rotate(180deg)}
+.recommendation-nav:hover:not(:disabled),.recommendation-nav:focus-visible{background:var(--lime);transform:translateY(-2px)}
+.recommendation-nav:disabled{cursor:default;opacity:.32}
+.recommendation-page-tabs{display:flex;align-items:center;gap:4px}
+.recommendation-page-tabs button{
+  display:grid;
+  min-width:48px;
+  height:44px;
+  place-items:center;
+  border-bottom:2px solid #aeb6aa;
+  font-size:11px;
+  font-weight:700;
+  transition:border-color .2s,background-color .2s,transform .2s;
+}
+.recommendation-page-tabs button:hover,.recommendation-page-tabs button:focus-visible{background:#ffffff73;transform:translateY(-2px)}
+.recommendation-page-tabs button[aria-current="page"]{border-color:#348561;background:#f4f5f1}
+
+@keyframes recommendation-page-in{
+  from{opacity:0;transform:translateY(10px)}
+  to{opacity:1;transform:none}
+}
+
+@media(max-width:640px){
+  .recommendation .section-top .eyebrow{font-size:10px}
+  .recommendation .section-top .quiet{font-size:12px}
+  .recommendation-pagination{justify-content:center;margin-top:22px}
+  .recommendation-nav{width:42px;height:42px}
+  .recommendation-page-tabs button{min-width:44px;height:42px;font-size:10px}
+  .recommendation-list .recommender h3{font-size:16px}
+  .recommendation-list .recommender p{font-size:11px}
+}
+
+@media(max-width:1100px){
+  .recommendation-page{grid-auto-rows:auto}
+  .recommendation-page .recommendation-card{height:auto}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .recommendation-page{animation:none}
+  .recommendation-nav,.recommendation-page-tabs button{transition:none}
+}
