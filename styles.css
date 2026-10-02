@@ -631,3 +631,50 @@ a.contact-channel:hover .channel-arrow,a.contact-channel:focus-visible .channel-
   .logo-fesa{max-width:108px}
   .logo-cambridge{max-width:112px}
 }
+
+/* Editorial v14: shared year rows and balanced header controls */
+.header .nav-contact{
+  height:34px;
+  padding:0 12px;
+}
+
+@media(min-width:761px){
+  .timeline-flow{
+    display:grid;
+    min-height:780px;
+    grid-template-rows:210px minmax(28px,1fr) 210px minmax(28px,1fr) 210px;
+    gap:0;
+    justify-content:stretch;
+  }
+  .timeline-flow .timeline-event{height:100%}
+  .learning-track [data-year="2027"],
+  .professional-track [data-year="2027"]{grid-row:1}
+  .professional-track [data-year="2025"]{grid-row:3}
+  .learning-track [data-year="2023"],
+  .professional-track [data-year="2023"]{grid-row:5}
+}
+
+@media(min-width:761px) and (max-width:1100px){
+  .timeline-flow{
+    min-height:850px;
+    grid-template-rows:230px minmax(28px,1fr) 230px minmax(28px,1fr) 230px;
+  }
+}
+
+@media(max-width:640px){
+  .header .nav-contact{
+    height:auto;
+    min-height:48px;
+    padding:15px;
+  }
+}
+
+@media(min-width:1101px){
+  .recommendation-list .recommendation-card{min-height:340px;align-items:stretch}
+  .recommendation-list .recommendation-copy{height:100%}
+}
+
+@media(min-width:641px) and (max-width:1100px){
+  .recommendation-list .recommendation-card{min-height:290px;align-items:stretch}
+  .recommendation-list .recommendation-copy{height:100%}
+}
