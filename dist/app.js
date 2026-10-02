@@ -149,7 +149,7 @@ const englishCopy = {
   learning2023Tag: 'LANGUAGE', learning2023Title: 'Cambridge English B2', learning2023Body: 'Cambridge B2 First certification completed with a score of 153.', work2023Title: 'Data Analytics Intern', work2023Body: 'Spreadsheet automation, data analysis and internal reporting improvements using Excel and VBA.',
   current: 'CURRENT', work2025Title: 'Data Analytics Intern', work2025Body: 'Python and Power BI dashboards, SAP data analysis and local AI supporting Special Audit.',
   planned: 'PLANNED', learning2027Title: 'Graduation', learning2027Body: 'Computer Engineering degree expected in December 2027.', goal: 'GOAL', work2027Title: 'Next step: Junior Data Analyst', work2027Body: 'The desired progression after the internship, combining hands-on experience, education and technical autonomy.',
-  recommendationEyebrow: 'PROFESSIONAL RECOMMENDATIONS', recommendationQuiet: 'Perspectives from people who trust my work.', quoteHenrico: 'I recommend Nicholas for his curiosity, dedication and ability to turn problems into practical solutions. He learns quickly, communicates clearly and takes every project seriously.', quoteEdgar: 'A longtime friend who is always willing to put in the work and deliver the product.', quoteVitor: 'I followed Nicholas during the development of the church project (CCB-BI). He knew how to listen, improve the solution and turn a real need into a clear, useful and well-built tool.', quoteEduardo: 'I recommend Nicholas for his dedication and willingness to listen to the area\'s needs, contributing ideas and disruptive solutions that demonstrate forward-looking technological thinking.', linkedinRecommendation: 'Recommendation via LinkedIn', connections: 'PROFESSIONAL CONNECTIONS', newRecommendations: 'More recommendations coming soon.',
+  recommendationEyebrow: 'PROFESSIONAL RECOMMENDATIONS', recommendationQuiet: 'Perspectives from people who trust my work.', quoteAzarias: 'Nicholas is an outstanding professional: committed and responsible. He is also innovative, adding significant value to our area\'s processes and to the quality of the work he delivers.', quoteEduardo: 'I recommend Nicholas for his dedication and willingness to listen to the area\'s needs, contributing ideas and disruptive solutions that demonstrate forward-looking technological thinking.', quoteVitor: 'I followed Nicholas during the development of the church project (CCB-BI). He knew how to listen, improve the solution and turn a real need into a clear, useful and well-built tool.', quoteBraghittoni: 'Top-notch.', quoteEdgar: 'A longtime friend who is always willing to put in the work and deliver the product.', quoteHenrico: 'I recommend Nicholas for his curiosity, dedication and ability to turn problems into practical solutions. He learns quickly, communicates clearly and takes every project seriously.', linkedinRecommendation: 'Recommendation via LinkedIn',
   contactEyebrow: '04 / CONTACT', contactQuiet: 'A CONVERSATION CAN BE THE BEGINNING.', contactTitle: 'LET\'S<br>TALK?', contactIntro: 'I am open to opportunities, collaborations and projects in data, automation, local AI and software development.', formTitle: 'WRITE YOUR MESSAGE', formEmail: 'YOUR EMAIL', formSubject: 'SUBJECT', formMessage: 'MESSAGE', formSubmit: 'PREPARE EMAIL', contactSocial: 'CONTACT & SOCIAL', contactProfessional: 'PROFESSIONAL PROFILES', location: 'São Bernardo do Campo, SP · Brazil', availability: 'Available to discuss new challenges', backTop: 'Back to top',
   caseProject: 'The project', caseDecisions: 'Technical decisions', caseGithub: 'Explore on GitHub'
 };
@@ -165,7 +165,7 @@ const spanishCopy = {
   learning2023Tag: 'IDIOMA', learning2023Title: 'Cambridge English B2', learning2023Body: 'Certificación Cambridge B2 First completada con una puntuación de 153.', work2023Title: 'Pasante de Análisis de Datos', work2023Body: 'Automatización de hojas de cálculo, análisis de datos y mejora de informes internos con Excel y VBA.',
   current: 'ACTUAL', work2025Title: 'Pasante de Análisis de Datos', work2025Body: 'Paneles en Python y Power BI, análisis de datos de SAP e IA local para apoyar a Auditoría Especial.',
   planned: 'PREVISTO', learning2027Title: 'Finalización de la carrera', learning2027Body: 'Graduación en Ingeniería Informática prevista para diciembre de 2027.', goal: 'OBJETIVO', work2027Title: 'Próximo paso: Analista de Datos Junior', work2027Body: 'La progresión deseada después de la pasantía, reuniendo experiencia práctica, formación y autonomía técnica.',
-  recommendationEyebrow: 'RECOMENDACIONES PROFESIONALES', recommendationQuiet: 'Perspectivas de quienes confían en mi trabajo.', quoteHenrico: 'Recomiendo a Nicholas por su curiosidad, dedicación y capacidad para transformar problemas en soluciones prácticas. Aprende rápido, se comunica con claridad y se toma cada proyecto en serio.', quoteEdgar: 'Un amigo de muchos años, siempre dispuesto a esforzarse y entregar el producto.', quoteVitor: 'Acompañé a Nicholas durante el desarrollo del proyecto para la iglesia (CCB-BI). Supo escuchar, mejorar la solución y transformar una necesidad real en una herramienta clara, útil y bien construida.', quoteEduardo: 'Recomiendo a Nicholas por su dedicación y disposición para escuchar las necesidades del área, aportando ideas y soluciones disruptivas que demuestran una visión orientada a las tecnologías del futuro.', linkedinRecommendation: 'Recomendación vía LinkedIn', connections: 'CONEXIONES PROFESIONALES', newRecommendations: 'Próximamente habrá nuevas recomendaciones.',
+  recommendationEyebrow: 'RECOMENDACIONES PROFESIONALES', recommendationQuiet: 'Perspectivas de quienes confían en mi trabajo.', quoteAzarias: 'Nicholas es un profesional excepcional: comprometido y responsable. Además, es innovador y aporta mucho valor a los procesos de nuestra área y a la calidad de las actividades que entrega.', quoteEduardo: 'Recomiendo a Nicholas por su dedicación y disposición para escuchar las necesidades del área, aportando ideas y soluciones disruptivas que demuestran una visión orientada a las tecnologías del futuro.', quoteVitor: 'Acompañé a Nicholas durante el desarrollo del proyecto para la iglesia (CCB-BI). Supo escuchar, mejorar la solución y transformar una necesidad real en una herramienta clara, útil y bien construida.', quoteBraghittoni: 'Excelente.', quoteEdgar: 'Un amigo de muchos años, siempre dispuesto a esforzarse y entregar el producto.', quoteHenrico: 'Recomiendo a Nicholas por su curiosidad, dedicación y capacidad para transformar problemas en soluciones prácticas. Aprende rápido, se comunica con claridad y se toma cada proyecto en serio.', linkedinRecommendation: 'Recomendación vía LinkedIn',
   contactEyebrow: '04 / CONTACTO', contactQuiet: 'UNA CONVERSACIÓN PUEDE SER EL COMIENZO.', contactTitle: '¿HABLAMOS?', contactIntro: 'Estoy abierto a oportunidades, colaboraciones y proyectos de datos, automatización, IA local y desarrollo de software.', formTitle: 'ESCRIBE TU MENSAJE', formEmail: 'TU E-MAIL', formSubject: 'ASUNTO', formMessage: 'MENSAJE', formSubmit: 'PREPARAR E-MAIL', contactSocial: 'CONTACTO & REDES SOCIALES', contactProfessional: 'PERFILES PROFESIONALES', location: 'São Bernardo do Campo, SP · Brasil', availability: 'Disponible para conversar sobre nuevos desafíos', backTop: 'Volver arriba',
   caseProject: 'El proyecto', caseDecisions: 'Decisiones técnicas', caseGithub: 'Explorar en GitHub'
 };
@@ -180,17 +180,17 @@ const languageConfigs = {
   pt: {
     htmlLang: 'pt-BR', code: 'PT', name: 'Português', flag: 'assets/icons/flag-br.svg', copy: null, placeholders: null,
     title: 'Nicholas Birochi | Dados, código & curiosidade', description: 'Nicholas Birochi. Dados, desenvolvimento e automação. Conheça meus projetos em BI, inteligência artificial local, software e hardware.',
-    menuOpen: 'Abrir menu', menuClose: 'Fechar menu', pickerLabel: 'Selecionar idioma. Atual: Português', socialLabel: 'Contato e redes sociais', professionalLabel: 'Perfis profissionais', recommendationAction: 'Ler a indicação e abrir o LinkedIn de', senderLabel: 'E-mail para retorno', formStatus: 'Abrindo seu aplicativo de e-mail…'
+    menuOpen: 'Abrir menu', menuClose: 'Fechar menu', pickerLabel: 'Selecionar idioma. Atual: Português', socialLabel: 'Contato e redes sociais', professionalLabel: 'Perfis profissionais', recommendationAction: 'Ler a indicação e abrir o LinkedIn de', recommendationPagesLabel: 'Páginas de indicações', recommendationPrevious: 'Página anterior', recommendationNext: 'Próxima página', recommendationPage: 'Página', recommendationOf: 'de', senderLabel: 'E-mail para retorno', formStatus: 'Abrindo seu aplicativo de e-mail…'
   },
   en: {
     htmlLang: 'en', code: 'EN', name: 'English', flag: 'assets/icons/flag-us.svg', copy: englishCopy, placeholders: englishPlaceholders,
     title: 'Nicholas Birochi | Data, code & curiosity', description: 'Nicholas Birochi. Data, development and automation. Explore my projects in BI, local AI, software and hardware.',
-    menuOpen: 'Open menu', menuClose: 'Close menu', pickerLabel: 'Select language. Current: English', socialLabel: 'Contact and social profiles', professionalLabel: 'Professional profiles', recommendationAction: 'Read the recommendation and open the LinkedIn profile of', senderLabel: 'Sender email', formStatus: 'Opening your email app…'
+    menuOpen: 'Open menu', menuClose: 'Close menu', pickerLabel: 'Select language. Current: English', socialLabel: 'Contact and social profiles', professionalLabel: 'Professional profiles', recommendationAction: 'Read the recommendation and open the LinkedIn profile of', recommendationPagesLabel: 'Recommendation pages', recommendationPrevious: 'Previous page', recommendationNext: 'Next page', recommendationPage: 'Page', recommendationOf: 'of', senderLabel: 'Sender email', formStatus: 'Opening your email app…'
   },
   es: {
     htmlLang: 'es', code: 'ES', name: 'Español', flag: 'assets/icons/flag-es.svg', copy: spanishCopy, placeholders: spanishPlaceholders,
     title: 'Nicholas Birochi | Datos, código y curiosidad', description: 'Nicholas Birochi. Datos, desarrollo y automatización. Conoce mis proyectos de BI, IA local, software y hardware.',
-    menuOpen: 'Abrir menú', menuClose: 'Cerrar menú', pickerLabel: 'Seleccionar idioma. Actual: Español', socialLabel: 'Contacto y redes sociales', professionalLabel: 'Perfiles profesionales', recommendationAction: 'Leer la recomendación y abrir el perfil de LinkedIn de', senderLabel: 'E-mail de contacto', formStatus: 'Abriendo tu aplicación de e-mail…'
+    menuOpen: 'Abrir menú', menuClose: 'Cerrar menú', pickerLabel: 'Seleccionar idioma. Actual: Español', socialLabel: 'Contacto y redes sociales', professionalLabel: 'Perfiles profesionales', recommendationAction: 'Leer la recomendación y abrir el perfil de LinkedIn de', recommendationPagesLabel: 'Páginas de recomendaciones', recommendationPrevious: 'Página anterior', recommendationNext: 'Página siguiente', recommendationPage: 'Página', recommendationOf: 'de', senderLabel: 'E-mail de contacto', formStatus: 'Abriendo tu aplicación de e-mail…'
   }
 };
 
@@ -206,7 +206,11 @@ function setLanguage(language, persist = true) {
     const key = element.dataset.i18nPlaceholder;
     element.placeholder = config.placeholders?.[key] ?? originalPlaceholders.get(key);
   });
-  document.querySelectorAll('[data-language]').forEach(button => button.setAttribute('aria-selected', String(button.dataset.language === currentLanguage)));
+  document.querySelectorAll('[data-language]').forEach(button => {
+    const isCurrent = button.dataset.language === currentLanguage;
+    button.setAttribute('aria-selected', String(isCurrent));
+    button.hidden = isCurrent;
+  });
   const currentFlag = document.querySelector('.language-current-flag');
   if (currentFlag) currentFlag.src = config.flag;
   const currentCode = document.querySelector('.language-current-code');
@@ -221,6 +225,7 @@ function setLanguage(language, persist = true) {
     const name = card.querySelector('.recommender h3')?.textContent.trim();
     if (name) card.setAttribute('aria-label', `${config.recommendationAction} ${name}`);
   });
+  updateRecommendationPaginationLabels();
   const copyVerb = currentLanguage === 'en' ? 'Copy' : 'Copiar';
   document.querySelectorAll('.copy-contact').forEach(button => {
     const label = `${copyVerb} ${button.dataset.copyName}`;
@@ -334,14 +339,58 @@ dialog.addEventListener('close', () => {
   dialogTrigger?.focus({preventScroll: true});
 });
 
+const recommendationPages = [...document.querySelectorAll('[data-recommendation-page]')];
+const recommendationPageButtons = [...document.querySelectorAll('[data-recommendation-target]')];
+const recommendationPagination = document.querySelector('.recommendation-pagination');
+const recommendationPrevious = document.querySelector('.recommendation-prev');
+const recommendationNext = document.querySelector('.recommendation-next');
+let activeRecommendationPage = 0;
+
+function updateRecommendationPaginationLabels() {
+  if (!recommendationPagination) return;
+  const config = languageConfigs[currentLanguage];
+  const total = recommendationPages.length;
+  recommendationPagination.setAttribute('aria-label', config.recommendationPagesLabel);
+  recommendationPrevious.setAttribute('aria-label', config.recommendationPrevious);
+  recommendationPrevious.title = config.recommendationPrevious;
+  recommendationNext.setAttribute('aria-label', config.recommendationNext);
+  recommendationNext.title = config.recommendationNext;
+  recommendationPageButtons.forEach((button, index) => button.setAttribute('aria-label', `${config.recommendationPage} ${index + 1}`));
+  recommendationPages.forEach((page, index) => page.setAttribute('aria-label', `${config.recommendationPage} ${index + 1} ${config.recommendationOf} ${total}`));
+  document.querySelector('#recommendation-page-status').textContent = `${config.recommendationPage} ${activeRecommendationPage + 1} ${config.recommendationOf} ${total}`;
+}
+
+function showRecommendationPage(index) {
+  activeRecommendationPage = Math.max(0, Math.min(index, recommendationPages.length - 1));
+  recommendationPages.forEach((page, pageIndex) => page.hidden = pageIndex !== activeRecommendationPage);
+  recommendationPageButtons.forEach((button, pageIndex) => {
+    if (pageIndex === activeRecommendationPage) button.setAttribute('aria-current', 'page');
+    else button.removeAttribute('aria-current');
+  });
+  recommendationPrevious.disabled = activeRecommendationPage === 0;
+  recommendationNext.disabled = activeRecommendationPage === recommendationPages.length - 1;
+  updateRecommendationPaginationLabels();
+}
+
+recommendationPrevious?.addEventListener('click', () => showRecommendationPage(activeRecommendationPage - 1));
+recommendationNext?.addEventListener('click', () => showRecommendationPage(activeRecommendationPage + 1));
+recommendationPageButtons.forEach(button => button.addEventListener('click', () => showRecommendationPage(Number(button.dataset.recommendationTarget))));
+recommendationPagination?.addEventListener('keydown', event => {
+  if (!['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+  event.preventDefault();
+  showRecommendationPage(activeRecommendationPage + (event.key === 'ArrowRight' ? 1 : -1));
+  recommendationPageButtons[activeRecommendationPage]?.focus();
+});
+
 const languagePicker = document.querySelector('.language-picker');
 const languageTrigger = document.querySelector('.language-trigger');
 const languageMenu = document.querySelector('.language-options');
 const languageItems = [...document.querySelectorAll('[data-language]')];
-function openLanguagePicker(focusIndex = -1) {
+const availableLanguageItems = () => languageItems.filter(item => !item.hidden);
+function openLanguagePicker(focusPosition = -1) {
   languageMenu.hidden = false;
   languageTrigger.setAttribute('aria-expanded', 'true');
-  if (focusIndex >= 0) languageItems[focusIndex]?.focus();
+  if (focusPosition >= 0) availableLanguageItems()[focusPosition]?.focus();
 }
 function closeLanguagePicker(restoreFocus = false) {
   languageMenu.hidden = true;
@@ -355,25 +404,26 @@ languageTrigger.addEventListener('click', () => {
 languageTrigger.addEventListener('keydown', event => {
   if (!['ArrowDown', 'ArrowUp'].includes(event.key)) return;
   event.preventDefault();
-  const selectedIndex = Math.max(0, languageItems.findIndex(item => item.dataset.language === currentLanguage));
-  openLanguagePicker(event.key === 'ArrowDown' ? selectedIndex : Math.max(0, selectedIndex - 1));
+  const availableItems = availableLanguageItems();
+  openLanguagePicker(event.key === 'ArrowDown' ? 0 : availableItems.length - 1);
 });
 languageItems.forEach(item => item.addEventListener('click', () => {
   setLanguage(item.dataset.language);
   closeLanguagePicker(true);
 }));
 languageMenu.addEventListener('keydown', event => {
-  const index = languageItems.indexOf(document.activeElement);
+  const availableItems = availableLanguageItems();
+  const index = availableItems.indexOf(document.activeElement);
   if (event.key === 'Escape') {
     event.preventDefault();
     closeLanguagePicker(true);
   } else if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
     event.preventDefault();
     const step = event.key === 'ArrowDown' ? 1 : -1;
-    languageItems[(index + step + languageItems.length) % languageItems.length].focus();
+    availableItems[(index + step + availableItems.length) % availableItems.length].focus();
   } else if (event.key === 'Home' || event.key === 'End') {
     event.preventDefault();
-    languageItems[event.key === 'Home' ? 0 : languageItems.length - 1].focus();
+    availableItems[event.key === 'Home' ? 0 : availableItems.length - 1].focus();
   } else if (event.key === 'Tab') closeLanguagePicker();
 });
 document.addEventListener('click', event => {
