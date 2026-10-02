@@ -846,3 +846,83 @@ a.contact-channel:hover .channel-arrow,a.contact-channel:focus-visible .channel-
   .recommendation-page{animation:none}
   .recommendation-nav,.recommendation-page-tabs button{transition:none}
 }
+
+/* Editorial v17: unmistakable contact-form hierarchy */
+.contact-form{
+  padding:26px;
+  border-color:#aeb5aa;
+  background:#fff;
+}
+.contact-form-head{
+  min-height:40px;
+  margin-bottom:22px;
+  padding:0;
+  border-bottom:0;
+  font-size:13px;
+  line-height:1.25;
+}
+.contact-form-head img{width:28px;height:28px}
+.contact-form-grid{gap:15px 16px}
+.contact-form label{
+  gap:8px;
+  padding-top:0;
+  font-size:9px;
+  line-height:1.2;
+}
+.contact-form label>span{font-weight:700}
+.contact-form input,.contact-form textarea{
+  width:100%;
+  border:1px solid #c4c9c0;
+  border-radius:3px;
+  background:#f5f6f2;
+  color:var(--ink);
+  font:500 13px/1.5 Manrope,Arial,sans-serif;
+  padding:13px 14px;
+  transition:border-color .2s,box-shadow .2s,background-color .2s;
+}
+.contact-form input{height:50px}
+.contact-form textarea{min-height:124px;max-height:220px}
+.contact-form input:hover,.contact-form textarea:hover{
+  border-color:#8f978c;
+  background:#fff;
+}
+.contact-form input:focus,.contact-form textarea:focus{
+  border:1px solid #348561;
+  background:#fff;
+  box-shadow:0 0 0 3px #34856120;
+}
+.contact-form input::placeholder,.contact-form textarea::placeholder{
+  color:#666b63;
+  opacity:.86;
+}
+.form-submit{
+  min-height:52px;
+  margin-top:14px;
+  padding:0 17px;
+  font-size:10px;
+  transition:background-color .2s,transform .2s;
+}
+.form-submit:hover,.form-submit:focus-visible{
+  background:#303330;
+  transform:translateY(-2px);
+}
+#form-status{min-height:0;margin-top:10px;font-size:10px}
+#form-status:empty{display:none}
+
+@media(max-width:640px){
+  .contact-form{padding:18px}
+  .contact-form-head{min-height:36px;margin-bottom:18px;font-size:12px}
+  .contact-form-head img{width:26px;height:26px}
+  .contact-form-grid{grid-template-columns:1fr;gap:13px}
+  .contact-form label.form-message{grid-column:auto}
+  .contact-form input{height:48px}
+  .contact-form textarea{min-height:116px}
+}
+
+@media(max-width:370px){
+  .contact-form{padding:15px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .contact-form input,.contact-form textarea,.form-submit{transition:none}
+}
