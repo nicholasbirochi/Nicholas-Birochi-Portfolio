@@ -140,7 +140,7 @@ const caseCopyEs = {
 
 const englishCopy = {
   skip: 'Skip to projects', headerNote: 'DATA & DEVELOPMENT', navProjects: 'Projects', navAbout: 'About', navJourney: 'Journey', navContact: 'Let\'s talk',
-  heroLabel: 'PERSONAL PORTFOLIO / 2026', heroLead: 'Data, code<br>& curiosity.', heroCopy: 'I turn problems into analyses,<br>automations and applications.', heroCta: 'Explore my work', heroCourse: 'COMPUTER ENGINEERING',
+  heroLabel: 'PERSONAL PORTFOLIO', heroLead: 'Data, code<br>& curiosity.', heroCopy: 'I turn problems into analyses,<br>automations and applications.', heroCta: 'Explore my work', heroCourse: 'COMPUTER ENGINEERING',
   fieldData: 'DATA ANALYSIS', fieldDev: 'DEVELOPMENT', fieldAi: 'AUTOMATION & AI', workEyebrow: '01 / SELECTED WORK', workQuiet: 'From insight to prototype.', workTitle: 'IDEAS THAT<br><em>TAKE SHAPE.</em>', workIntro: 'A selection of what I have been building across data, software and experimentation.',
   filterAll: 'All', filterData: 'Data', filterAi: 'AI & automation', allGithub: 'All on GitHub', ccbDescription: 'From records to diagnosis: forms, filters and analyses supporting decisions in a local application.', rondaTitle: 'Behavioral Analysis', rondaDescription: 'Attendance, co-presence and weekly trend dashboards with filters, caching and report exports.', jarvisDescription: 'A local multimodal assistant with voice, structured professional memory and supervised automations.', iasTitle: 'Local AI + Automation', iasDescription: 'A self-hosted pipeline that turns documents into analyses and answers using local AI.', petshopDescription: 'A complete store with catalog, cart, orders, authentication, access roles and an administration panel.', fingerprintDescription: 'A biometric key for macOS: electronics, protocol, firmware and a parametric enclosure in one product.',
   numberRepos: 'public repositories', numberFields: 'areas of practice', numberEnglish: 'certified English', numberGraduation: 'expected graduation',
@@ -156,7 +156,7 @@ const englishCopy = {
 
 const spanishCopy = {
   skip: 'Ir a los proyectos', headerNote: 'DATOS & DESARROLLO', navProjects: 'Proyectos', navAbout: 'Sobre mí', navJourney: 'Trayectoria', navContact: 'Hablemos',
-  heroLabel: 'PORTAFOLIO PERSONAL / 2026', heroLead: 'Datos, código<br>y curiosidad.', heroCopy: 'Transformo problemas en análisis,<br>automatizaciones y aplicaciones.', heroCta: 'Explorar mi trabajo', heroCourse: 'INGENIERÍA INFORMÁTICA',
+  heroLabel: 'PORTAFOLIO PERSONAL', heroLead: 'Datos, código<br>y curiosidad.', heroCopy: 'Transformo problemas en análisis,<br>automatizaciones y aplicaciones.', heroCta: 'Explorar mi trabajo', heroCourse: 'INGENIERÍA INFORMÁTICA',
   fieldData: 'ANÁLISIS DE DATOS', fieldDev: 'DESARROLLO', fieldAi: 'AUTOMATIZACIÓN & IA', workEyebrow: '01 / TRABAJOS SELECCIONADOS', workQuiet: 'De la idea al prototipo.', workTitle: 'IDEAS QUE<br><em>TOMAN FORMA.</em>', workIntro: 'Una selección de lo que vengo construyendo entre datos, software y experimentación.',
   filterAll: 'Todos', filterData: 'Datos', filterAi: 'IA & automatización', allGithub: 'Todos en GitHub', ccbDescription: 'Del registro al diagnóstico: formularios, filtros y análisis para apoyar decisiones en una aplicación local.', rondaTitle: 'Análisis de Comportamiento', rondaDescription: 'Paneles de presencia, copresencia y evolución semanal con filtros, caché y exportación de informes.', jarvisDescription: 'Un asistente multimodal local con voz, memoria profesional estructurada y automatizaciones supervisadas.', iasTitle: 'IA Local + Automatización', iasDescription: 'Un pipeline autoalojado que convierte documentos en análisis y respuestas mediante IA local.', petshopDescription: 'Una tienda completa con catálogo, carrito, pedidos, autenticación, perfiles de acceso y panel administrativo.', fingerprintDescription: 'Una llave biométrica para macOS: electrónica, protocolo, firmware y carcasa paramétrica en un solo producto.',
   numberRepos: 'repositorios públicos', numberFields: 'áreas de actuación', numberEnglish: 'inglés certificado', numberGraduation: 'graduación prevista',
@@ -180,17 +180,17 @@ const languageConfigs = {
   pt: {
     htmlLang: 'pt-BR', code: 'PT', name: 'Português', flag: 'assets/icons/flag-br.svg', copy: null, placeholders: null,
     title: 'Nicholas Birochi | Dados, código & curiosidade', description: 'Nicholas Birochi. Dados, desenvolvimento e automação. Conheça meus projetos em BI, inteligência artificial local, software e hardware.',
-    menuOpen: 'Abrir menu', menuClose: 'Fechar menu', pickerLabel: 'Selecionar idioma. Atual: Português', senderLabel: 'E-mail para retorno', formStatus: 'Abrindo seu aplicativo de e-mail…'
+    menuOpen: 'Abrir menu', menuClose: 'Fechar menu', pickerLabel: 'Selecionar idioma. Atual: Português', socialLabel: 'Contato e redes sociais', professionalLabel: 'Perfis profissionais', senderLabel: 'E-mail para retorno', formStatus: 'Abrindo seu aplicativo de e-mail…'
   },
   en: {
     htmlLang: 'en', code: 'EN', name: 'English', flag: 'assets/icons/flag-us.svg', copy: englishCopy, placeholders: englishPlaceholders,
     title: 'Nicholas Birochi | Data, code & curiosity', description: 'Nicholas Birochi. Data, development and automation. Explore my projects in BI, local AI, software and hardware.',
-    menuOpen: 'Open menu', menuClose: 'Close menu', pickerLabel: 'Select language. Current: English', senderLabel: 'Sender email', formStatus: 'Opening your email app…'
+    menuOpen: 'Open menu', menuClose: 'Close menu', pickerLabel: 'Select language. Current: English', socialLabel: 'Contact and social profiles', professionalLabel: 'Professional profiles', senderLabel: 'Sender email', formStatus: 'Opening your email app…'
   },
   es: {
     htmlLang: 'es', code: 'ES', name: 'Español', flag: 'assets/icons/flag-es.svg', copy: spanishCopy, placeholders: spanishPlaceholders,
     title: 'Nicholas Birochi | Datos, código y curiosidad', description: 'Nicholas Birochi. Datos, desarrollo y automatización. Conoce mis proyectos de BI, IA local, software y hardware.',
-    menuOpen: 'Abrir menú', menuClose: 'Cerrar menú', pickerLabel: 'Seleccionar idioma. Actual: Español', senderLabel: 'E-mail de contacto', formStatus: 'Abriendo tu aplicación de e-mail…'
+    menuOpen: 'Abrir menú', menuClose: 'Cerrar menú', pickerLabel: 'Seleccionar idioma. Actual: Español', socialLabel: 'Contacto y redes sociales', professionalLabel: 'Perfiles profesionales', senderLabel: 'E-mail de contacto', formStatus: 'Abriendo tu aplicación de e-mail…'
   }
 };
 
@@ -213,6 +213,10 @@ function setLanguage(language, persist = true) {
   if (currentCode) currentCode.textContent = config.code;
   const languageTrigger = document.querySelector('.language-trigger');
   if (languageTrigger) languageTrigger.setAttribute('aria-label', config.pickerLabel);
+  const socialGroup = document.querySelector('.contact-channel-group:first-child');
+  if (socialGroup) socialGroup.setAttribute('aria-label', config.socialLabel);
+  const professionalGroup = document.querySelector('.contact-channel-group:last-child');
+  if (professionalGroup) professionalGroup.setAttribute('aria-label', config.professionalLabel);
   const copyVerb = currentLanguage === 'en' ? 'Copy' : 'Copiar';
   document.querySelectorAll('.copy-contact').forEach(button => {
     const label = `${copyVerb} ${button.dataset.copyName}`;

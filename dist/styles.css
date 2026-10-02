@@ -532,3 +532,102 @@ a.contact-channel:hover .channel-arrow,a.contact-channel:focus-visible .channel-
   .header nav a,.header nav a::after,.language-trigger,.menu-toggle,.contact-channel,.channel-name,.channel-preview,.copy-contact,.channel-arrow{transition:none!important}
   .header nav a,.language-trigger,.menu-toggle,.copy-contact,.channel-arrow{transform:none!important}
 }
+
+/* Editorial v12: compact controls, centered facts and branded trajectory */
+.numbers-strip .container>div,
+.numbers-strip .container>div:first-child{
+  display:flex;
+  min-height:96px;
+  padding-inline:28px;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.numbers-strip span{max-width:180px}
+
+.timeline-event-head{
+  display:flex;
+  min-height:46px;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+.timeline-brands{
+  display:flex;
+  min-width:0;
+  align-items:center;
+  justify-content:flex-end;
+  gap:12px;
+}
+.timeline-logo{
+  display:block;
+  width:auto;
+  max-width:130px;
+  height:34px;
+  object-fit:contain;
+}
+.logo-volkswagen{width:40px;height:40px}
+.logo-pratikaud{width:64px;height:48px}
+.logo-cambridge{max-width:132px;height:28px}
+.logo-fesa{max-width:128px;height:38px}
+.timeline-brands-pair{flex-wrap:wrap}
+
+.contact-channel-group>h3{display:none}
+.contact-channel-icon,
+.copy-contact,
+.channel-arrow{border:0!important}
+.contact-channel-icon{width:48px;height:48px}
+.contact-channel-icon img{width:30px;height:30px}
+.channel-name{font-size:21px}
+.channel-preview{font-size:13px}
+.copy-contact,.channel-arrow{width:38px;height:38px}
+.copy-contact img,.channel-arrow img{width:21px;height:21px}
+.contact-channel:hover .contact-channel-icon,
+.contact-channel:focus-within .contact-channel-icon,
+.contact-channel:hover .copy-contact,
+.contact-channel:focus-within .copy-contact,
+.contact-channel:hover .channel-arrow,
+.contact-channel:focus-within .channel-arrow{border-color:transparent}
+
+.language-trigger{
+  grid-template-columns:24px auto;
+  min-width:60px;
+  justify-content:center;
+  gap:7px;
+  padding-inline:8px;
+}
+.language-options{width:72px;padding:4px}
+.language-options button{
+  grid-template-columns:24px auto;
+  justify-content:center;
+  gap:7px;
+  padding:9px 7px;
+  text-align:center;
+}
+.language-options button small{font-size:9px}
+
+@media(max-width:760px){
+  .timeline-event-head{align-items:flex-start;flex-direction:column;gap:10px}
+  .timeline-brands{justify-content:flex-start}
+}
+
+@media(max-width:640px){
+  .numbers-strip .container>div,
+  .numbers-strip .container>div:first-child,
+  .numbers-strip .container>div:nth-child(odd){padding-inline:12px}
+  .language-trigger{grid-template-columns:22px auto;min-width:56px}
+  .language-options{right:0;left:auto;width:68px}
+  .contact-channel-icon{width:40px;height:40px}
+  .contact-channel-icon img{width:27px;height:27px}
+  .channel-name{font-size:17px}
+  .channel-preview{font-size:10px}
+  .copy-contact,.channel-arrow{width:32px;height:32px}
+}
+
+@media(max-width:370px){
+  .channel-name{font-size:16px}
+  .timeline-logo{max-width:110px}
+  .logo-fesa{max-width:108px}
+  .logo-cambridge{max-width:112px}
+}
