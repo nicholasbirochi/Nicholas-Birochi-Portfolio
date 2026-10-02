@@ -13,7 +13,7 @@ Open `index.html` in a browser, or serve the folder with `python -m http.server 
 ## Interaction and accessibility
 
 - Portuguese/English/Spanish language combobox with local persistence and translated project dialogs.
-- Project filters, project detail dialogs, JARVIS audio control, mobile navigation and grouped contact links.
+- Project filters, project detail dialogs, JARVIS audio control, animated navigation and grouped contact links with hover previews and copy actions.
 - Static contact composer that prepares a `mailto:` message without sending data to a server.
 - Keyboard focus, Escape dismissal, reduced-motion support and local fonts.
 - Responsive layouts for mobile, tablet and desktop.
@@ -28,4 +28,4 @@ Hero image editing used the built-in image generation tool. Prompt: preserve the
 
 The active JARVIS frame was derived from the supplied interface screenshot with its central data sphere made legible for a video preview. The About photograph and professional portraits use the original files supplied by Nicholas. Featured recommendations use supplied or explicitly authorized draft text; profiles awaiting copy remain linked without invented testimonials.
 
-Release marker: `2026-10-01-editorial-v10`.
+Release marker: `2026-10-02-editorial-v11`.
