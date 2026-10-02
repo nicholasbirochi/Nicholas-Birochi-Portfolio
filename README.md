@@ -24,8 +24,10 @@ Open `index.html` in a browser, or serve the folder with `python -m http.server 
 
 Barlow Condensed and Manrope are distributed with their OFL licenses. Icons are from Lucide (license in `assets/icons/LICENSE`). Project imagery is sourced from public project documentation, supplied assets or code-built previews. The Behavioral Analysis dashboard is a public-safe reproduction based on the project's real interface and graph types, while the local-AI diagram describes the documented n8n/Ollama workflow. The hero photograph uses Nicholas's provided LinkedIn portrait, edited for layout, with the original retained in the About section.
 
+Timeline branding uses the Faculdade Engenheiro Salvador Arena logo supplied in Nicholas's local project files, the official Cambridge English candidate asset, Volkswagen's public logo asset and PratikaUD's public profile mark.
+
 Hero image editing used the built-in image generation tool. Prompt: preserve the subject's exact identity, smile, hair and polo; replace the wall with flat charcoal #202221; compose a wide photograph with the subject on the right and empty background on the left, without text or props.
 
 The active JARVIS frame was derived from the supplied interface screenshot with its central data sphere made legible for a video preview. The About photograph and professional portraits use the original files supplied by Nicholas. Featured recommendations use supplied or explicitly authorized draft text; profiles awaiting copy remain linked without invented testimonials.
 
-Release marker: `2026-10-02-editorial-v11`.
+Release marker: `2026-10-02-editorial-v12`.
