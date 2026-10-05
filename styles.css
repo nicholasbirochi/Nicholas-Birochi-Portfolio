@@ -777,9 +777,6 @@ a.contact-channel:hover .channel-arrow,a.contact-channel:focus-visible .channel-
 .recommendation-list .recommendation-eduardo figure{background:#d7c2b0}
 .recommendation-list .recommendation-eduardo figure img{transform:translateY(6%) scale(1.2);transform-origin:center center}
 .recommendation-list .recommendation-eduardo:hover figure img{transform:translateY(6%) scale(1.23)}
-.recommendation-list .recommendation-braghittoni figure{background:#303740}
-.recommendation-list .recommendation-braghittoni figure img{transform:none;transform-origin:center center}
-.recommendation-list .recommendation-braghittoni:hover figure img{transform:scale(1.03)}
 .recommendation-list .recommender h3{font-size:18px}
 .recommendation-list .recommender p{font-size:11px}
 
@@ -1317,7 +1314,6 @@ img{-webkit-user-drag:none;-webkit-user-select:none;user-select:none}
   display:grid;
   grid-template-rows:auto auto auto minmax(0,1fr) auto;
 }
-.about-copy>p strong{color:var(--ink);font-weight:700}
 .behavior-head{min-height:31px;padding:5px 9px}
 .behavior-head>span{display:flex;min-width:0;flex-direction:column;text-align:left}
 .behavior-head strong{font-size:6px;line-height:1.15}
