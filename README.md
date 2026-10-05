@@ -6,6 +6,8 @@ Personal portfolio at https://nicholasbirochi.com.br. Static HTML, CSS and JavaS
 
 Selected projects: CCB BI, Behavioral Analysis, JARVIS, Local AI + Automation, Petshop E-Commerce and Standalone Fingerprint Key. The CCB preview uses only aggregated period metrics, the Behavioral Analysis preview reproduces the real chart families with anonymous demonstration values, and JARVIS includes a short local-voice demonstration. The Petshop preview is rendered from the project's actual home-page design. Professional and learning timelines are based on Nicholas's supplied resume; private business documents and datasets are not published.
 
+![Standalone Fingerprint Key with its 3D-printed enclosure, biometric sensor and ESP32-S3 board](assets/fingerprint-key-realistic.png)
+
 ## Development
 
 Open `index.html` in a browser, or serve the folder with `python -m http.server 8080` for HTTP checks. No package installation or build step is required. Keep root publication files and `dist/` synchronized before pushing to `main`.
@@ -14,10 +16,10 @@ Open `index.html` in a browser, or serve the folder with `python -m http.server 
 
 - Portuguese/English/Spanish language combobox with local persistence and translated project dialogs.
 - Project filters, project detail dialogs, JARVIS audio control, animated navigation and grouped contact links with hover previews and copy actions.
-- Static contact composer that prepares a `mailto:` message without sending data to a server.
+- Contact form submitted to Formspree over HTTPS, with accessible success and error feedback.
 - Keyboard focus, Escape dismissal, reduced-motion support and local fonts.
 - Responsive layouts for mobile, tablet and desktop.
-- No analytics, authentication, external runtime scripts or cookies.
+- No analytics, authentication, external runtime scripts or cookies; only contact-form data is sent to Formspree when a visitor submits it.
 - CSP and security headers in `_headers`; no secrets or client-side credentials.
 
 ## Assets
@@ -30,4 +32,4 @@ Hero image editing used the built-in image generation tool. Prompt: preserve the
 
 The active JARVIS frame was derived from the supplied interface screenshot with its central data sphere made legible for a video preview. The About photograph and professional portraits use the original files supplied by Nicholas. Featured recommendations use supplied or explicitly authorized draft text; profiles awaiting copy remain linked without invented testimonials.
 
-Release marker: `2026-10-02-editorial-v17`.
+Release marker: `2026-10-04-editorial-v27`.
