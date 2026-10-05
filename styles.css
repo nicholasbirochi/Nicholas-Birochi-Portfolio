@@ -50,10 +50,7 @@
 .about-photo>img{aspect-ratio:4/5;object-position:center 61%;filter:none}
 .recommendation-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
 .recommendation-list .recommendation-card{grid-template-columns:148px minmax(0,1fr);min-height:300px;align-items:start}
-.recommendation-list .recommendation-card:last-child:nth-child(odd){grid-column:1/-1;grid-template-columns:148px minmax(0,1fr);min-height:260px}
 .recommendation-list .recommendation-card figure{width:108px;height:108px;margin:30px 0 0 30px;border:1px solid #bec5bc;border-radius:50%}
-.recommendation-list .recommendation-card:nth-child(3) figure img{transform:translateY(5%) scale(1.2);transform-origin:center 28%}
-.recommendation-list .recommendation-card:nth-child(3):hover figure img{transform:translateY(5%) scale(1.23)}
 .recommendation-list .recommendation-copy{padding:30px 30px 28px 4px}
 .recommendation-list .quote-mark{font-size:58px}
 .recommendation-list blockquote{margin:22px 0 28px;font-size:22px;line-height:1.24}
@@ -71,9 +68,9 @@
 .profile-link:hover,.profile-link:focus-visible{background:#202221;color:#fff}
 .profile-link:hover small,.profile-link:focus-visible small{color:#b9bdb8}
 .profile-link:hover>img:last-child,.profile-link:focus-visible>img:last-child{filter:invert(1);transform:translate(2px,-2px)}
-@media(max-width:1100px){.recommendation-list{grid-template-columns:1fr}.recommendation-list .recommendation-card,.recommendation-list .recommendation-card:last-child:nth-child(odd){grid-column:auto;grid-template-columns:132px minmax(0,1fr);min-height:270px}.recommendation-list .recommendation-card figure{width:96px;height:96px;margin:28px 0 0 28px}.profile-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:1100px){.recommendation-list{grid-template-columns:1fr}.recommendation-list .recommendation-card{grid-column:auto;grid-template-columns:132px minmax(0,1fr);min-height:270px}.recommendation-list .recommendation-card figure{width:96px;height:96px;margin:28px 0 0 28px}.profile-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:760px){.profile-grid{grid-template-columns:1fr}.profile-link,.profile-link:nth-child(2){border-right:0;border-bottom:1px solid #bec5bc}.profile-link:last-child{border-bottom:0}}
-@media(max-width:640px){.about-photo>img{aspect-ratio:4/5}.recommendation-list{gap:16px}.recommendation-list .recommendation-card,.recommendation-list .recommendation-card:last-child:nth-child(odd){grid-template-columns:1fr;min-height:0}.recommendation-list .recommendation-card figure{width:84px;height:84px;margin:24px 0 0 24px}.recommendation-list .recommendation-copy{padding:18px 24px 26px}.recommendation-list .quote-mark{font-size:52px}.recommendation-list blockquote{margin:18px 0 26px;font-size:22px}.network-heading{align-items:start;flex-direction:column;gap:5px}}
+@media(max-width:640px){.about-photo>img{aspect-ratio:4/5}.recommendation-list{gap:16px}.recommendation-list .recommendation-card{grid-template-columns:1fr;min-height:0}.recommendation-list .recommendation-card figure{width:84px;height:84px;margin:24px 0 0 24px}.recommendation-list .recommendation-copy{padding:18px 24px 26px}.recommendation-list .quote-mark{font-size:52px}.recommendation-list blockquote{margin:18px 0 26px;font-size:22px}.network-heading{align-items:start;flex-direction:column;gap:5px}}
 
 /* Six flagship projects */
 .projects{grid-template-columns:repeat(3,minmax(0,1fr));gap:52px 22px}
@@ -310,10 +307,6 @@ a.contact-channel:hover .channel-arrow,a.contact-channel:focus-visible .channel-
 .future-event{background:#eef0ea}
 .future-event.learning-event{padding-left:24px}.future-event.professional-event{padding-right:24px}
 
-.recommendation-list .recommendation-card:nth-child(3) figure img{transform:translateY(9%) scale(1.09);transform-origin:center center}
-.recommendation-list .recommendation-card:nth-child(3):hover figure img{transform:translateY(9%) scale(1.12)}
-.recommendation-list .recommendation-card:nth-child(4) figure img{transform:translateY(7%) scale(1.08);transform-origin:center center}
-.recommendation-list .recommendation-card:nth-child(4):hover figure img{transform:translateY(7%) scale(1.11)}
 .profile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 
 .contact-title{display:grid;grid-template-columns:minmax(0,.78fr) minmax(480px,1fr);align-items:start;gap:72px}
@@ -394,14 +387,6 @@ a.contact-channel:hover .channel-arrow,a.contact-channel:focus-visible .channel-
 .timeline-flow .future-event::before{border-style:dashed;color:var(--muted)}
 .timeline-flow .current-event{border-color:#a6bd62;background:#f0f5df}
 .timeline-flow .current-event::before{border-color:#9fbd3a;background:var(--lime)}
-
-/* Recommendation portrait crops */
-.recommendation-list .recommendation-card:nth-child(3) figure{background:#22272b}
-.recommendation-list .recommendation-card:nth-child(3) figure img{transform:translateY(7%) scale(1.24);transform-origin:center center}
-.recommendation-list .recommendation-card:nth-child(3):hover figure img{transform:translateY(7%) scale(1.27)}
-.recommendation-list .recommendation-card:nth-child(4) figure{background:#d7c2b0}
-.recommendation-list .recommendation-card:nth-child(4) figure img{transform:translateY(6%) scale(1.2);transform-origin:center center}
-.recommendation-list .recommendation-card:nth-child(4):hover figure img{transform:translateY(6%) scale(1.23)}
 
 /* Contact form and grouped channels */
 .contact-form{background:#fff}
