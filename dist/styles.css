@@ -1358,3 +1358,61 @@ img{-webkit-user-drag:none;-webkit-user-select:none;user-select:none}
   .round-link i{width:30px;height:30px}
   .round-link i img{width:17px;height:17px}
 }
+
+/* Projects pagination: same look as the recommendations tabs — grey base line + green active segment */
+.projects-pagination{display:flex;align-items:center;justify-content:center;margin-top:28px}
+.projects-pagination[hidden]{display:none}
+.projects-page-tabs{--active-page:0;--page-count:1;position:relative;display:flex;align-items:center;gap:0;padding-bottom:2px}
+.projects-page-tabs::before,.projects-page-tabs::after{content:"";position:absolute;bottom:0;left:0;height:2px;pointer-events:none}
+.projects-page-tabs::before{width:100%;background:#aeb6aa}
+.projects-page-tabs::after{width:calc(100% / var(--page-count));background:#348561;transform:translateX(calc(var(--active-page) * 100%));transition:transform .34s cubic-bezier(.22,.61,.36,1)}
+.projects-page-tabs button{display:grid;min-width:46px;height:44px;place-items:center;background:transparent;font-size:12px;font-weight:700;color:var(--muted);transition:color .2s,background-color .2s}
+.projects-page-tabs button:hover,.projects-page-tabs button:focus-visible{color:var(--ink);background:#ffffff73}
+.projects-page-tabs button[aria-current="page"]{color:var(--ink)}
+@media(max-width:640px){
+  .projects-pagination{margin-top:22px}
+  .projects-page-tabs button{min-width:42px;height:42px;font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){.projects-page-tabs::after,.projects-page-tabs button{transition:none}}
+
+/* Project stage: 6 cards (3x2 desktop) with prev/next arrows centered on the sides.
+   Hover changes only color/background — position stays via a preserved translateY(-50%). */
+.projects-stage{position:relative;margin-top:32px;padding-inline:60px}
+.projects-stage>.projects{margin-top:0}
+.projects-stage>.projects-prev,.projects-stage>.projects-next{position:absolute;top:50%;transform:translateY(-50%);z-index:4}
+.projects-stage>.projects-prev{left:0}
+.projects-stage>.projects-next{right:0}
+.projects-stage>.projects-prev:hover,.projects-stage>.projects-prev:focus-visible,.projects-stage>.projects-next:hover,.projects-stage>.projects-next:focus-visible{transform:translateY(-50%)}
+@media(max-width:900px){.projects-stage{padding-inline:50px}}
+@media(max-width:640px){
+  .projects-stage{padding-inline:0;margin-top:24px}
+  .projects-stage>.projects-prev,.projects-stage>.projects-next{display:none}
+}
+
+/* Lock every card to the same height so the grid area (and the pagination below it) never shifts between pages */
+.project-meta h3{min-height:2.5em;overflow:hidden}
+.project-description{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:calc(1.55em * 3)}
+
+/* Minimalist text cards for GitHub projects without a real screenshot (honest, no fake illustration) */
+.project-meta h3 a{text-align:left;font:inherit;color:inherit}
+.visual-text{display:flex;flex-direction:column;justify-content:space-between;padding:22px;background:#e4e6df}
+.visual-text .text-top{display:flex;align-items:center;gap:9px;padding-bottom:11px;border-bottom:1px solid #2022211f}
+.visual-text .text-ico{display:grid;place-items:center;width:20px;height:20px;color:var(--spec-ink,#20322a)}
+.visual-text .text-ico svg{width:19px;height:19px}
+.visual-text .text-kind{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--spec-ink,#20322a)}
+.visual-text .text-name{font-family:Barlow,Arial,sans-serif;font-weight:700;font-size:29px;line-height:1.03;color:var(--spec-ink,#20322a);max-width:96%}
+.visual-text .text-chips{display:flex;flex-wrap:wrap;gap:6px;padding-right:44px}
+.visual-text .text-chips i{font-size:8px;font-weight:600;letter-spacing:.04em;padding:4px 9px;border:1px solid #2022211f;border-radius:999px;color:var(--spec-ink,#20322a)}
+.visual-churn{background:#dce5f7;--spec-ink:#1f3b63}
+.visual-scheduler{background:#d8e3dc;--spec-ink:#20402f}
+.visual-doppler{background:#d6dde8;--spec-ink:#1e2f4d}
+.visual-dashboards{background:#cadbd3;--spec-ink:#1d3a2e}
+.visual-fraud{background:#e8ddd2;--spec-ink:#4a3722}
+.visual-lyrics{--spec-ink:#473a6b}
+.visual-homework{background:#e4e3d4;--spec-ink:#454027}
+.visual-dna{background:#dde1d7;--spec-ink:#2f3a2a}
+.visual-netflix{background:#ecd9d9;--spec-ink:#5a2b2b}
+.visual-meal{background:#d9e4dc;--spec-ink:#224030}
+.visual-dbprojects{background:#d6dfe6;--spec-ink:#223a4d}
+.visual-statistics{background:#dfe0ec;--spec-ink:#343a66}
+@media(max-width:640px){.visual-text{padding:20px}.visual-text .text-name{font-size:26px}}
