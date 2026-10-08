@@ -6,14 +6,16 @@
   <meta name="description" content="Nicholas Birochi. Dados, desenvolvimento e automação. Conheça meus projetos em BI, inteligência artificial local, software e hardware.">
   <meta name="theme-color" content="#202221">
   <meta name="portfolio-version" content="2026-10-04-editorial-v29">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://formspree.io https://api.github.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io">
   <meta property="og:title" content="Nicholas Birochi | Portfólio">
   <meta property="og:description" content="Da análise à aplicação. Projetos, experimentos e a minha trajetória em tecnologia.">
   <meta property="og:image" content="https://nicholasbirochi.com.br/assets/nicholas-photo.jpg">
   <meta property="og:url" content="https://nicholasbirochi.com.br/">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://nicholasbirochi.com.br/">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="preload" href="assets/fonts/barlow-700.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="styles.css?v=20261004c">
@@ -53,7 +55,9 @@
     <section class="work section-space container" id="projetos" aria-labelledby="work-title">
       <div class="section-top"><p class="eyebrow" data-i18n="workEyebrow">01 / TRABALHOS SELECIONADOS</p><span class="quiet" data-i18n="workQuiet">Do insight ao protótipo.</span></div>
       <div class="work-heading"><h2 id="work-title" data-i18n="workTitle">IDEIAS QUE<br><em>GANHAM FORMA.</em></h2><p data-i18n="workIntro">Uma seleção do que venho construindo entre dados, software e experimentação.</p></div>
-      <div class="filter-bar" aria-label="Filtrar projetos"><div class="filters" role="group" aria-label="Área do projeto"><button aria-pressed="true" data-filter="all"><span data-i18n="filterAll">Todos</span> <sup>6</sup></button><button aria-pressed="false" data-filter="dados" data-i18n="filterData">Dados</button><button aria-pressed="false" data-filter="ia" data-i18n="filterAi">IA & automação</button><button aria-pressed="false" data-filter="software">Software</button><button aria-pressed="false" data-filter="hardware">Hardware</button></div><a class="filter-github" href="https://github.com/nicholasbirochi?tab=repositories" target="_blank" rel="noopener noreferrer"><span data-i18n="allGithub">Todos no GitHub</span><img src="assets/icons/arrow-up-right.svg" width="17" height="17" alt=""></a><span id="filter-status" class="sr-only" aria-live="polite">6 projetos visíveis</span></div>
+      <div class="filter-bar" aria-label="Filtrar projetos"><div class="filters" role="group" aria-label="Área do projeto"><button aria-pressed="true" data-filter="all"><span data-i18n="filterAll">Todos</span> <sup>12</sup></button><button aria-pressed="false" data-filter="dados" data-i18n="filterData">Dados</button><button aria-pressed="false" data-filter="ia" data-i18n="filterAi">IA & automação</button><button aria-pressed="false" data-filter="software">Software</button><button aria-pressed="false" data-filter="hardware">Hardware</button></div><a class="filter-github" href="https://github.com/nicholasbirochi?tab=repositories" target="_blank" rel="noopener noreferrer"><span data-i18n="allGithub">Todos no GitHub</span><img src="assets/icons/arrow-up-right.svg" width="17" height="17" alt=""></a><span id="filter-status" class="sr-only" aria-live="polite">12 projetos visíveis</span></div>
+      <div class="projects-stage">
+      <button type="button" class="recommendation-nav recommendation-prev projects-prev" aria-label="Página anterior"><img src="assets/icons/arrow-right.svg" alt="" width="18" height="18"></button>
       <div class="projects">
         <article class="project" data-category="dados software">
           <button class="project-visual visual-ccb" data-project="ccb" aria-label="Conhecer o projeto CCB BI e seus indicadores">
@@ -105,10 +109,74 @@
           <button class="project-visual visual-ias" data-project="ias" aria-label="Conhecer o projeto IA Local e Automação"><span class="ai-console" aria-hidden="true"><span class="ai-console-head"><i></i><i></i><i></i><small>LOCAL PIPELINE / ONLINE</small></span><span class="ai-flow"><span><b>01</b><strong>ARQUIVOS</strong><small>Drive / OneDrive</small></span><em></em><span class="ai-core"><b>02</b><strong>n8n</strong><small>orquestração</small></span><em></em><span><b>03</b><strong>OLLAMA</strong><small>inferência local</small></span></span><span class="ai-stack"><i>POSTGRESQL</i><i>DOCKER</i><i>SELF-HOSTED</i></span></span><span class="project-open"><img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24"></span></button>
           <div class="project-meta"><div><p class="eyebrow">N8N · OLLAMA · POSTGRESQL</p><h3><button data-project="ias" data-i18n="iasTitle">IA Local + Automação</button></h3></div><span>2025</span></div><p class="project-description" data-i18n="iasDescription">Um pipeline auto-hospedado para transformar documentos em análises e respostas com IA local.</p>
         </article>
+
+        <article class="project" data-category="dados ia" hidden>
+          <a class="project-visual visual-text visual-churn" href="https://github.com/nicholasbirochi/SAAS-Churn-Analysis-Techgrow" target="_blank" rel="noopener noreferrer" aria-label="Abrir o projeto Análise de Churn SaaS no GitHub">
+            <span class="text-top" aria-hidden="true"><span class="text-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21v-7M11 21V8M16 21v-4"/></svg></span><span class="text-kind" data-i18n="filterData">Dados</span></span>
+            <span class="text-name" aria-hidden="true" data-i18n="churnTitle">Análise de Churn SaaS</span>
+            <span class="text-chips" aria-hidden="true"><i>PYTHON</i><i>SKLEARN</i><i>XGBOOST</i></span>
+            <span class="project-open"><img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24"></span>
+          </a>
+          <div class="project-meta"><div><p class="eyebrow">PYTHON · SCIKIT-LEARN · XGBOOST</p><h3><a href="https://github.com/nicholasbirochi/SAAS-Churn-Analysis-Techgrow" target="_blank" rel="noopener noreferrer" data-i18n="churnTitle">Análise de Churn SaaS</a></h3></div><span>2026</span></div><p class="project-description" data-i18n="churnDescription">Modelagem preditiva de cancelamento (Logistic Regression, Random Forest e XGBoost) com interpretação de variáveis e recomendações para Produto e CS.</p>
+        </article>
+
+        <article class="project" data-category="software" hidden>
+          <a class="project-visual visual-text visual-lyrics" href="https://github.com/nicholasbirochi/Language-Lyrics-Lab" target="_blank" rel="noopener noreferrer" aria-label="Abrir o projeto Language Lyrics Lab no GitHub">
+            <span class="text-top" aria-hidden="true"><span class="text-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></span><span class="text-kind">Software</span></span>
+            <span class="text-name" aria-hidden="true">Language Lyrics Lab</span>
+            <span class="text-chips" aria-hidden="true"><i>EXPO</i><i>TYPESCRIPT</i><i>ÁUDIO</i></span>
+            <span class="project-open"><img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24"></span>
+          </a>
+          <div class="project-meta"><div><p class="eyebrow">EXPO · TYPESCRIPT · ÁUDIO</p><h3><a href="https://github.com/nicholasbirochi/Language-Lyrics-Lab" target="_blank" rel="noopener noreferrer">Language Lyrics Lab</a></h3></div><span>2026</span></div><p class="project-description" data-i18n="lyricsDescription">App de idiomas com letras sincronizadas, tradução linha a linha, flashcards e modos de revisão, usando LRCLIB e LibreTranslate.</p>
+        </article>
+
+        <article class="project" data-category="software" hidden>
+          <a class="project-visual visual-text visual-scheduler" href="https://github.com/nicholasbirochi/Task-Scheduling-Simulator" target="_blank" rel="noopener noreferrer" aria-label="Abrir o projeto Simulador de Escalonamento no GitHub">
+            <span class="text-top" aria-hidden="true"><span class="text-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></span><span class="text-kind">Software</span></span>
+            <span class="text-name" aria-hidden="true" data-i18n="schedulerTitle">Simulador de Escalonamento</span>
+            <span class="text-chips" aria-hidden="true"><i>PYTHON</i><i>SCHEDULING</i><i>TESTES</i></span>
+            <span class="project-open"><img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24"></span>
+          </a>
+          <div class="project-meta"><div><p class="eyebrow">PYTHON · SISTEMAS OPERACIONAIS</p><h3><a href="https://github.com/nicholasbirochi/Task-Scheduling-Simulator" target="_blank" rel="noopener noreferrer" data-i18n="schedulerTitle">Simulador de Escalonamento</a></h3></div><span>2026</span></div><p class="project-description" data-i18n="schedulerDescription">Simulador de algoritmos de escalonamento de CPU com inversão e herança de prioridade, protocolo de teto, aging, cenários persistentes e testes.</p>
+        </article>
+
+        <article class="project" data-category="software" hidden>
+          <a class="project-visual visual-text visual-doppler" href="https://github.com/nicholasbirochi/Audio-Simulator-with-Doppler-Effect" target="_blank" rel="noopener noreferrer" aria-label="Abrir o projeto Simulador de Áudio Doppler no GitHub">
+            <span class="text-top" aria-hidden="true"><span class="text-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></span><span class="text-kind">Software</span></span>
+            <span class="text-name" aria-hidden="true" data-i18n="dopplerTitle">Simulador de Áudio Doppler</span>
+            <span class="text-chips" aria-hidden="true"><i>JAVA</i><i>POO</i><i>SQL</i></span>
+            <span class="project-open"><img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24"></span>
+          </a>
+          <div class="project-meta"><div><p class="eyebrow">JAVA · POO · SQL</p><h3><a href="https://github.com/nicholasbirochi/Audio-Simulator-with-Doppler-Effect" target="_blank" rel="noopener noreferrer" data-i18n="dopplerTitle">Simulador de Áudio Doppler</a></h3></div><span>2025</span></div><p class="project-description" data-i18n="dopplerDescription">Projeto multidisciplinar em Java que simula o comportamento do áudio com o efeito Doppler, unindo física, orientação a objetos e banco de dados.</p>
+        </article>
+
+        <article class="project" data-category="ia dados" hidden>
+          <a class="project-visual visual-text visual-fraud" href="https://github.com/nicholasbirochi/Bank-Transaction-Fraud-Classification-Decision-Tree-" target="_blank" rel="noopener noreferrer" aria-label="Abrir o projeto Classificador de Fraude no GitHub">
+            <span class="text-top" aria-hidden="true"><span class="text-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21v-7M11 21V8M16 21v-4"/></svg></span><span class="text-kind" data-i18n="filterData">Dados</span></span>
+            <span class="text-name" aria-hidden="true" data-i18n="fraudTitle">Classificador de Fraude</span>
+            <span class="text-chips" aria-hidden="true"><i>PYTHON</i><i>SKLEARN</i><i>ML</i></span>
+            <span class="project-open"><img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24"></span>
+          </a>
+          <div class="project-meta"><div><p class="eyebrow">PYTHON · DECISION TREE · ML</p><h3><a href="https://github.com/nicholasbirochi/Bank-Transaction-Fraud-Classification-Decision-Tree-" target="_blank" rel="noopener noreferrer" data-i18n="fraudTitle">Classificador de Fraude</a></h3></div><span>2025</span></div><p class="project-description" data-i18n="fraudDescription">Árvore de decisão para sinalizar transações fraudulentas: EDA, preparo de atributos, tratamento de desbalanceamento e avaliação por ROC-AUC e PR-AUC.</p>
+        </article>
+
+        <article class="project" data-category="software" hidden>
+          <a class="project-visual visual-text visual-homework" href="https://github.com/nicholasbirochi/Homework-Management" target="_blank" rel="noopener noreferrer" aria-label="Abrir o projeto Gestor de Tarefas Escolares no GitHub">
+            <span class="text-top" aria-hidden="true"><span class="text-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></span><span class="text-kind">Software</span></span>
+            <span class="text-name" aria-hidden="true" data-i18n="homeworkTitle">Gestor de Tarefas Escolares</span>
+            <span class="text-chips" aria-hidden="true"><i>REACT NATIVE</i><i>EXPO</i><i>SQLITE</i></span>
+            <span class="project-open"><img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24"></span>
+          </a>
+          <div class="project-meta"><div><p class="eyebrow">REACT NATIVE · EXPO · SQLITE</p><h3><a href="https://github.com/nicholasbirochi/Homework-Management" target="_blank" rel="noopener noreferrer" data-i18n="homeworkTitle">Gestor de Tarefas Escolares</a></h3></div><span>2026</span></div><p class="project-description" data-i18n="homeworkDescription">App mobile para organizar a vida escolar: alunos, trabalhos, atividades, progresso e gráficos, feito com React Native, Expo e SQLite.</p>
+        </article>
       </div>
+      <button type="button" class="recommendation-nav recommendation-next projects-next" aria-label="Próxima página"><img src="assets/icons/arrow-right.svg" alt="" width="18" height="18"></button>
+      </div>
+      <div class="projects-pagination" aria-label="Páginas de projetos"><div class="projects-page-tabs" role="group"></div></div>
+      <p class="sr-only" id="projects-page-status" role="status" aria-live="polite"></p>
     </section>
 
-    <section class="numbers-strip" aria-label="Nicholas Birochi em números"><div class="container"><div><strong>28</strong><span data-i18n="numberRepos">repositórios públicos</span></div><div><strong>4</strong><span data-i18n="numberFields">áreas de atuação</span></div><div><strong>B2</strong><span data-i18n="numberEnglish">inglês certificado</span></div><div><strong>2027</strong><span data-i18n="numberGraduation">conclusão da graduação</span></div></div></section>
+    <section class="numbers-strip" aria-label="Nicholas Birochi em números"><div class="container"><div><strong id="repo-count">28</strong><span data-i18n="numberRepos">repositórios públicos</span></div><div><strong>4</strong><span data-i18n="numberFields">áreas de atuação</span></div><div><strong>B2</strong><span data-i18n="numberEnglish">inglês certificado</span></div><div><strong>2027</strong><span data-i18n="numberGraduation">conclusão da graduação</span></div></div></section>
 
     <section class="about section-space" id="sobre" aria-labelledby="about-title"><div class="container"><div class="section-top"><p class="eyebrow" data-i18n="aboutEyebrow">02 / UM POUCO SOBRE MIM</p><span class="quiet" data-i18n="aboutQuiet">Além do código.</span></div><div class="about-grid"><figure class="about-photo"><img src="assets/nicholas-about-v2.webp" alt="Nicholas Birochi em uma visita ao universo automotivo" width="900" height="1600" loading="lazy"><figcaption>NICHOLAS BIROCHI <span>SÃO PAULO, BRASIL</span></figcaption></figure><div class="about-copy"><h2 id="about-title" data-i18n="aboutTitle">CURIOSO POR<br><em>NATUREZA.</em><br>INOVADOR<br><em>POR ESCOLHA.</em></h2><p data-i18n="aboutP1">Sou Nicholas Birochi, tenho {{age}} anos e sou estudante de Engenharia da Computação na Faculdade Engenheiro Salvador Arena. Também atuo como estagiário em Análise de Dados na Volkswagen do Brasil.</p><p data-i18n="aboutP2">Meu trabalho conecta dados e desenvolvimento: investigar um problema, encontrar padrões e criar soluções que ajudem alguém a decidir ou a trabalhar melhor.</p><p data-i18n="aboutP3">Essa curiosidade também vai para os projetos pessoais. Exploro IA local, aplicações web, música e hardware, aprendendo enquanto transformo ideias em experiências úteis.</p><a class="text-link" href="https://www.linkedin.com/in/nicholasbirochi" target="_blank" rel="noopener noreferrer"><span data-i18n="aboutLinkedin">Mais sobre mim no LinkedIn</span> <img src="assets/icons/arrow-up-right.svg" alt="" width="20" height="20"></a></div></div><div class="skills"><div><span>01</span><h3 data-i18n="skillData">Dados & análise</h3><p>Python, R, SQL, Power BI,<br>Pandas e Machine Learning</p></div><div><span>02</span><h3>Software</h3><p>Flask, Dash, Java, Spring,<br>C#, React Native e Git</p></div><div><span>03</span><h3 data-i18n="skillAi">Automação & IA</h3><p>Ollama, n8n, Docker,<br>Power Automate e Excel VBA</p></div><div><span>04</span><h3 data-i18n="skillExperiment">Experimentação</h3><p>ESP32, USB HID, sensores,<br>firmware e modelagem 3D</p></div></div></div></section>
 

@@ -171,6 +171,7 @@ const englishCopy = {
   heroLabel: 'PERSONAL PORTFOLIO', heroLead: 'Data, code<br>& curiosity.', heroCopy: 'I turn problems into analyses,<br>automations and applications.', heroCta: 'Explore my work', heroCourse: 'COMPUTER ENGINEERING',
   fieldData: 'DATA ANALYSIS', fieldDev: 'DEVELOPMENT', fieldAi: 'AUTOMATION & AI', workEyebrow: '01 / SELECTED WORK', workQuiet: 'From insight to prototype.', workTitle: 'IDEAS THAT<br><em>TAKE SHAPE.</em>', workIntro: 'A selection of what I have been building across data, software and experimentation.',
   filterAll: 'All', filterData: 'Data', filterAi: 'AI & automation', allGithub: 'All on GitHub', ccbDescription: 'From records to diagnosis: forms, filters and analyses supporting decisions in a local application.', behaviorTitle: 'Behavioral Analysis', behaviorDescription: 'Attendance, co-presence and weekly trend dashboards with filters, caching and report exports.', jarvisDescription: 'A local multimodal assistant with voice, structured professional memory and supervised automations.', iasTitle: 'Local AI + Automation', iasDescription: 'A self-hosted pipeline that turns documents into analyses and answers using local AI.', petshopDescription: 'A complete store with catalog, cart, orders, authentication, access roles and an administration panel.', fingerprintDescription: 'A biometric key for macOS: electronics, protocol, firmware and a parametric enclosure in one product.',
+  churnTitle: 'SaaS Churn Analysis', churnDescription: 'Predictive churn modeling (Logistic Regression, Random Forest and XGBoost) with feature interpretation and actionable Product and CS recommendations.', lyricsDescription: 'A language-learning app with synchronized lyrics, line-by-line translation, flashcards and review modes, powered by LRCLIB and LibreTranslate.', schedulerTitle: 'Task Scheduling Simulator', schedulerDescription: 'A CPU scheduling simulator with priority inversion and inheritance, ceiling protocol, aging, persistent scenarios and validation tests.', dopplerTitle: 'Doppler Audio Simulator', dopplerDescription: 'A multidisciplinary Java project that simulates audio behavior with the Doppler effect, combining physics, object-oriented programming and a database.', dashboardsTitle: 'Sales & Clients Dashboards', dashboardsDescription: 'Sales and customer dashboards for business analysis, combining data processing, visualization and database concepts.', fraudTitle: 'Bank Fraud Classifier', fraudDescription: 'A decision tree to flag fraudulent transactions: EDA, feature preparation, imbalance handling and evaluation via ROC-AUC and PR-AUC.', homeworkTitle: 'Homework Management', homeworkDescription: 'A mobile app to organize school life: students, assignments, activities, progress and charts, built with React Native, Expo and SQLite.', dnaDescription: 'A parametric web app: adjust five features and watch the avatar respond in body, posture and expression.', netflixDescription: 'Exploratory analysis of the Netflix Daily Top 10 with Pandas and Matplotlib: validation, distributions, date coverage and top-viewership titles.', mealTitle: 'Meal Delivery Analysis', mealDescription: 'Meal delivery data analysis with Pandas and NumPy: EDA, feature engineering, monthly revenue trend and core business KPIs.', dbprojectsTitle: 'Database Projects', dbprojectsDescription: 'A collection of database and data-analysis projects, with hands-on exercises using the IceCream and Titanic datasets.', statisticsTitle: 'Statistics for Devs', statisticsDescription: 'A statistics and analytics challenge with Pandas: data cleaning, average calculations and monthly bar and line charts with Matplotlib.',
   numberRepos: 'public repositories', numberFields: 'areas of practice', numberEnglish: 'certified English', numberGraduation: 'expected graduation',
   aboutEyebrow: '02 / A LITTLE ABOUT ME', aboutQuiet: 'Beyond the code.', aboutTitle: 'CURIOUS BY<br><em>NATURE.</em><br>INNOVATIVE<br><em>BY CHOICE.</em>', aboutP1: 'I\'m Nicholas Birochi, I\'m {{age}} years old and a Computer Engineering student at Faculdade Engenheiro Salvador Arena. I also work as a Data Analytics intern at Volkswagen do Brasil.', aboutP2: 'My work connects data and development: understanding a problem, finding patterns and creating solutions that help someone decide or work better.', aboutP3: 'That curiosity also drives my personal projects. I explore local AI, web applications, music and hardware while turning ideas into useful experiences.', aboutLinkedin: 'More about me on LinkedIn', skillData: 'Data & analytics', skillAi: 'Automation & AI', skillExperiment: 'Experimentation',
   journeyEyebrow: '03 / JOURNEY', journeyQuiet: 'Learning and practice in motion.', journeyTitle: 'TWO PATHS.<br><em>ONE EVOLUTION.</em>', journeyIntro: 'Education and experience move forward together: what I learn becomes practice, and every professional challenge guides the next subject I study.', learning: 'Learning', professional: 'Professional',
@@ -187,6 +188,7 @@ const spanishCopy = {
   heroLabel: 'PORTAFOLIO PERSONAL', heroLead: 'Datos, código<br>y curiosidad.', heroCopy: 'Transformo problemas en análisis,<br>automatizaciones y aplicaciones.', heroCta: 'Explorar mi trabajo', heroCourse: 'INGENIERÍA INFORMÁTICA',
   fieldData: 'ANÁLISIS DE DATOS', fieldDev: 'DESARROLLO', fieldAi: 'AUTOMATIZACIÓN & IA', workEyebrow: '01 / TRABAJOS SELECCIONADOS', workQuiet: 'De la idea al prototipo.', workTitle: 'IDEAS QUE<br><em>TOMAN FORMA.</em>', workIntro: 'Una selección de lo que vengo construyendo entre datos, software y experimentación.',
   filterAll: 'Todos', filterData: 'Datos', filterAi: 'IA & automatización', allGithub: 'Todos en GitHub', ccbDescription: 'Del registro al diagnóstico: formularios, filtros y análisis para apoyar decisiones en una aplicación local.', behaviorTitle: 'Análisis de Comportamiento', behaviorDescription: 'Paneles de presencia, copresencia y evolución semanal con filtros, caché y exportación de informes.', jarvisDescription: 'Un asistente multimodal local con voz, memoria profesional estructurada y automatizaciones supervisadas.', iasTitle: 'IA Local + Automatización', iasDescription: 'Un pipeline autoalojado que convierte documentos en análisis y respuestas mediante IA local.', petshopDescription: 'Una tienda completa con catálogo, carrito, pedidos, autenticación, perfiles de acceso y panel administrativo.', fingerprintDescription: 'Una llave biométrica para macOS: electrónica, protocolo, firmware y carcasa paramétrica en un solo producto.',
+  churnTitle: 'Análisis de Churn SaaS', churnDescription: 'Modelado predictivo de cancelación (Regresión Logística, Random Forest y XGBoost) con interpretación de variables y recomendaciones para Producto y CS.', lyricsDescription: 'App de idiomas con letras sincronizadas, traducción línea por línea, flashcards y modos de repaso, con LRCLIB y LibreTranslate.', schedulerTitle: 'Simulador de Planificación', schedulerDescription: 'Simulador de algoritmos de planificación de CPU con inversión y herencia de prioridad, protocolo de techo, aging, escenarios persistentes y pruebas.', dopplerTitle: 'Simulador de Audio Doppler', dopplerDescription: 'Proyecto multidisciplinario en Java que simula el comportamiento del audio con el efecto Doppler, uniendo física, programación orientada a objetos y base de datos.', dashboardsTitle: 'Dashboards de Ventas y Clientes', dashboardsDescription: 'Dashboards de ventas y clientes para análisis de negocio, uniendo procesamiento de datos, visualización y conceptos de base de datos.', fraudTitle: 'Clasificador de Fraude', fraudDescription: 'Árbol de decisión para señalar transacciones fraudulentas: EDA, preparación de atributos, manejo de desbalanceo y evaluación con ROC-AUC y PR-AUC.', homeworkTitle: 'Gestor de Tareas Escolares', homeworkDescription: 'App móvil para organizar la vida escolar: alumnos, trabajos, actividades, progreso y gráficos, hecha con React Native, Expo y SQLite.', dnaDescription: 'App web paramétrica: ajusta cinco características y observa cómo el avatar responde en cuerpo, postura y expresión.', netflixDescription: 'Análisis exploratorio del Netflix Daily Top 10 con Pandas y Matplotlib: validación, distribuciones, cobertura temporal y títulos más vistos.', mealTitle: 'Análisis de Delivery', mealDescription: 'Análisis de datos de delivery con Pandas y NumPy: EDA, ingeniería de atributos, tendencia mensual de ingresos y KPIs clave de negocio.', dbprojectsTitle: 'Proyectos de Base de Datos', dbprojectsDescription: 'Colección de proyectos de base de datos y análisis de datos, con ejercicios prácticos usando los conjuntos IceCream y Titanic.', statisticsTitle: 'Estadística para Devs', statisticsDescription: 'Desafío de estadística y análisis con Pandas: limpieza de datos, cálculo de promedios y gráficos de barra y línea por mes con Matplotlib.',
   numberRepos: 'repositorios públicos', numberFields: 'áreas de actuación', numberEnglish: 'inglés certificado', numberGraduation: 'graduación prevista',
   aboutEyebrow: '02 / UN POCO SOBRE MÍ', aboutQuiet: 'Más allá del código.', aboutTitle: 'CURIOSO POR<br><em>NATURALEZA.</em><br>INNOVADOR<br><em>POR ELECCIÓN.</em>', aboutP1: 'Soy Nicholas Birochi, tengo {{age}} años y estudio Ingeniería Informática en la Faculdade Engenheiro Salvador Arena. También trabajo como pasante de Análisis de Datos en Volkswagen do Brasil.', aboutP2: 'Mi trabajo conecta datos y desarrollo: investigar un problema, encontrar patrones y crear soluciones que ayuden a alguien a decidir o trabajar mejor.', aboutP3: 'Esa curiosidad también impulsa mis proyectos personales. Exploro IA local, aplicaciones web, música y hardware mientras convierto ideas en experiencias útiles.', aboutLinkedin: 'Más sobre mí en LinkedIn', skillData: 'Datos & análisis', skillAi: 'Automatización & IA', skillExperiment: 'Experimentación',
   journeyEyebrow: '03 / TRAYECTORIA', journeyQuiet: 'Aprendizaje y práctica en movimiento.', journeyTitle: 'DOS CAMINOS.<br><em>UNA EVOLUCIÓN.</em>', journeyIntro: 'La formación y la experiencia avanzan juntas: lo que aprendo se convierte en práctica y cada desafío profesional orienta el siguiente estudio.', learning: 'Aprendizaje', professional: 'Profesional',
@@ -216,17 +218,17 @@ const languageConfigs = {
   pt: {
     htmlLang: 'pt-BR', code: 'PT', name: 'Português', flag: 'assets/icons/flag-br.svg', copy: null, placeholders: null,
     title: 'Nicholas Birochi | Portfólio', description: 'Nicholas Birochi. Dados, desenvolvimento e automação. Conheça meus projetos em BI, inteligência artificial local, software e hardware.',
-    menuOpen: 'Abrir menu', menuClose: 'Fechar menu', pickerLabel: 'Selecionar idioma. Atual: Português', socialLabel: 'Contato e redes sociais', professionalLabel: 'Perfis profissionais', recommendationAction: 'Ler a indicação e abrir o LinkedIn de', recommendationPagesLabel: 'Páginas de indicações', recommendationPrevious: 'Página anterior', recommendationNext: 'Próxima página', recommendationPage: 'Página', recommendationOf: 'de', formSending: 'Enviando mensagem…', formSuccess: 'Mensagem enviada. Obrigado pelo contato!', formError: 'Não foi possível enviar agora. Tente novamente ou use o e-mail abaixo.'
+    menuOpen: 'Abrir menu', menuClose: 'Fechar menu', pickerLabel: 'Selecionar idioma. Atual: Português', socialLabel: 'Contato e redes sociais', professionalLabel: 'Perfis profissionais', recommendationAction: 'Ler a indicação e abrir o LinkedIn de', recommendationPagesLabel: 'Páginas de indicações', projectsPagesLabel: 'Páginas de projetos', recommendationPrevious: 'Página anterior', recommendationNext: 'Próxima página', recommendationPage: 'Página', recommendationOf: 'de', formSending: 'Enviando mensagem…', formSuccess: 'Mensagem enviada. Obrigado pelo contato!', formError: 'Não foi possível enviar agora. Tente novamente ou use o e-mail abaixo.'
   },
   en: {
     htmlLang: 'en', code: 'EN', name: 'English', flag: 'assets/icons/flag-us.svg', copy: englishCopy, placeholders: englishPlaceholders,
     title: 'Nicholas Birochi | Portfólio', description: 'Nicholas Birochi. Data, development and automation. Explore my projects in BI, local AI, software and hardware.',
-    menuOpen: 'Open menu', menuClose: 'Close menu', pickerLabel: 'Select language. Current: English', socialLabel: 'Contact and social profiles', professionalLabel: 'Professional profiles', recommendationAction: 'Read the recommendation and open the LinkedIn profile of', recommendationPagesLabel: 'Recommendation pages', recommendationPrevious: 'Previous page', recommendationNext: 'Next page', recommendationPage: 'Page', recommendationOf: 'of', formSending: 'Sending message…', formSuccess: 'Message sent. Thank you for reaching out!', formError: 'The message could not be sent. Please try again or use the email below.'
+    menuOpen: 'Open menu', menuClose: 'Close menu', pickerLabel: 'Select language. Current: English', socialLabel: 'Contact and social profiles', professionalLabel: 'Professional profiles', recommendationAction: 'Read the recommendation and open the LinkedIn profile of', recommendationPagesLabel: 'Recommendation pages', projectsPagesLabel: 'Project pages', recommendationPrevious: 'Previous page', recommendationNext: 'Next page', recommendationPage: 'Page', recommendationOf: 'of', formSending: 'Sending message…', formSuccess: 'Message sent. Thank you for reaching out!', formError: 'The message could not be sent. Please try again or use the email below.'
   },
   es: {
     htmlLang: 'es', code: 'ES', name: 'Español', flag: 'assets/icons/flag-es.svg', copy: spanishCopy, placeholders: spanishPlaceholders,
     title: 'Nicholas Birochi | Portfólio', description: 'Nicholas Birochi. Datos, desarrollo y automatización. Conoce mis proyectos de BI, IA local, software y hardware.',
-    menuOpen: 'Abrir menú', menuClose: 'Cerrar menú', pickerLabel: 'Seleccionar idioma. Actual: Español', socialLabel: 'Contacto y redes sociales', professionalLabel: 'Perfiles profesionales', recommendationAction: 'Leer la recomendación y abrir el perfil de LinkedIn de', recommendationPagesLabel: 'Páginas de recomendaciones', recommendationPrevious: 'Página anterior', recommendationNext: 'Página siguiente', recommendationPage: 'Página', recommendationOf: 'de', formSending: 'Enviando mensaje…', formSuccess: 'Mensaje enviado. ¡Gracias por escribir!', formError: 'No se pudo enviar el mensaje. Inténtalo de nuevo o usa el e-mail de abajo.'
+    menuOpen: 'Abrir menú', menuClose: 'Cerrar menú', pickerLabel: 'Seleccionar idioma. Actual: Español', socialLabel: 'Contacto y redes sociales', professionalLabel: 'Perfiles profesionales', recommendationAction: 'Leer la recomendación y abrir el perfil de LinkedIn de', recommendationPagesLabel: 'Páginas de recomendaciones', projectsPagesLabel: 'Páginas de proyectos', recommendationPrevious: 'Página anterior', recommendationNext: 'Página siguiente', recommendationPage: 'Página', recommendationOf: 'de', formSending: 'Enviando mensaje…', formSuccess: 'Mensaje enviado. ¡Gracias por escribir!', formError: 'No se pudo enviar el mensaje. Inténtalo de nuevo o usa el e-mail de abajo.'
   }
 };
 
@@ -271,8 +273,7 @@ function setLanguage(language, persist = true) {
   document.title = config.title;
   const description = document.querySelector('meta[name="description"]');
   if (description) description.content = config.description;
-  const visibleCount = projects.filter(project => !project.hidden).length;
-  updateFilterStatus(visibleCount);
+  renderProjects();
   if (document.querySelector('.case-dialog')?.open && activeDetail) renderCase(activeDetail.key, activeDetail.type);
   closeMenu();
   if (persist) {
@@ -321,17 +322,87 @@ document.addEventListener('click', event => {
 window.matchMedia('(min-width: 641px)').addEventListener('change', closeMenu);
 
 const projects = [...document.querySelectorAll('.project')];
+const projectsPagination = document.querySelector('.projects-pagination');
+const projectsPageTabs = document.querySelector('.projects-page-tabs');
+const projectsPageStatus = document.querySelector('#projects-page-status');
+const projectsPrev = document.querySelector('.projects-prev');
+const projectsNext = document.querySelector('.projects-next');
+const projectsPerPage = 6;
+let currentProjectFilter = 'all';
+let activeProjectPage = 0;
+
+function matchingProjects() {
+  return projects.filter(project => currentProjectFilter === 'all' || project.dataset.category.split(' ').includes(currentProjectFilter));
+}
+
+function renderProjects() {
+  const matches = matchingProjects();
+  const totalPages = Math.max(1, Math.ceil(matches.length / projectsPerPage));
+  activeProjectPage = Math.min(Math.max(activeProjectPage, 0), totalPages - 1);
+  const start = activeProjectPage * projectsPerPage;
+  const visible = matches.slice(start, start + projectsPerPage);
+  projects.forEach(project => { project.hidden = !visible.includes(project); });
+  renderProjectsPagination(totalPages);
+  updateFilterStatus(matches.length);
+}
+
+function renderProjectsPagination(totalPages) {
+  if (!projectsPagination || !projectsPageTabs) return;
+  const config = languageConfigs[currentLanguage];
+  projectsPagination.setAttribute('aria-label', config.projectsPagesLabel);
+  projectsPagination.hidden = totalPages <= 1;
+  if (projectsPageTabs.children.length !== totalPages) {
+    projectsPageTabs.innerHTML = '';
+    for (let index = 0; index < totalPages; index += 1) {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.dataset.projectsTarget = String(index);
+      button.innerHTML = `<span>${index + 1}</span>`;
+      button.addEventListener('click', () => { activeProjectPage = index; renderProjects(); });
+      projectsPageTabs.appendChild(button);
+    }
+  }
+  [...projectsPageTabs.children].forEach((button, index) => {
+    button.setAttribute('aria-label', `${config.recommendationPage} ${index + 1}`);
+    if (index === activeProjectPage) button.setAttribute('aria-current', 'page');
+    else button.removeAttribute('aria-current');
+  });
+  projectsPageTabs.style.setProperty('--active-page', activeProjectPage);
+  projectsPageTabs.style.setProperty('--page-count', totalPages);
+  if (projectsPrev) {
+    projectsPrev.disabled = activeProjectPage <= 0;
+    projectsPrev.setAttribute('aria-label', config.recommendationPrevious);
+  }
+  if (projectsNext) {
+    projectsNext.disabled = activeProjectPage >= totalPages - 1;
+    projectsNext.setAttribute('aria-label', config.recommendationNext);
+  }
+  if (projectsPageStatus) projectsPageStatus.textContent = totalPages > 1 ? `${config.recommendationPage} ${activeProjectPage + 1} ${config.recommendationOf} ${totalPages}` : '';
+}
+
 document.querySelectorAll('[data-filter]').forEach(button => {
   button.addEventListener('click', () => {
-    const filter = button.dataset.filter;
+    currentProjectFilter = button.dataset.filter;
+    activeProjectPage = 0;
     document.querySelectorAll('[data-filter]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
-    projects.forEach(project => {
-      project.hidden = filter !== 'all' && !project.dataset.category.split(' ').includes(filter);
-    });
-    const count = projects.filter(project => !project.hidden).length;
-    updateFilterStatus(count);
+    renderProjects();
   });
 });
+
+projectsPagination?.addEventListener('keydown', event => {
+  if (!['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+  const tabs = [...projectsPageTabs.children];
+  if (tabs.length < 2) return;
+  event.preventDefault();
+  activeProjectPage = Math.min(Math.max(activeProjectPage + (event.key === 'ArrowRight' ? 1 : -1), 0), tabs.length - 1);
+  renderProjects();
+  projectsPageTabs.children[activeProjectPage]?.focus();
+});
+
+projectsPrev?.addEventListener('click', () => { activeProjectPage -= 1; renderProjects(); });
+projectsNext?.addEventListener('click', () => { activeProjectPage += 1; renderProjects(); });
+
+renderProjects();
 
 const dialog = document.querySelector('.case-dialog');
 let dialogTrigger;
@@ -651,4 +722,13 @@ if (!motion.matches && 'IntersectionObserver' in window) {
     });
   }, {threshold: .08});
   document.querySelectorAll('.project, .about-grid, [data-journey]').forEach(element => observer.observe(element));
+}
+
+// Live public-repository count from the GitHub API; keeps the HTML fallback on any failure.
+const repoCountEl = document.querySelector('#repo-count');
+if (repoCountEl) {
+  fetch('https://api.github.com/users/nicholasbirochi', {headers: {Accept: 'application/vnd.github+json'}})
+    .then(response => (response.ok ? response.json() : Promise.reject(response.status)))
+    .then(data => { if (Number.isFinite(data.public_repos)) repoCountEl.textContent = data.public_repos; })
+    .catch(() => {});
 }
