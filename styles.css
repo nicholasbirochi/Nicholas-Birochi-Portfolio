@@ -1367,11 +1367,11 @@ img{-webkit-user-drag:none;-webkit-user-select:none;user-select:none}
 .projects-pagination[hidden]{display:none}
 .projects-page-tabs{--active-page:0;--page-count:1;--projects-fill:6s;display:flex;align-items:center;justify-content:center;gap:2px}
 .projects-page-tabs button{display:grid;place-items:center;padding:7px 2px;border:0;background:transparent}
-.projects-page-tabs button>span{position:relative;display:block;width:8px;height:8px;border-radius:999px;background:#9ac2af;overflow:hidden;font-size:0;line-height:0;color:transparent;transition:width .34s cubic-bezier(.22,.61,.36,1),height .34s cubic-bezier(.22,.61,.36,1),opacity .25s,background .25s}
+.projects-page-tabs button>span{position:relative;display:block;width:8px;height:8px;border-radius:999px;background:#aeb6aa;overflow:hidden;font-size:0;line-height:0;color:transparent;transition:width .34s cubic-bezier(.22,.61,.36,1),height .34s cubic-bezier(.22,.61,.36,1),opacity .25s,background .25s}
 .projects-page-tabs button>span>i{position:absolute;inset:0;border-radius:inherit;background:#348561;transform:scaleX(0);transform-origin:left center}
 .projects-page-tabs button:not([aria-current="page"])>span{width:5px;height:5px;opacity:1}
 .projects-page-tabs button:not([aria-current="page"]):hover>span,.projects-page-tabs button:not([aria-current="page"]):focus-visible>span{background:#348561;opacity:1}
-.projects-page-tabs button[aria-current="page"]>span{width:40px;background:#9ac2af}
+.projects-page-tabs button[aria-current="page"]>span{width:40px;background:#aeb6aa}
 .projects-page-tabs button[aria-current="page"]>span>i{animation:projects-dot-fill var(--projects-fill) linear forwards}
 .projects-pagination.is-paused .projects-page-tabs button[aria-current="page"]>span>i{animation-play-state:paused}
 @keyframes projects-dot-fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
@@ -1394,6 +1394,7 @@ img{-webkit-user-drag:none;-webkit-user-select:none;user-select:none}
 .projects-stage>.projects-prev,.projects-stage>.projects-next{position:absolute;top:50%;transform:translateY(-50%);z-index:4}
 .projects-stage>.projects-prev{left:0}
 .projects-stage>.projects-next{right:0}
+.projects-stage>.projects-prev:disabled,.projects-stage>.projects-next:disabled{opacity:0;visibility:hidden;pointer-events:none}
 .projects-stage>.projects-prev:hover,.projects-stage>.projects-prev:focus-visible,.projects-stage>.projects-next:hover,.projects-stage>.projects-next:focus-visible{transform:translateY(-50%)}
 @media(max-width:900px){.projects-stage{padding-inline:50px}}
 @media(max-width:640px){
