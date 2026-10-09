@@ -1365,11 +1365,11 @@ img{-webkit-user-drag:none;-webkit-user-select:none;user-select:none}
    pill that fills up (green) over the rotation time, then the page advances. */
 .projects-pagination{display:flex;align-items:center;justify-content:center;margin-top:28px}
 .projects-pagination[hidden]{display:none}
-.projects-page-tabs{--active-page:0;--page-count:1;--projects-fill:6s;display:flex;align-items:center;justify-content:center;gap:6px}
-.projects-page-tabs button{display:grid;place-items:center;padding:7px 5px;border:0;background:transparent}
+.projects-page-tabs{--active-page:0;--page-count:1;--projects-fill:6s;display:flex;align-items:center;justify-content:center;gap:2px}
+.projects-page-tabs button{display:grid;place-items:center;padding:7px 3px;border:0;background:transparent}
 .projects-page-tabs button>span{position:relative;display:block;width:8px;height:8px;border-radius:999px;background:#aeb6aa;overflow:hidden;font-size:0;line-height:0;color:transparent;transition:width .34s cubic-bezier(.22,.61,.36,1),height .34s cubic-bezier(.22,.61,.36,1),opacity .25s,background .25s}
 .projects-page-tabs button>span>i{position:absolute;inset:0;border-radius:inherit;background:#348561;transform:scaleX(0);transform-origin:left center}
-.projects-page-tabs button:not([aria-current="page"])>span{width:4px;height:4px;opacity:.4}
+.projects-page-tabs button:not([aria-current="page"])>span{width:4px;height:4px;opacity:0}
 .projects-page-tabs button:not([aria-current="page"]):hover>span,.projects-page-tabs button:not([aria-current="page"]):focus-visible>span{background:#348561;opacity:1}
 .projects-page-tabs button[aria-current="page"]>span{width:40px;background:#bcd3c7}
 .projects-page-tabs button[aria-current="page"]>span>i{animation:projects-dot-fill var(--projects-fill) linear forwards}
@@ -1377,8 +1377,8 @@ img{-webkit-user-drag:none;-webkit-user-select:none;user-select:none}
 @keyframes projects-dot-fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 @media(max-width:640px){
   .projects-pagination{margin-top:22px}
-  .projects-page-tabs{gap:5px}
-  .projects-page-tabs button{padding:7px 4px}
+  .projects-page-tabs{gap:2px}
+  .projects-page-tabs button{padding:7px 3px}
   .projects-page-tabs button[aria-current="page"]>span{width:34px}
 }
 @media(prefers-reduced-motion:reduce){
