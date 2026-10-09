@@ -45,6 +45,102 @@ const cases = {
     points: ['Protocolo UART separado do firmware, com testes de framing e checksum.', 'Gabinete paramétrico de 46,4 × 46,4 × 13 mm, em duas peças.', 'Documentação de montagem, testes de bancada e limitações de segurança.'],
     status: 'Projeto experimental. Não equivale a Touch ID ou a uma chave FIDO2; o segredo digitado exige cuidados descritos no repositório.',
     url: 'https://github.com/nicholasbirochi/Standalone-Fingerprint-Key'
+  },
+  churn: {
+    title: 'Análise de Churn SaaS', kicker: 'PYTHON · SCIKIT-LEARN · XGBOOST',
+    intro: 'Prever quem vai cancelar e transformar isso em ação para Produto e CS.',
+    description: 'Projeto de ciência de dados que modela o cancelamento de clientes de um SaaS, comparando algoritmos e interpretando o que mais pesa na decisão de sair.',
+    points: ['Modelos comparados: Logistic Regression, Random Forest e XGBoost.', 'Interpretação de variáveis para entender os fatores de churn.', 'Recomendações práticas para os times de Produto e Customer Success.'],
+    status: 'Projeto público de portfólio. Código, notebook e detalhes no repositório.',
+    url: 'https://github.com/nicholasbirochi/SAAS-Churn-Analysis-Techgrow'
+  },
+  lyrics: {
+    title: 'Language Lyrics Lab', kicker: 'EXPO · TYPESCRIPT · ÁUDIO',
+    intro: 'Aprender idiomas pela música, com a letra e a tradução lado a lado.',
+    description: 'Aplicativo de estudo de idiomas que sincroniza a letra com o áudio e traduz linha a linha, apoiado por flashcards e modos de revisão.',
+    points: ['Letras sincronizadas com o áudio via LRCLIB.', 'Tradução linha a linha com LibreTranslate.', 'Flashcards e modos de revisão para fixar o vocabulário.'],
+    status: 'Projeto público de portfólio. Código e detalhes no repositório.',
+    url: 'https://github.com/nicholasbirochi/Language-Lyrics-Lab'
+  },
+  scheduler: {
+    title: 'Simulador de Escalonamento', kicker: 'PYTHON · SISTEMAS OPERACIONAIS',
+    intro: 'Ver na prática como o sistema operacional decide quem usa a CPU.',
+    description: 'Simulador de algoritmos de escalonamento de CPU que reproduz problemas clássicos de concorrência e prioridade, com cenários persistentes e testes.',
+    points: ['Inversão e herança de prioridade com protocolo de teto.', 'Aging para evitar a inanição de processos.', 'Cenários persistentes e testes automatizados.'],
+    status: 'Projeto acadêmico público. Código, cenários e testes no repositório.',
+    url: 'https://github.com/nicholasbirochi/Task-Scheduling-Simulator'
+  },
+  doppler: {
+    title: 'Simulador de Áudio Doppler', kicker: 'JAVA · POO · SQL',
+    intro: 'Física, orientação a objetos e banco de dados em um só projeto.',
+    description: 'Projeto multidisciplinar em Java que simula o comportamento do áudio sob o efeito Doppler, unindo modelagem física, POO e persistência em banco.',
+    points: ['Simulação do efeito Doppler a partir de parâmetros físicos.', 'Arquitetura orientada a objetos.', 'Persistência de dados em SQL.'],
+    status: 'Projeto acadêmico público. Código e detalhes no repositório.',
+    url: 'https://github.com/nicholasbirochi/Audio-Simulator-with-Doppler-Effect'
+  },
+  fraud: {
+    title: 'Classificador de Fraude', kicker: 'PYTHON · DECISION TREE · ML',
+    intro: 'Sinalizar transações bancárias suspeitas com uma árvore de decisão.',
+    description: 'Projeto de machine learning que classifica transações fraudulentas, da exploração dos dados ao tratamento do desbalanceamento e à avaliação do modelo.',
+    points: ['EDA e preparo de atributos das transações.', 'Tratamento do desbalanceamento entre classes.', 'Avaliação por ROC-AUC e PR-AUC.'],
+    status: 'Projeto público de portfólio. Código e notebook no repositório.',
+    url: 'https://github.com/nicholasbirochi/Bank-Transaction-Fraud-Classification-Decision-Tree-'
+  },
+  homework: {
+    title: 'Gestor de Tarefas Escolares', kicker: 'REACT NATIVE · EXPO · SQLITE',
+    intro: 'Organizar a vida escolar inteira em um app no bolso.',
+    description: 'Aplicativo mobile para acompanhar alunos, trabalhos e atividades, com visão de progresso e gráficos, usando armazenamento local.',
+    points: ['Cadastro de alunos, trabalhos e atividades.', 'Acompanhamento de progresso com gráficos.', 'Dados locais no dispositivo com SQLite.'],
+    status: 'Projeto público de portfólio. Código e detalhes no repositório.',
+    url: 'https://github.com/nicholasbirochi/Homework-Management'
+  },
+  dashboards: {
+    title: 'Dashboards de Vendas e Clientes', kicker: 'BI · DADOS · SQL',
+    intro: 'Dados de vendas e clientes virando leitura de negócio.',
+    description: 'Dashboards que reúnem vendas e clientes para análise de negócio, unindo processamento de dados, visualização e conceitos de banco de dados.',
+    points: ['Processamento e preparo dos dados de origem.', 'Visualizações de vendas e de clientes.', 'Apoiado em conceitos de banco de dados.'],
+    status: 'Projeto público de portfólio. Base demonstrativa e detalhes no repositório.',
+    url: 'https://github.com/nicholasbirochi/DashBoards---Vendas-e-Clientes'
+  },
+  dna: {
+    title: 'DNACharacter', kicker: 'JAVASCRIPT · HTML · CSS',
+    intro: 'Mexa em cinco características e veja o avatar reagir na hora.',
+    description: 'Aplicação web paramétrica em que cinco controles mudam o avatar em tempo real, refletindo em corpo, postura e expressão.',
+    points: ['Cinco características ajustáveis pelo usuário.', 'Avatar que responde em corpo, postura e expressão.', 'Feito com JavaScript, HTML e CSS, sem dependências.'],
+    status: 'Projeto público de portfólio. Código e demonstração no repositório.',
+    url: 'https://github.com/nicholasbirochi/DNACharacter'
+  },
+  netflix: {
+    title: 'Netflix Top 10 EDA', kicker: 'PYTHON · PANDAS · MATPLOTLIB',
+    intro: 'O que o Top 10 diário da Netflix revela quando os dados falam.',
+    description: 'Análise exploratória do Netflix Daily Top 10 com Pandas e Matplotlib, da validação dos dados às tendências de audiência.',
+    points: ['Validação e limpeza da base diária.', 'Distribuições e cobertura temporal.', 'Títulos de maior audiência no período.'],
+    status: 'Projeto público de portfólio. Notebook e gráficos no repositório.',
+    url: 'https://github.com/nicholasbirochi/AI-Development---EDA'
+  },
+  meal: {
+    title: 'Análise de Delivery', kicker: 'PYTHON · PANDAS · NUMPY',
+    intro: 'Dados de pedidos de delivery transformados em KPIs de negócio.',
+    description: 'Análise de dados de delivery com Pandas e NumPy, da exploração à engenharia de atributos e aos principais indicadores de negócio.',
+    points: ['EDA e engenharia de atributos dos pedidos.', 'Tendência mensal de receita.', 'Principais KPIs de negócio.'],
+    status: 'Projeto público de portfólio. Notebook e detalhes no repositório.',
+    url: 'https://github.com/nicholasbirochi/Meal-Delivery-Analysis'
+  },
+  dbprojects: {
+    title: 'Projetos de Banco de Dados', kicker: 'JUPYTER · PYTHON · SQL',
+    intro: 'Uma coletânea prática de banco de dados e análise de dados.',
+    description: 'Conjunto de exercícios práticos de banco de dados e análise de dados, usando os conjuntos IceCream e Titanic.',
+    points: ['Exercícios práticos com os datasets IceCream e Titanic.', 'Consultas e manipulação de dados em SQL.', 'Análise exploratória em notebooks Jupyter.'],
+    status: 'Projeto público de portfólio. Notebooks e detalhes no repositório.',
+    url: 'https://github.com/nicholasbirochi/Projects---DataBase'
+  },
+  statistics: {
+    title: 'Estatística para Devs', kicker: 'PYTHON · PANDAS · MATPLOTLIB',
+    intro: 'Fundamentos de estatística aplicados com Pandas, do dado ao gráfico.',
+    description: 'Desafio de estatística e análise com Pandas, da limpeza dos dados ao cálculo de métricas e à geração de gráficos por mês.',
+    points: ['Limpeza e preparo dos dados.', 'Cálculo de médias e métricas básicas.', 'Gráficos de barra e de linha por mês com Matplotlib.'],
+    status: 'Projeto público de portfólio. Código e gráficos no repositório.',
+    url: 'https://github.com/nicholasbirochi/Project---Statistics-for-Devs'
   }
 };
 
@@ -118,6 +214,90 @@ const caseCopyEn = {
     description: 'The ESP32-S3 communicates with an HLK-ZW111 sensor and presents itself to the computer as a USB keyboard. After a biometric match, it types a locally configured secret.',
     points: ['UART protocol separated from firmware, with framing and checksum tests.', 'A two-part, parametric 46.4 × 46.4 × 13 mm enclosure.', 'Assembly documentation, bench testing and clearly stated security limitations.'],
     status: 'Experimental project. It is not equivalent to Touch ID or a FIDO2 key; typing a secret requires the safeguards documented in the repository.'
+  },
+  churn: {
+    title: 'SaaS Churn Analysis', kicker: 'PYTHON · SCIKIT-LEARN · XGBOOST',
+    intro: 'Predicting who will cancel and turning it into action for Product and CS.',
+    description: 'A data-science project that models customer churn for a SaaS, comparing algorithms and interpreting what weighs most in the decision to leave.',
+    points: ['Models compared: Logistic Regression, Random Forest and XGBoost.', 'Feature interpretation to understand the drivers of churn.', 'Actionable recommendations for Product and Customer Success teams.'],
+    status: 'Public portfolio project. Code, notebook and details in the repository.'
+  },
+  lyrics: {
+    title: 'Language Lyrics Lab', kicker: 'EXPO · TYPESCRIPT · AUDIO',
+    intro: 'Learning languages through music, with lyrics and translation side by side.',
+    description: 'A language-study app that syncs lyrics with the audio and translates line by line, supported by flashcards and review modes.',
+    points: ['Lyrics synced to the audio via LRCLIB.', 'Line-by-line translation with LibreTranslate.', 'Flashcards and review modes to retain vocabulary.'],
+    status: 'Public portfolio project. Code and details in the repository.'
+  },
+  scheduler: {
+    title: 'CPU Scheduling Simulator', kicker: 'PYTHON · OPERATING SYSTEMS',
+    intro: 'Seeing first-hand how an operating system decides who gets the CPU.',
+    description: 'A CPU scheduling simulator that reproduces classic concurrency and priority problems, with persistent scenarios and tests.',
+    points: ['Priority inversion and inheritance with the ceiling protocol.', 'Aging to prevent process starvation.', 'Persistent scenarios and automated tests.'],
+    status: 'Public academic project. Code, scenarios and tests in the repository.'
+  },
+  doppler: {
+    title: 'Doppler Audio Simulator', kicker: 'JAVA · OOP · SQL',
+    intro: 'Physics, object-oriented programming and a database in one project.',
+    description: 'A multidisciplinary Java project that simulates audio behavior under the Doppler effect, combining physical modeling, OOP and database persistence.',
+    points: ['Doppler-effect simulation from physical parameters.', 'Object-oriented architecture.', 'Data persistence in SQL.'],
+    status: 'Public academic project. Code and details in the repository.'
+  },
+  fraud: {
+    title: 'Fraud Classifier', kicker: 'PYTHON · DECISION TREE · ML',
+    intro: 'Flagging suspicious bank transactions with a decision tree.',
+    description: 'A machine-learning project that classifies fraudulent transactions, from data exploration to imbalance handling and model evaluation.',
+    points: ['EDA and feature preparation of the transactions.', 'Handling of class imbalance.', 'Evaluation with ROC-AUC and PR-AUC.'],
+    status: 'Public portfolio project. Code and notebook in the repository.'
+  },
+  homework: {
+    title: 'School Task Manager', kicker: 'REACT NATIVE · EXPO · SQLITE',
+    intro: 'Organizing your whole school life in an app in your pocket.',
+    description: 'A mobile app to keep track of students, assignments and activities, with a progress view and charts, using local storage.',
+    points: ['Records for students, assignments and activities.', 'Progress tracking with charts.', 'On-device local data with SQLite.'],
+    status: 'Public portfolio project. Code and details in the repository.'
+  },
+  dashboards: {
+    title: 'Sales and Customer Dashboards', kicker: 'BI · DATA · SQL',
+    intro: 'Turning sales and customer data into a business read.',
+    description: 'Dashboards that bring sales and customers together for business analysis, combining data processing, visualization and database concepts.',
+    points: ['Processing and preparation of the source data.', 'Sales and customer visualizations.', 'Grounded in database concepts.'],
+    status: 'Public portfolio project. Demonstration data and details in the repository.'
+  },
+  dna: {
+    title: 'DNACharacter', kicker: 'JAVASCRIPT · HTML · CSS',
+    intro: 'Tweak five traits and watch the avatar react instantly.',
+    description: 'A parametric web app where five controls change the avatar in real time, reflected in body, posture and expression.',
+    points: ['Five user-adjustable traits.', 'An avatar that responds in body, posture and expression.', 'Built with plain JavaScript, HTML and CSS.'],
+    status: 'Public portfolio project. Code and demo in the repository.'
+  },
+  netflix: {
+    title: 'Netflix Top 10 EDA', kicker: 'PYTHON · PANDAS · MATPLOTLIB',
+    intro: 'What the Netflix Daily Top 10 reveals once the data speaks.',
+    description: 'Exploratory analysis of the Netflix Daily Top 10 with Pandas and Matplotlib, from data validation to audience trends.',
+    points: ['Validation and cleaning of the daily dataset.', 'Distributions and time coverage.', 'Highest-audience titles in the period.'],
+    status: 'Public portfolio project. Notebook and charts in the repository.'
+  },
+  meal: {
+    title: 'Meal Delivery Analysis', kicker: 'PYTHON · PANDAS · NUMPY',
+    intro: 'Delivery order data turned into business KPIs.',
+    description: 'A delivery data analysis with Pandas and NumPy, from exploration to feature engineering and key business indicators.',
+    points: ['EDA and feature engineering of the orders.', 'Monthly revenue trend.', 'Key business KPIs.'],
+    status: 'Public portfolio project. Notebook and details in the repository.'
+  },
+  dbprojects: {
+    title: 'Database Projects', kicker: 'JUPYTER · PYTHON · SQL',
+    intro: 'A hands-on collection of database and data-analysis work.',
+    description: 'A set of hands-on database and data-analysis exercises, using the IceCream and Titanic datasets.',
+    points: ['Hands-on exercises with the IceCream and Titanic datasets.', 'Querying and data manipulation in SQL.', 'Exploratory analysis in Jupyter notebooks.'],
+    status: 'Public portfolio project. Notebooks and details in the repository.'
+  },
+  statistics: {
+    title: 'Statistics for Devs', kicker: 'PYTHON · PANDAS · MATPLOTLIB',
+    intro: 'Statistics fundamentals applied with Pandas, from data to chart.',
+    description: 'A statistics and analysis challenge with Pandas, from data cleaning to computing metrics and generating monthly charts.',
+    points: ['Data cleaning and preparation.', 'Computing averages and basic metrics.', 'Monthly bar and line charts with Matplotlib.'],
+    status: 'Public portfolio project. Code and charts in the repository.'
   }
 };
 
@@ -163,6 +343,90 @@ const caseCopyEs = {
     description: 'El ESP32-S3 se comunica con un sensor HLK-ZW111 y se presenta ante el computador como un teclado USB. Tras una coincidencia biométrica, escribe un secreto configurado localmente.',
     points: ['Protocolo UART separado del firmware, con pruebas de tramas y checksum.', 'Carcasa paramétrica de 46,4 × 46,4 × 13 mm en dos piezas.', 'Documentación de montaje, pruebas de banco y limitaciones de seguridad claramente indicadas.'],
     status: 'Proyecto experimental. No equivale a Touch ID ni a una llave FIDO2; escribir un secreto exige las precauciones documentadas en el repositorio.'
+  },
+  churn: {
+    title: 'Análisis de Churn SaaS', kicker: 'PYTHON · SCIKIT-LEARN · XGBOOST',
+    intro: 'Predecir quién cancelará y convertirlo en acción para Producto y CS.',
+    description: 'Proyecto de ciencia de datos que modela la cancelación de clientes de un SaaS, comparando algoritmos e interpretando qué pesa más en la decisión de irse.',
+    points: ['Modelos comparados: Logistic Regression, Random Forest y XGBoost.', 'Interpretación de variables para entender los factores de churn.', 'Recomendaciones prácticas para los equipos de Producto y Customer Success.'],
+    status: 'Proyecto público de portafolio. Código, notebook y detalles en el repositorio.'
+  },
+  lyrics: {
+    title: 'Language Lyrics Lab', kicker: 'EXPO · TYPESCRIPT · AUDIO',
+    intro: 'Aprender idiomas con música, con la letra y la traducción lado a lado.',
+    description: 'Aplicación de estudio de idiomas que sincroniza la letra con el audio y traduce línea por línea, con flashcards y modos de repaso.',
+    points: ['Letras sincronizadas con el audio mediante LRCLIB.', 'Traducción línea por línea con LibreTranslate.', 'Flashcards y modos de repaso para fijar el vocabulario.'],
+    status: 'Proyecto público de portafolio. Código y detalles en el repositorio.'
+  },
+  scheduler: {
+    title: 'Simulador de Planificación', kicker: 'PYTHON · SISTEMAS OPERATIVOS',
+    intro: 'Ver en la práctica cómo el sistema operativo decide quién usa la CPU.',
+    description: 'Simulador de algoritmos de planificación de CPU que reproduce problemas clásicos de concurrencia y prioridad, con escenarios persistentes y pruebas.',
+    points: ['Inversión y herencia de prioridad con protocolo de techo.', 'Aging para evitar la inanición de procesos.', 'Escenarios persistentes y pruebas automatizadas.'],
+    status: 'Proyecto académico público. Código, escenarios y pruebas en el repositorio.'
+  },
+  doppler: {
+    title: 'Simulador de Audio Doppler', kicker: 'JAVA · POO · SQL',
+    intro: 'Física, programación orientada a objetos y base de datos en un solo proyecto.',
+    description: 'Proyecto multidisciplinario en Java que simula el comportamiento del audio bajo el efecto Doppler, uniendo modelado físico, POO y persistencia en base de datos.',
+    points: ['Simulación del efecto Doppler a partir de parámetros físicos.', 'Arquitectura orientada a objetos.', 'Persistencia de datos en SQL.'],
+    status: 'Proyecto académico público. Código y detalles en el repositorio.'
+  },
+  fraud: {
+    title: 'Clasificador de Fraude', kicker: 'PYTHON · DECISION TREE · ML',
+    intro: 'Señalar transacciones bancarias sospechosas con un árbol de decisión.',
+    description: 'Proyecto de machine learning que clasifica transacciones fraudulentas, desde la exploración de datos hasta el tratamiento del desbalance y la evaluación del modelo.',
+    points: ['EDA y preparación de atributos de las transacciones.', 'Tratamiento del desbalance entre clases.', 'Evaluación con ROC-AUC y PR-AUC.'],
+    status: 'Proyecto público de portafolio. Código y notebook en el repositorio.'
+  },
+  homework: {
+    title: 'Gestor de Tareas Escolares', kicker: 'REACT NATIVE · EXPO · SQLITE',
+    intro: 'Organizar toda la vida escolar en una app en el bolsillo.',
+    description: 'Aplicación móvil para seguir alumnos, trabajos y actividades, con vista de progreso y gráficos, usando almacenamiento local.',
+    points: ['Registro de alumnos, trabajos y actividades.', 'Seguimiento del progreso con gráficos.', 'Datos locales en el dispositivo con SQLite.'],
+    status: 'Proyecto público de portafolio. Código y detalles en el repositorio.'
+  },
+  dashboards: {
+    title: 'Dashboards de Ventas y Clientes', kicker: 'BI · DATOS · SQL',
+    intro: 'Datos de ventas y clientes convertidos en lectura de negocio.',
+    description: 'Dashboards que reúnen ventas y clientes para el análisis de negocio, uniendo procesamiento de datos, visualización y conceptos de base de datos.',
+    points: ['Procesamiento y preparación de los datos de origen.', 'Visualizaciones de ventas y de clientes.', 'Apoyados en conceptos de base de datos.'],
+    status: 'Proyecto público de portafolio. Base demostrativa y detalles en el repositorio.'
+  },
+  dna: {
+    title: 'DNACharacter', kicker: 'JAVASCRIPT · HTML · CSS',
+    intro: 'Ajusta cinco características y mira al avatar reaccionar al instante.',
+    description: 'Aplicación web paramétrica en la que cinco controles cambian el avatar en tiempo real, reflejándose en cuerpo, postura y expresión.',
+    points: ['Cinco características ajustables por el usuario.', 'Un avatar que responde en cuerpo, postura y expresión.', 'Hecho con JavaScript, HTML y CSS, sin dependencias.'],
+    status: 'Proyecto público de portafolio. Código y demostración en el repositorio.'
+  },
+  netflix: {
+    title: 'Netflix Top 10 EDA', kicker: 'PYTHON · PANDAS · MATPLOTLIB',
+    intro: 'Lo que revela el Top 10 diario de Netflix cuando hablan los datos.',
+    description: 'Análisis exploratorio del Netflix Daily Top 10 con Pandas y Matplotlib, desde la validación de datos hasta las tendencias de audiencia.',
+    points: ['Validación y limpieza de la base diaria.', 'Distribuciones y cobertura temporal.', 'Títulos de mayor audiencia en el período.'],
+    status: 'Proyecto público de portafolio. Notebook y gráficos en el repositorio.'
+  },
+  meal: {
+    title: 'Análisis de Delivery', kicker: 'PYTHON · PANDAS · NUMPY',
+    intro: 'Datos de pedidos de delivery convertidos en KPIs de negocio.',
+    description: 'Análisis de datos de delivery con Pandas y NumPy, desde la exploración hasta la ingeniería de atributos y los principales indicadores de negocio.',
+    points: ['EDA e ingeniería de atributos de los pedidos.', 'Tendencia mensual de ingresos.', 'Principales KPIs de negocio.'],
+    status: 'Proyecto público de portafolio. Notebook y detalles en el repositorio.'
+  },
+  dbprojects: {
+    title: 'Proyectos de Base de Datos', kicker: 'JUPYTER · PYTHON · SQL',
+    intro: 'Una colección práctica de base de datos y análisis de datos.',
+    description: 'Conjunto de ejercicios prácticos de base de datos y análisis de datos, usando los conjuntos IceCream y Titanic.',
+    points: ['Ejercicios prácticos con los datasets IceCream y Titanic.', 'Consultas y manipulación de datos en SQL.', 'Análisis exploratorio en notebooks de Jupyter.'],
+    status: 'Proyecto público de portafolio. Notebooks y detalles en el repositorio.'
+  },
+  statistics: {
+    title: 'Estadística para Devs', kicker: 'PYTHON · PANDAS · MATPLOTLIB',
+    intro: 'Fundamentos de estadística aplicados con Pandas, del dato al gráfico.',
+    description: 'Desafío de estadística y análisis con Pandas, desde la limpieza de datos hasta el cálculo de métricas y la generación de gráficos por mes.',
+    points: ['Limpieza y preparación de los datos.', 'Cálculo de promedios y métricas básicas.', 'Gráficos de barras y de líneas por mes con Matplotlib.'],
+    status: 'Proyecto público de portafolio. Código y gráficos en el repositorio.'
   }
 };
 
@@ -357,7 +621,7 @@ function renderProjectsPagination(totalPages) {
       const button = document.createElement('button');
       button.type = 'button';
       button.dataset.projectsTarget = String(index);
-      button.innerHTML = `<span>${index + 1}</span>`;
+      button.innerHTML = '<span><i></i></span>';
       button.addEventListener('click', () => { activeProjectPage = index; renderProjects(); });
       projectsPageTabs.appendChild(button);
     }
@@ -404,24 +668,81 @@ projectsNext?.addEventListener('click', () => { activeProjectPage += 1; renderPr
 
 renderProjects();
 
+// Auto-rotate project pages like the Claude carousel: the active dot fills up and,
+// when it finishes filling, the page advances. The fill animation is the timer, so
+// pausing/resuming it (via the .is-paused class) keeps visuals and timing in sync.
+// Only opening a project pauses it; it resumes 3s after the dialog closes. Hovering
+// and page navigation (dots/arrows/keyboard) never pause it.
+const projectsResumeDelay = 3000;
+const projectsReduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let projectsResumeTimer = null;
+
+function projectsTotalPages() {
+  return Math.max(1, Math.ceil(matchingProjects().length / projectsPerPage));
+}
+function clearProjectsResume() {
+  if (projectsResumeTimer) { clearTimeout(projectsResumeTimer); projectsResumeTimer = null; }
+}
+function canAutoRotate() {
+  return !projectsReduceMotion.matches && !document.hidden && !document.body.classList.contains('modal-open') && projectsTotalPages() > 1;
+}
+function pauseProjectsAuto() {
+  clearProjectsResume();
+  projectsPagination?.classList.add('is-paused');
+}
+function resumeProjectsAuto() {
+  clearProjectsResume();
+  projectsPagination?.classList.toggle('is-paused', !canAutoRotate());
+}
+function scheduleProjectsResume(delay = projectsResumeDelay) {
+  clearProjectsResume();
+  projectsResumeTimer = setTimeout(() => { projectsResumeTimer = null; resumeProjectsAuto(); }, delay);
+}
+// The active dot finished filling -> advance to the next page (wraps around).
+projectsPageTabs?.addEventListener('animationend', event => {
+  if (event.animationName !== 'projects-dot-fill') return;
+  if (!canAutoRotate() || projectsPagination?.classList.contains('is-paused')) return;
+  activeProjectPage = (activeProjectPage + 1) % projectsTotalPages();
+  renderProjects();
+});
+
+document.addEventListener('visibilitychange', () => { if (document.hidden) pauseProjectsAuto(); else scheduleProjectsResume(projectsResumeDelay); });
+projectsReduceMotion.addEventListener('change', () => { if (projectsReduceMotion.matches) pauseProjectsAuto(); else resumeProjectsAuto(); });
+
+resumeProjectsAuto();
+
 const dialog = document.querySelector('.case-dialog');
 let dialogTrigger;
 function renderCase(key, type = 'project') {
-  const project = type === 'journey' ? journeyCases[key]?.[currentLanguage] : cases[key];
-  if (!project) return;
-  const localizedCases = currentLanguage === 'en' ? caseCopyEn : currentLanguage === 'es' ? caseCopyEs : null;
-  const copy = type === 'project' && localizedCases ? {...project, ...localizedCases[key]} : project;
-  for (const [id, value] of Object.entries({title: copy.title, kicker: copy.kicker, intro: copy.intro, description: copy.description, status: copy.status})) {
-    document.querySelector(`#case-${id}`).textContent = value;
+  let copy;
+  if (type === 'journey') {
+    copy = journeyCases[key]?.[currentLanguage];
+  } else {
+    const base = cases[key];
+    const localized = currentLanguage === 'en' ? caseCopyEn[key] : currentLanguage === 'es' ? caseCopyEs[key] : null;
+    copy = base ? {...base, ...(localized || {})} : null;
   }
-  document.querySelector('#case-points').replaceChildren(...copy.points.map(point => {
+  if (!copy) return;
+  document.querySelector('#case-kicker').textContent = copy.kicker || '';
+  document.querySelector('#case-title').textContent = copy.title || '';
+  const introEl = document.querySelector('#case-intro');
+  introEl.textContent = copy.intro || '';
+  introEl.hidden = !copy.intro;
+  document.querySelector('#case-description').textContent = copy.description || '';
+  const points = copy.points || [];
+  const pointsList = document.querySelector('#case-points');
+  pointsList.replaceChildren(...points.map(point => {
     const li = document.createElement('li');
     li.textContent = point;
     return li;
   }));
+  pointsList.closest('.case-section').hidden = points.length === 0;
+  const statusEl = document.querySelector('#case-status');
+  statusEl.textContent = copy.status || '';
+  statusEl.hidden = !copy.status;
   const repoLink = document.querySelector('#case-repo');
-  repoLink.hidden = type === 'journey' || !project.url;
-  if (type === 'project' && project.url) repoLink.href = project.url;
+  repoLink.hidden = !copy.url;
+  if (copy.url) repoLink.href = copy.url;
   else repoLink.removeAttribute('href');
 }
 
@@ -432,13 +753,15 @@ function openCase(trigger, key, type) {
   dialog.showModal();
   dialog.scrollTop = 0;
   document.body.classList.add('modal-open');
+  pauseProjectsAuto();
   document.querySelector('.dialog-close').focus();
 }
 
 document.querySelectorAll('[data-project]').forEach(button => {
   button.addEventListener('click', () => {
-    if (!cases[button.dataset.project]) return;
-    openCase(button, button.dataset.project, 'project');
+    const key = button.dataset.project;
+    if (!cases[key]) return;
+    openCase(button, key, 'project');
   });
 });
 document.querySelectorAll('[data-journey]').forEach(event => {
@@ -459,6 +782,7 @@ dialog.addEventListener('close', () => {
   document.body.classList.remove('modal-open');
   dialogTrigger?.focus({preventScroll: true});
   activeDetail = null;
+  scheduleProjectsResume(projectsResumeDelay);
 });
 
 const recommendationPages = [...document.querySelectorAll('[data-recommendation-page]')];
