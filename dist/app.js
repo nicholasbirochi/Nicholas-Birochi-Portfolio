@@ -673,7 +673,7 @@ renderProjects();
 // pausing/resuming it (via the .is-paused class) keeps visuals and timing in sync.
 // Only opening a project pauses it; it resumes 3s after the dialog closes. Hovering
 // and page navigation (dots/arrows/keyboard) never pause it.
-const projectsResumeDelay = 3000;
+const projectsResumeDelay = 2000;
 const projectsReduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 let projectsResumeTimer = null;
 
