@@ -1650,3 +1650,16 @@ body{font-size:16px}
 @media(max-width:640px){
   .contact-title .contact-form textarea{min-height:170px}
 }
+
+/* Editorial v36: Rocketseat is the final contact row. */
+.contact-title .contact-form{min-height:628px}
+.contact-title .contact-form textarea{
+  min-height:273px;
+  max-height:360px;
+}
+@media(max-width:1100px){
+  .contact-title .contact-form{min-height:0}
+}
+@media(max-width:640px){
+  .contact-title .contact-form textarea{min-height:170px}
+}
