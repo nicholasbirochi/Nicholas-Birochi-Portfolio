@@ -590,6 +590,7 @@ const hero = document.querySelector('.hero');
 function updateHeaderState() {
   if (!header || !hero) return;
   header.classList.toggle('is-stuck', window.scrollY >= hero.offsetHeight - header.offsetHeight);
+  document.documentElement.classList.toggle('is-page-end', window.scrollY >= document.documentElement.scrollHeight - window.innerHeight - 2);
 }
 window.addEventListener('scroll', updateHeaderState, {passive: true});
 window.addEventListener('resize', updateHeaderState);
