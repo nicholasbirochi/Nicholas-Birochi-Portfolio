@@ -1651,6 +1651,20 @@ body{font-size:16px}
   .contact-title .contact-form textarea{min-height:170px}
 }
 
+/* Editorial v38: align the form bottom with the Rocketseat row. */
+.contact-title .contact-form{min-height:606px}
+.contact-title .contact-form textarea{
+  min-height:251px;
+  max-height:340px;
+}
+.contact-title .form-submit{margin-top:20px}
+@media(max-width:1100px){
+  .contact-title .contact-form{min-height:0}
+}
+@media(max-width:640px){
+  .contact-title .contact-form textarea{min-height:150px}
+}
+
 /* Editorial v37: keep the submit gap equal to the field gaps. */
 .contact-title .contact-form textarea{
   min-height:253px;
