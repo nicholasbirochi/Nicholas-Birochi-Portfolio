@@ -585,12 +585,23 @@ document.addEventListener('click', event => {
 });
 window.matchMedia('(min-width: 641px)').addEventListener('change', closeMenu);
 
+const header = document.querySelector('.header');
+const hero = document.querySelector('.hero');
+function updateHeaderState() {
+  if (!header || !hero) return;
+  header.classList.toggle('is-stuck', window.scrollY >= hero.offsetHeight - 1);
+}
+window.addEventListener('scroll', updateHeaderState, {passive: true});
+window.addEventListener('resize', updateHeaderState);
+updateHeaderState();
+
 const projects = [...document.querySelectorAll('.project')];
 const projectsPagination = document.querySelector('.projects-pagination');
 const projectsPageTabs = document.querySelector('.projects-page-tabs');
 const projectsPageStatus = document.querySelector('#projects-page-status');
 const projectsPrev = document.querySelector('.projects-prev');
 const projectsNext = document.querySelector('.projects-next');
+const filterButtons = [...document.querySelectorAll('[data-filter]')];
 const projectsPerPage = 6;
 let currentProjectFilter = 'all';
 let activeProjectPage = 0;
@@ -608,6 +619,15 @@ function renderProjects() {
   projects.forEach(project => { project.hidden = !visible.includes(project); });
   renderProjectsPagination(totalPages);
   updateFilterStatus(matches.length);
+}
+
+function setProjectFilter(filter, reveal = false) {
+  const selected = filterButtons.find(button => button.dataset.filter === filter) || filterButtons[0];
+  currentProjectFilter = selected.dataset.filter;
+  activeProjectPage = 0;
+  filterButtons.forEach(button => button.setAttribute('aria-pressed', String(button === selected)));
+  renderProjects();
+  if (reveal) document.querySelector('#projetos')?.scrollIntoView({block: 'start'});
 }
 
 function renderProjectsPagination(totalPages) {
@@ -644,12 +664,16 @@ function renderProjectsPagination(totalPages) {
   if (projectsPageStatus) projectsPageStatus.textContent = totalPages > 1 ? `${config.recommendationPage} ${activeProjectPage + 1} ${config.recommendationOf} ${totalPages}` : '';
 }
 
-document.querySelectorAll('[data-filter]').forEach(button => {
+filterButtons.forEach(button => {
   button.addEventListener('click', () => {
-    currentProjectFilter = button.dataset.filter;
-    activeProjectPage = 0;
-    document.querySelectorAll('[data-filter]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
-    renderProjects();
+    setProjectFilter(button.dataset.filter);
+  });
+});
+
+document.querySelectorAll('[data-band-filter]').forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    setProjectFilter(link.dataset.bandFilter, true);
   });
 });
 
