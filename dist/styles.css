@@ -1468,9 +1468,12 @@ img{-webkit-user-drag:none;-webkit-user-select:none;user-select:none}
   text-decoration:underline;
   text-underline-offset:7px;
 }
+html{background:var(--ink)}
+body{background:var(--lime)}
+main{background:var(--paper)}
 .header{
   position:fixed;
-  background:transparent;
+  background:#202221;
   transition:background-color .2s,border-color .2s,box-shadow .2s;
 }
 .header.is-stuck{
