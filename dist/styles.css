@@ -1430,7 +1430,7 @@ img{-webkit-user-drag:none;-webkit-user-select:none;user-select:none}
 .visual-statistics{background:#dfe0ec;--spec-ink:#343a66}
 @media(max-width:640px){.visual-text{padding:20px}.visual-text .text-name{font-size:26px}}
 
-/* Editorial v30: repo screenshots fill the card instead of showing colored gutters. */
+/* Editorial v31: trimmed screenshots fit whole, without colored gutters or crop. */
 .visual-churn .project-preview-image,
 .visual-lyrics .project-preview-image,
 .visual-scheduler .project-preview-image,
@@ -1443,13 +1443,11 @@ img{-webkit-user-drag:none;-webkit-user-select:none;user-select:none}
 .visual-meal .project-preview-image,
 .visual-dbprojects .project-preview-image,
 .visual-statistics .project-preview-image{
-  top:-32px;
-  right:auto;
-  bottom:auto;
-  left:-32px;
-  width:calc(100% + 64px);
-  height:calc(100% + 64px);
-  max-width:none;
-  object-fit:cover;
+  inset:0;
+  width:100%;
+  height:100%;
+  max-width:100%;
+  object-fit:contain;
   object-position:center;
+  background:#fff;
 }
