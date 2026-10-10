@@ -1468,7 +1468,8 @@ img{-webkit-user-drag:none;-webkit-user-select:none;user-select:none}
   text-decoration:underline;
   text-underline-offset:7px;
 }
-html{background:var(--lime)}
+html{background:var(--ink)}
+html.is-page-end{background:var(--lime)}
 body{background:var(--lime)}
 main{background:var(--paper)}
 .header{
@@ -1501,4 +1502,79 @@ main{background:var(--paper)}
     height:calc(100% - 28px);
     max-width:calc(100% - 28px);
   }
+}
+
+/* Editorial v33: final contact pass with a denser channel stack and taller form. */
+.contact-title{
+  grid-template-columns:minmax(390px,.78fr) minmax(520px,1fr);
+  gap:56px;
+}
+.contact-copy-block{min-width:0}
+.contact-title h2{font-size:94px}
+.contact-title>div>p{
+  max-width:600px;
+  margin-top:20px;
+  font-size:18px;
+  line-height:1.55;
+}
+.contact-title .contact-channels{
+  display:grid;
+  grid-template-columns:1fr;
+  margin-top:28px;
+  border:1px solid #20222155;
+}
+.contact-title .contact-channel-group{display:contents}
+.contact-title .contact-channel-group+.contact-channel-group{border:0}
+.contact-title .contact-channel-group>h3{display:none}
+.contact-title .contact-channel-group .contact-channel{
+  min-height:62px;
+  padding:10px 14px;
+  gap:10px;
+  border-right:0;
+  border-bottom:1px solid #20222155;
+}
+.contact-title .contact-channel-group:last-child .contact-channel:last-child{border-bottom:0}
+.contact-title .contact-channel-main{
+  grid-template-columns:32px minmax(0,1fr);
+  gap:12px;
+}
+.contact-title .contact-channel-icon,
+.contact-title .copy-contact,
+.contact-title .channel-arrow{
+  width:32px;
+  height:32px;
+}
+.contact-title .contact-channel-icon img{width:20px;height:20px}
+.contact-title .channel-name{font-size:14px}
+.contact-title .channel-preview{font-size:12px}
+.contact-title .contact-form{
+  min-height:540px;
+  display:flex;
+  flex-direction:column;
+}
+.contact-title .contact-form-grid{gap:18px}
+.contact-title .contact-form label{font-size:9px}
+.contact-title .contact-form input{
+  height:56px;
+  font-size:14px;
+}
+.contact-title .contact-form textarea{
+  min-height:190px;
+  font-size:14px;
+}
+.contact-title .form-submit{margin-top:auto}
+.project-description{font-size:13px;line-height:1.6}
+.work-heading>p,
+.about-copy>p,
+.timeline p{font-size:14px}
+.contact-signoff{font-size:11px}
+@media(max-width:1100px){
+  .contact-title{grid-template-columns:1fr;gap:34px}
+  .contact-title .contact-form{min-height:0}
+}
+@media(max-width:640px){
+  .contact-title h2{font-size:60px}
+  .contact-title>div>p{font-size:13px}
+  .contact-title .contact-channel-group .contact-channel{min-height:58px;padding:9px 10px}
+  .contact-title .contact-form textarea{min-height:130px}
 }
