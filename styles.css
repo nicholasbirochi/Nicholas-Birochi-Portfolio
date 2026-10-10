@@ -1651,78 +1651,20 @@ body{font-size:16px}
   .contact-title .contact-form textarea{min-height:170px}
 }
 
-/* Editorial v40: absolute final contact-bottom alignment override. */
+/* Editorial v43: final contact alignment and dark surface color. */
 .contact-title .contact-form{min-height:606px}
 .contact-title .contact-form textarea{
   min-height:251px;
   max-height:340px;
 }
 .contact-title .form-submit{margin-top:20px}
-@media(max-width:1100px){
-  .contact-title .contact-form{min-height:0}
+html,
+.hero,
+.hero-copy,
+.header.is-stuck,
+.header nav.is-open{
+  background:rgb(29,29,29);
 }
-@media(max-width:640px){
-  .contact-title .contact-form textarea{min-height:150px}
-}
-
-/* Editorial v39: final override wins the contact-bottom alignment. */
-.contact-title .contact-form{min-height:606px}
-.contact-title .contact-form textarea{
-  min-height:251px;
-  max-height:340px;
-}
-.contact-title .form-submit{margin-top:20px}
-@media(max-width:1100px){
-  .contact-title .contact-form{min-height:0}
-}
-@media(max-width:640px){
-  .contact-title .contact-form textarea{min-height:150px}
-}
-
-/* Editorial v38: align the form bottom with the Rocketseat row. */
-.contact-title .contact-form{min-height:606px}
-.contact-title .contact-form textarea{
-  min-height:251px;
-  max-height:340px;
-}
-.contact-title .form-submit{margin-top:20px}
-@media(max-width:1100px){
-  .contact-title .contact-form{min-height:0}
-}
-@media(max-width:640px){
-  .contact-title .contact-form textarea{min-height:150px}
-}
-
-/* Editorial v37: keep the submit gap equal to the field gaps. */
-.contact-title .contact-form textarea{
-  min-height:253px;
-  max-height:340px;
-}
-.contact-title .form-submit{margin-top:20px}
-@media(max-width:640px){
-  .contact-title .contact-form textarea{min-height:150px}
-}
-
-/* Editorial v36: Rocketseat is the final contact row. */
-.contact-title .contact-form{min-height:628px}
-.contact-title .contact-form textarea{
-  min-height:273px;
-  max-height:360px;
-}
-@media(max-width:1100px){
-  .contact-title .contact-form{min-height:0}
-}
-@media(max-width:640px){
-  .contact-title .contact-form textarea{min-height:170px}
-}
-
-/* Editorial v40: absolute final contact-bottom alignment override. */
-.contact-title .contact-form{min-height:606px}
-.contact-title .contact-form textarea{
-  min-height:251px;
-  max-height:340px;
-}
-.contact-title .form-submit{margin-top:20px}
 @media(max-width:1100px){
   .contact-title .contact-form{min-height:0}
 }
