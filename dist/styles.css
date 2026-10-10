@@ -1626,3 +1626,27 @@ body{font-size:16px}
   .contact-title .contact-form{padding:18px}
   .contact-title .contact-form textarea{min-height:160px}
 }
+
+/* Editorial v35: restore Rocketseat and make the form reach the contact stack. */
+.contact-title .contact-form{
+  min-height:690px;
+}
+.contact-title .contact-form-grid{
+  grid-template-columns:1fr;
+}
+.contact-title .contact-form label.form-message{
+  grid-column:auto;
+}
+.contact-title .contact-form textarea{
+  min-height:335px;
+  max-height:430px;
+}
+.contact-title .form-submit{
+  margin-top:auto;
+}
+@media(max-width:1100px){
+  .contact-title .contact-form{min-height:0}
+}
+@media(max-width:640px){
+  .contact-title .contact-form textarea{min-height:170px}
+}
