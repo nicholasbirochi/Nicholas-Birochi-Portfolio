@@ -589,7 +589,7 @@ const header = document.querySelector('.header');
 const hero = document.querySelector('.hero');
 function updateHeaderState() {
   if (!header || !hero) return;
-  header.classList.toggle('is-stuck', window.scrollY >= hero.offsetHeight - 1);
+  header.classList.toggle('is-stuck', window.scrollY >= hero.offsetHeight - header.offsetHeight);
 }
 window.addEventListener('scroll', updateHeaderState, {passive: true});
 window.addEventListener('resize', updateHeaderState);
