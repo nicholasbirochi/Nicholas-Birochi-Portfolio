@@ -1469,10 +1469,11 @@ img{-webkit-user-drag:none;-webkit-user-select:none;user-select:none}
   text-underline-offset:7px;
 }
 .header{
+  position:fixed;
+  background:transparent;
   transition:background-color .2s,border-color .2s,box-shadow .2s;
 }
 .header.is-stuck{
-  position:fixed;
   background:rgb(29,29,29);
   border-bottom-color:#ffffff1f;
   box-shadow:0 12px 30px #00000024;
