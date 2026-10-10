@@ -1,6 +1,6 @@
 # Nicholas Birochi Portfolio
 
-Personal portfolio at https://nicholasbirochi.com.br. Static HTML, CSS and JavaScript, deployed through Cloudflare Pages from `dist/`.
+My personal portfolio at https://nicholasbirochi.com.br brings together selected projects, demonstrations and professional links. It is built with static HTML, CSS and JavaScript, with the published files in `dist/` and deployment through Cloudflare Pages.
 
 ## Content
 
@@ -24,7 +24,7 @@ Open `index.html` in a browser, or serve the folder with `python -m http.server 
 
 ## Assets
 
-Barlow Condensed and Manrope are distributed with their OFL licenses. Icons are from Lucide (license in `assets/icons/LICENSE`). Project imagery is sourced from public project documentation, supplied assets or code-built previews. The Behavioral Analysis dashboard is a public-safe reproduction based on the project's real interface and graph types, while the local-AI diagram describes the documented n8n/Ollama workflow. The hero photograph uses Nicholas's provided LinkedIn portrait, edited for layout, with the original retained in the About section.
+Barlow Condensed and Manrope are distributed with their OFL licenses. Icons are from Lucide (license in `assets/icons/license`). Project imagery is sourced from public project documentation, supplied assets or code-built previews. The Behavioral Analysis dashboard is a public-safe reproduction based on the project's real interface and graph types, while the local-AI diagram describes the documented n8n/Ollama workflow. The hero photograph uses Nicholas's provided LinkedIn portrait, edited for layout, with the original retained in the About section.
 
 Timeline branding uses the Faculdade Engenheiro Salvador Arena logo supplied in Nicholas's local project files, the official Cambridge English candidate asset, Volkswagen's public logo asset and PratikaUD's public profile mark.
 
@@ -33,3 +33,7 @@ Hero image editing used the built-in image generation tool. Prompt: preserve the
 The active JARVIS frame was derived from the supplied interface screenshot with its central data sphere made legible for a video preview. The About photograph and professional portraits use the original files supplied by Nicholas. Featured recommendations use supplied or explicitly authorized draft text; profiles awaiting copy remain linked without invented testimonials.
 
 Release marker: `2026-10-04-editorial-v29`.
+
+## License
+
+Original code and documentation are covered by [MIT](license). Photographs, personal records, logos and third-party assets are not relicensed by this notice.
