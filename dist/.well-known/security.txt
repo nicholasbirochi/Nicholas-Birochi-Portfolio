@@ -1,3 +1,0 @@
-Contact: mailto:nicholas.birochi@gmail.com
-Preferred-Languages: pt-BR, en
-Canonical: https://nicholasbirochi.com.br/.well-known/security.txt

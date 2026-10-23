@@ -10,7 +10,11 @@ Selected projects: CCB BI, Behavioral Analysis, JARVIS, Local AI + Automation, P
 
 ## Development
 
-Open `index.html` in a browser, or serve the folder with `python -m http.server 8080` for HTTP checks. No package installation or build step is required. Keep root publication files and `dist/` synchronized before pushing to `main`.
+Open `index.html` in a browser, or serve the folder with `python -m http.server 8080` for HTTP checks. No package installation is required for local development.
+
+For publication, run `python3 tools/build_site.py` in a clean checkout. The script copies only the explicit static publication files into `dist/`; it excludes documentation and local files. It refuses an existing destination to prevent deleting local content or publishing stale assets. Use `--output <new-directory>` for a separate preview. Build output is not versioned.
+
+Cloudflare Pages must use **build command** `python3 tools/build_site.py` and **output directory** `dist`. Configure and verify that build before removing the currently tracked `dist/` files from the publication branch. The external Pages settings have not been verified by this change.
 
 ## Interaction and accessibility
 
