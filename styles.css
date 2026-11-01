@@ -1683,3 +1683,12 @@ html,
 @media(prefers-reduced-motion:reduce){
   .contact-channel .resume-chip{transform:none!important}
 }
+
+/* Contact form height: the card stretches to the channel list (resume row included) and the message box absorbs the difference. */
+@media(min-width:1101px){
+  .contact-title{align-items:stretch}
+  .contact-title .contact-form{min-height:0}
+  .contact-title .contact-form-grid{flex:1;grid-template-rows:auto auto minmax(0,1fr)}
+  .contact-title .contact-form label.form-message{grid-template-rows:auto minmax(0,1fr)}
+  .contact-title .contact-form textarea{height:100%;min-height:150px;max-height:none;resize:none}
+}
