@@ -444,7 +444,8 @@ const englishCopy = {
   planned: 'PLANNED', learning2027Title: 'Graduation', learning2027Body: 'Computer Engineering degree expected in December 2027.', goal: 'GOAL', work2027Title: 'Next step: Junior Data Analyst', work2027Body: 'The desired progression after the internship, combining hands-on experience, education and technical autonomy.',
   recommendationEyebrow: 'PROFESSIONAL RECOMMENDATIONS', recommendationQuiet: 'Perspectives from people who trust my work.', quoteAzarias: 'Nicholas is an outstanding professional: committed and responsible. He is also innovative, adding significant value to our area\'s processes and to the quality of the work he delivers.', quoteEduardo: 'I recommend Nicholas for his dedication and willingness to listen to the area\'s needs, contributing ideas and disruptive solutions that demonstrate forward-looking technological thinking.', quoteVitor: 'I followed Nicholas during the development of the church project (CCB-BI). He knew how to listen, improve the solution and turn a real need into a clear, useful and well-built tool.', quoteEdgar: 'A longtime friend who is always willing to put in the work and deliver the product.', quoteHenrico: 'I recommend Nicholas for his curiosity, dedication and ability to turn problems into practical solutions. He learns quickly, communicates clearly and takes every project seriously.', linkedinRecommendation: 'Recommendation via LinkedIn',
   contactEyebrow: '04 / CONTACT', contactQuiet: 'A CONVERSATION CAN BE THE BEGINNING.', contactTitle: 'LET\'S<br>TALK?', contactIntro: 'I am open to opportunities, collaborations and projects in data, automation, local AI and software development.', formTitle: 'WRITE YOUR MESSAGE', formEmail: 'YOUR EMAIL', formSubject: 'SUBJECT', formMessage: 'MESSAGE', formSubmit: 'SEND MESSAGE', contactSocial: 'CONTACT & SOCIAL', contactProfessional: 'PROFESSIONAL PROFILES', location: 'São Bernardo do Campo, SP · Brazil', availability: 'Available to discuss new challenges', backTop: 'Back to top',
-  caseOverview: 'Overview', caseHighlights: 'Key points', caseGithub: 'Explore on GitHub'
+  caseOverview: 'Overview', caseHighlights: 'Key points', caseGithub: 'Explore on GitHub',
+  resumeName: 'Resume', resumePreview: 'Download PDF'
 };
 
 const spanishCopy = {
@@ -461,7 +462,8 @@ const spanishCopy = {
   planned: 'PREVISTO', learning2027Title: 'Finalización de la carrera', learning2027Body: 'Graduación en Ingeniería Informática prevista para diciembre de 2027.', goal: 'OBJETIVO', work2027Title: 'Próximo paso: Analista de Datos Junior', work2027Body: 'La progresión deseada después de la pasantía, reuniendo experiencia práctica, formación y autonomía técnica.',
   recommendationEyebrow: 'RECOMENDACIONES PROFESIONALES', recommendationQuiet: 'Perspectivas de quienes confían en mi trabajo.', quoteAzarias: 'Nicholas es un profesional excepcional: comprometido y responsable. Además, es innovador y aporta mucho valor a los procesos de nuestra área y a la calidad de las actividades que entrega.', quoteEduardo: 'Recomiendo a Nicholas por su dedicación y disposición para escuchar las necesidades del área, aportando ideas y soluciones disruptivas que demuestran una visión orientada a las tecnologías del futuro.', quoteVitor: 'Acompañé a Nicholas durante el desarrollo del proyecto para la iglesia (CCB-BI). Supo escuchar, mejorar la solución y transformar una necesidad real en una herramienta clara, útil y bien construida.', quoteEdgar: 'Un amigo de muchos años, siempre dispuesto a esforzarse y entregar el producto.', quoteHenrico: 'Recomiendo a Nicholas por su curiosidad, dedicación y capacidad para transformar problemas en soluciones prácticas. Aprende rápido, se comunica con claridad y se toma cada proyecto en serio.', linkedinRecommendation: 'Recomendación vía LinkedIn',
   contactEyebrow: '04 / CONTACTO', contactQuiet: 'UNA CONVERSACIÓN PUEDE SER EL COMIENZO.', contactTitle: '¿HABLAMOS?', contactIntro: 'Estoy abierto a oportunidades, colaboraciones y proyectos de datos, automatización, IA local y desarrollo de software.', formTitle: 'ESCRIBE TU MENSAJE', formEmail: 'TU E-MAIL', formSubject: 'ASUNTO', formMessage: 'MENSAJE', formSubmit: 'ENVIAR MENSAJE', contactSocial: 'CONTACTO & REDES SOCIALES', contactProfessional: 'PERFILES PROFESIONALES', location: 'São Bernardo do Campo, SP · Brasil', availability: 'Disponible para conversar sobre nuevos desafíos', backTop: 'Volver arriba',
-  caseOverview: 'Resumen', caseHighlights: 'Puntos principales', caseGithub: 'Explorar en GitHub'
+  caseOverview: 'Resumen', caseHighlights: 'Puntos principales', caseGithub: 'Explorar en GitHub',
+  resumeName: 'Currículum', resumePreview: 'Descargar PDF'
 };
 
 const englishPlaceholders = {formEmailPlaceholder: 'you@company.com', formSubjectPlaceholder: 'About an opportunity', formMessagePlaceholder: 'Briefly tell me how I can help.'};
@@ -534,6 +536,8 @@ function setLanguage(language, persist = true) {
     button.setAttribute('aria-label', label);
     button.title = label;
   });
+  const resumeMain = document.querySelector('[data-resume-main]');
+  if (resumeMain) resumeMain.href = currentLanguage === 'pt' ? 'assets/Nicholas-Birochi-Curriculo.pdf' : 'assets/Nicholas-Birochi-Resume.pdf';
   document.title = config.title;
   const description = document.querySelector('meta[name="description"]');
   if (description) description.content = config.description;

@@ -1672,3 +1672,14 @@ html,
 @media(max-width:640px){
   .contact-title .contact-form textarea{min-height:150px}
 }
+
+/* Resume row: the PT / EN download buttons reuse the round channel buttons with a text label. */
+.resume-chip{font-size:12px;font-weight:800;letter-spacing:.04em;line-height:1;color:inherit}
+.contact-channel:hover .resume-chip,.contact-channel:focus-within .resume-chip,.contact-channel.is-previewing .resume-chip{transform:none}
+.contact-channel .resume-chip:hover,.contact-channel .resume-chip:focus-visible{color:var(--ink);transform:translateY(-2px)}
+@media(max-width:640px){
+  .resume-chip{font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){
+  .contact-channel .resume-chip{transform:none!important}
+}
