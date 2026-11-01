@@ -603,7 +603,9 @@ const projectsPageStatus = document.querySelector('#projects-page-status');
 const projectsPrev = document.querySelector('.projects-prev');
 const projectsNext = document.querySelector('.projects-next');
 const filterButtons = [...document.querySelectorAll('[data-filter]')];
-const projectsPerPage = 6;
+// Phones show one project per screen; wider screens keep the grid of six.
+const projectsMobileQuery = window.matchMedia('(max-width: 640px)');
+const projectsPerPage = () => (projectsMobileQuery.matches ? 1 : 6);
 let currentProjectFilter = 'all';
 let activeProjectPage = 0;
 
@@ -613,10 +615,11 @@ function matchingProjects() {
 
 function renderProjects() {
   const matches = matchingProjects();
-  const totalPages = Math.max(1, Math.ceil(matches.length / projectsPerPage));
+  const perPage = projectsPerPage();
+  const totalPages = Math.max(1, Math.ceil(matches.length / perPage));
   activeProjectPage = Math.min(Math.max(activeProjectPage, 0), totalPages - 1);
-  const start = activeProjectPage * projectsPerPage;
-  const visible = matches.slice(start, start + projectsPerPage);
+  const start = activeProjectPage * perPage;
+  const visible = matches.slice(start, start + perPage);
   projects.forEach(project => { project.hidden = !visible.includes(project); });
   renderProjectsPagination(totalPages);
   updateFilterStatus(matches.length);
@@ -691,6 +694,26 @@ projectsPagination?.addEventListener('keydown', event => {
 projectsPrev?.addEventListener('click', () => { activeProjectPage -= 1; renderProjects(); });
 projectsNext?.addEventListener('click', () => { activeProjectPage += 1; renderProjects(); });
 
+// The arrows are hidden on phones, so a horizontal swipe on the projects moves between pages.
+let projectsSwipeStart = null;
+const projectsStage = document.querySelector('.projects-stage');
+projectsStage?.addEventListener('touchstart', event => {
+  const touch = event.touches[0];
+  projectsSwipeStart = event.touches.length === 1 ? {x: touch.clientX, y: touch.clientY} : null;
+}, {passive: true});
+projectsStage?.addEventListener('touchend', event => {
+  if (!projectsSwipeStart) return;
+  const touch = event.changedTouches[0];
+  const dx = touch.clientX - projectsSwipeStart.x;
+  const dy = touch.clientY - projectsSwipeStart.y;
+  projectsSwipeStart = null;
+  if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+  activeProjectPage += dx < 0 ? 1 : -1;
+  renderProjects();
+}, {passive: true});
+
+projectsMobileQuery.addEventListener('change', () => { activeProjectPage = 0; renderProjects(); });
+
 renderProjects();
 
 // Auto-rotate project pages like the Claude carousel: the active dot fills up and,
@@ -703,7 +726,7 @@ const projectsReduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)
 let projectsResumeTimer = null;
 
 function projectsTotalPages() {
-  return Math.max(1, Math.ceil(matchingProjects().length / projectsPerPage));
+  return Math.max(1, Math.ceil(matchingProjects().length / projectsPerPage()));
 }
 function clearProjectsResume() {
   if (projectsResumeTimer) { clearTimeout(projectsResumeTimer); projectsResumeTimer = null; }
