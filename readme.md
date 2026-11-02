@@ -4,7 +4,7 @@ My personal portfolio at https://nicholasbirochi.com.br brings together selected
 
 ## Content
 
-Selected projects: CCB BI, Behavioral Analysis, JARVIS, Local AI + Automation, Petshop E-Commerce and Standalone Fingerprint Key. The CCB preview uses only aggregated period metrics, the Behavioral Analysis preview reproduces the real chart families with anonymous demonstration values, and JARVIS includes a short local-voice demonstration. The Petshop preview is rendered from the project's actual home-page design. Professional and learning timelines are based on Nicholas's supplied resume; private business documents and datasets are not published.
+Selected projects: CCB BI, Behavioral Analysis, Noah, Local AI + Automation, Petshop E-Commerce and Standalone Fingerprint Key. The CCB preview uses only aggregated period metrics, the Behavioral Analysis preview reproduces the real chart families with anonymous demonstration values, and Noah includes a short local-voice demonstration. The Petshop preview is rendered from the project's actual home-page design. Professional and learning timelines are based on Nicholas's supplied resume; private business documents and datasets are not published.
 
 ![Standalone Fingerprint Key with its 3D-printed enclosure, biometric sensor and ESP32-S3 board](assets/fingerprint-key-realistic.png)
 
@@ -19,7 +19,7 @@ Cloudflare Pages must use **build command** `python3 tools/build_site.py` and **
 ## Interaction and accessibility
 
 - Portuguese/English/Spanish language combobox with local persistence and translated project dialogs.
-- Project filters, project detail dialogs, JARVIS audio control, animated navigation and grouped contact links with hover previews and copy actions.
+- Project filters, project detail dialogs, Noah audio control, animated navigation and grouped contact links with hover previews and copy actions.
 - Contact form submitted to Formspree over HTTPS, with accessible success and error feedback.
 - Keyboard focus, Escape dismissal, reduced-motion support and local fonts.
 - Responsive layouts for mobile, tablet and desktop.
@@ -34,7 +34,7 @@ Timeline branding uses the Faculdade Engenheiro Salvador Arena logo supplied in 
 
 Hero image editing used the built-in image generation tool. Prompt: preserve the subject's exact identity, smile, hair and polo; replace the wall with flat charcoal #202221; compose a wide photograph with the subject on the right and empty background on the left, without text or props.
 
-The active JARVIS frame was derived from the supplied interface screenshot with its central data sphere made legible for a video preview. The About photograph and professional portraits use the original files supplied by Nicholas. Featured recommendations use supplied or explicitly authorized draft text; profiles awaiting copy remain linked without invented testimonials.
+The active Noah frame was derived from the supplied interface screenshot with its central data sphere made legible for a video preview. The About photograph and professional portraits use the original files supplied by Nicholas. Featured recommendations use supplied or explicitly authorized draft text; profiles awaiting copy remain linked without invented testimonials.
 
 Release marker: `2026-10-04-editorial-v29`.
 

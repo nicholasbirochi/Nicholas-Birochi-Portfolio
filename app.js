@@ -15,12 +15,12 @@ const cases = {
     status: 'Todos os valores, categorias e rótulos exibidos são fictícios e não derivam de qualquer base real.'
   },
   jarvis: {
-    title: 'J.A.R.V.I.S.', kicker: 'IA LOCAL / ASSISTENTE DE VOZ',
+    title: 'Noah', kicker: 'IA LOCAL / ASSISTENTE DE VOZ',
     intro: 'Um assistente pessoal que conversa em português, no próprio computador.',
     description: 'Reconhecimento de voz, conversação via Ollama e organização de informações profissionais, com interface visual de estado e integração com a barra de menus do macOS.',
     points: ['Ativação por palavra-chave ou duas palmas, com reconhecimento local.', 'Perfil profissional estruturado com procedência dos fatos.', 'Adaptadores de sites com prévia das alterações antes da confirmação.'],
     status: 'Em desenvolvimento. A gestão completa de candidaturas continua em evolução.',
-    url: 'https://github.com/nicholasbirochi/JARVIS-Assistant'
+    url: 'https://github.com/nicholasbirochi/Noah-Assistant'
   },
   ias: {
     title: 'IA Local + Automação', kicker: 'IA / DOCUMENTOS / ORQUESTRAÇÃO',
@@ -188,7 +188,7 @@ const caseCopyEn = {
     status: 'Every value, category and label shown is fictional and does not derive from any real dataset.'
   },
   jarvis: {
-    title: 'J.A.R.V.I.S.', kicker: 'LOCAL AI / VOICE ASSISTANT',
+    title: 'Noah', kicker: 'LOCAL AI / VOICE ASSISTANT',
     intro: 'A personal assistant that speaks Portuguese and runs on the computer itself.',
     description: 'Voice recognition, Ollama-powered conversation and structured professional information, with a visual status interface and macOS menu bar integration.',
     points: ['Wake-word or double-clap activation with local recognition.', 'A structured professional profile with fact provenance.', 'Website adapters with a preview before any change is confirmed.'],
@@ -317,7 +317,7 @@ const caseCopyEs = {
     status: 'Todos los valores, categorías y rótulos mostrados son ficticios y no provienen de ninguna base real.'
   },
   jarvis: {
-    title: 'J.A.R.V.I.S.', kicker: 'IA LOCAL / ASISTENTE DE VOZ',
+    title: 'Noah', kicker: 'IA LOCAL / ASISTENTE DE VOZ',
     intro: 'Un asistente personal que conversa en portugués y funciona en el propio computador.',
     description: 'Reconocimiento de voz, conversación mediante Ollama e información profesional estructurada, con una interfaz visual de estado e integración con la barra de menús de macOS.',
     points: ['Activación por palabra clave o dos palmadas, con reconocimiento local.', 'Perfil profesional estructurado con procedencia de los datos.', 'Adaptadores de sitios web con vista previa antes de confirmar cualquier cambio.'],
@@ -1056,9 +1056,9 @@ if (jarvisVideo && jarvisSound) {
   jarvisVideo.addEventListener('ended', () => {
     jarvisVideo.muted = true;
     jarvisSound.setAttribute('aria-pressed', 'false');
-    jarvisSound.setAttribute('aria-label', 'Ouvir a demonstração do JARVIS');
+    jarvisSound.setAttribute('aria-label', 'Ouvir a demonstração do Noah');
     jarvisSound.querySelector('img').src = 'assets/icons/volume-2.svg';
-    jarvisSound.querySelector('span').textContent = 'OUVIR JARVIS';
+    jarvisSound.querySelector('span').textContent = 'OUVIR NOAH';
     jarvisVideo.currentTime = 0;
     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) jarvisVideo.play().catch(() => {});
   });
@@ -1070,9 +1070,9 @@ if (jarvisVideo && jarvisSound) {
       jarvisVideo.currentTime = 0;
     }
     jarvisSound.setAttribute('aria-pressed', String(turnOn));
-    jarvisSound.setAttribute('aria-label', turnOn ? 'Silenciar a demonstração do JARVIS' : 'Ouvir a demonstração do JARVIS');
+    jarvisSound.setAttribute('aria-label', turnOn ? 'Silenciar a demonstração do Noah' : 'Ouvir a demonstração do Noah');
     jarvisSound.querySelector('img').src = `assets/icons/${turnOn ? 'volume-x' : 'volume-2'}.svg`;
-    jarvisSound.querySelector('span').textContent = turnOn ? 'SILENCIAR' : 'OUVIR JARVIS';
+    jarvisSound.querySelector('span').textContent = turnOn ? 'SILENCIAR' : 'OUVIR NOAH';
     try {
       await jarvisVideo.play();
     } catch {
